@@ -446,7 +446,7 @@ h5 {
 }
 
 .container .pjcontain:hover .light-card h2 {
-    color: #fff;
+    color: #e5e5e5;
     transition: color .6s ease-out;
 }
 
