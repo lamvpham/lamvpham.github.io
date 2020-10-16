@@ -782,3 +782,9 @@ h5 {
         max-width: 100%;
     }
 }
+
+.playlist {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 25px;
+}
