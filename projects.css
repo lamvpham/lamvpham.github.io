@@ -1,35 +1,31 @@
 /* new code for project sections */
 
-#project {
-    margin-top: 5rem;
+.project {
+    margin-top: 5em;
 }
 
-hr {
-    border: 0.1px solid #9ea3a3;
-}
-
-
-/* fixed side */
-
-#project {
+.project {
     position: relative;
     left: 8%;
     width: 84%;
     display: flex;
 }
 
-#project .side-context {
+
+/* fixed side */
+
+.project .side-info {
     width: 35%;
     display: block;
     top: 0;
 }
 
-#project .side-context .fixed {
+.project .side-info .fixed {
     top: 5rem;
     position: sticky;
 }
 
-#project .side-context h1 {
+.project .side-info h1 {
     margin-top: 0;
     margin-bottom: 40px;
     padding-right: 15px;
@@ -39,14 +35,13 @@ hr {
     width: 100%;
 }
 
-#project .side-context h2 {
+.project .side-info h2 {
     font-size: 1.1em;
     font-weight: 600;
-    width: 70%;
     margin-bottom: 10px;
 }
 
-#project .side-context p {
+.project .side-info p {
     width: 70%;
     margin-top: 0;
     margin-bottom: 30px;
@@ -55,12 +50,12 @@ hr {
     color: #9ea3a3;
 }
 
-#project .side-context p a {
+.project .side-info p a {
     color: #9ea3a3;
     text-decoration: none;
 }
 
-#project .side-context p a:hover {
+.project .side-info p a:hover {
     color: #fff;
     transition: all 325ms;
     cursor: crosshair;
@@ -69,23 +64,47 @@ hr {
 
 /* project information */
 
-#project p.section-header {
-    margin-bottom: 0.75rem;
-    font-size: 1.1em;
-    font-weight: 400;
-}
-
-#project .project-content {
-    width: 65%;
+.project .proj-content {
+    width: 60%;
     display: block;
     margin-left: 0;
 }
 
-#project .project-content .project-text {
-    width: 60%;
+.proj-images img {
+    width: 100%;
+    margin-bottom: 4em;
 }
 
-.project-images img {
-    width: 100%;
-    margin-bottom: 2rem;
+.project .proj-content .proj-text {
+    width: 70%;
+}
+
+.project .section-header p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #9ea3a3;
+}
+
+hr {
+    background-color: #9ea3a3;
+}
+
+.text-container {
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+
+.text-container h2 {
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    line-height: 18px;
+    color: #9ea3a3;
 }
