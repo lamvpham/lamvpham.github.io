@@ -11,6 +11,46 @@
     display: flex;
 }
 
+.main-nav {
+    width: 88vh;
+}
+
+@media (max-height:945px) {
+    .main-nav {
+        width: 90.5vh;
+    }
+}
+
+@media (max-height:935px) {
+    .main-nav {
+        width: 90vh;
+    }
+}
+
+@media (max-height:925px) {
+    .main-nav {
+        width: 89.5vh;
+    }
+}
+
+@media (max-height:915px) {
+    .main-nav {
+        width: 89vh;
+    }
+}
+
+@media (max-height:905px) {
+    .main-nav {
+        width: 88.5vh;
+    }
+}
+
+@media (max-height:900px) {
+    .main-nav {
+        width: 88vh;
+    }
+}
+
 
 /* fixed side */
 
@@ -91,13 +131,22 @@ hr {
 }
 
 .text-container {
-    margin-top: 2em;
     margin-bottom: 5em;
+}
+
+.text-container .stats {
+    padding: 10px 20px 10px 15px;
 }
 
 .text-container h2 {
     font-size: 1.25em;
     font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text-container h3 {
+    font-size: 65px;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
@@ -107,4 +156,31 @@ hr {
     font-size: 1.1em;
     line-height: 18px;
     color: #9ea3a3;
+}
+
+.numbering span {
+    display: inline-block;
+    position: absolute;
+    font-size: 1.1em;
+    font-family: 'Poppins';
+    color: #9ea3a3;
+    font-weight: 600;
+}
+
+.numbering p {
+    padding-top: 2px;
+    margin-left: 2em;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 18px;
+    color: #9ea3a3;
+}
+
+.numbering img {
+    margin-left: 2em;
+    width: 96%;
+}
+
+.m-t-2 {
+    margin-top: 2em;
 }
