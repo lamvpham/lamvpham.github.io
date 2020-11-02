@@ -125,19 +125,19 @@ ul.nav li a {
 
 @media (max-width: 600px) {
     .intro .vertical-ani {
-        font-size: 7em;
+        font-size: 6em;
     }
 }
 
 @media (max-width: 480px) {
     .intro .vertical-ani {
-        font-size: 5em;
+        font-size: 4em;
     }
 }
 
 @media (max-width: 320px) {
     .intro .vertical-ani {
-        font-size: 4.5em;
+        font-size: 3.75em;
     }
 }
 
@@ -431,22 +431,18 @@ h5 {
 .container .pjcontain h2 {
     color: #9ea3a3;
     margin-left: 6.05vw;
-    transition: color .6s ease-out;
+    transition: color 325ms ease-out;
 }
 
 .container .pjcontain:hover h2 {
-    color: #c7c7c7;
-    transition: color .6s ease-out;
+    color: #fff;
+    transition: color 325ms ease-out;
 }
 
-.container .pjcontain .light-card h2 {
-    color: #9ea3a3;
-    transition: color .6s ease-out;
-}
-
-.container .pjcontain:hover .light-card h2 {
-    color: #e5e5e5;
-    transition: color .6s ease-out;
+@media (max-width: 600px) {
+    .container .pjcontain h2 {
+        color: #fff;
+    }
 }
 
 .container .pjcontain .hiddencard img {
@@ -501,13 +497,14 @@ h5 {
 
 @media (max-width: 768px) {
     .pj-contain h1 {
-        font-size: 2em;
+        font-size: 1.85em;
     }
 }
 
 @media (max-width: 600px) {
     .pj-contain h1 {
-        font-size: 1.9em;
+        font-size: 1.6em;
+        font-weight: 900;
     }
 }
 
@@ -515,7 +512,6 @@ h5 {
     font-size: 1.4em;
     margin-left: 6vw;
     margin-top: -25vh;
-    color: #9ea3a3;
 }
 
 @media (max-width: 900px) {
@@ -545,7 +541,8 @@ h5 {
 
 @media (max-width: 768px) {
     .pj-contain h3 {
-        font-size: 1.3em;
+        font-size: 1.1em;
+        width: 100%;
     }
 }
 

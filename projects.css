@@ -104,6 +104,10 @@
 
 /* project information */
 
+.project .proj-content .section {
+    margin-bottom: 5em;
+}
+
 .project .proj-content {
     width: 60%;
     display: block;
@@ -131,11 +135,16 @@ hr {
 }
 
 .text-container {
-    margin-bottom: 5em;
+    margin-bottom: 4em;
 }
 
 .text-container .stats {
     padding: 10px 20px 10px 15px;
+}
+
+.text-container h1 {
+    font-size: 2em;
+    font-weight: 400;
 }
 
 .text-container h2 {
