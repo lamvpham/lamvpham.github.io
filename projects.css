@@ -1,104 +1,12 @@
 /* new code for project sections */
 
 .project {
-    margin-top: 5em;
-}
-
-.project {
-    position: relative;
-    left: 9.5%;
-    width: 84%;
-    display: flex;
+    margin: 0 auto;
+    width: 70%;
 }
 
 .main-nav {
-    width: 88vh;
-}
-
-@media (max-height:945px) {
-    .main-nav {
-        width: 90.5vh;
-    }
-}
-
-@media (max-height:935px) {
-    .main-nav {
-        width: 90vh;
-    }
-}
-
-@media (max-height:925px) {
-    .main-nav {
-        width: 89.5vh;
-    }
-}
-
-@media (max-height:915px) {
-    .main-nav {
-        width: 89vh;
-    }
-}
-
-@media (max-height:905px) {
-    .main-nav {
-        width: 88.5vh;
-    }
-}
-
-@media (max-height:900px) {
-    .main-nav {
-        width: 88vh;
-    }
-}
-
-
-/* fixed side */
-
-.project .side-info {
-    width: 35%;
-    display: block;
-    top: 0;
-}
-
-.project .side-info .fixed {
-    top: 5rem;
-    position: sticky;
-}
-
-.project .side-info h1 {
-    margin-top: 0;
-    margin-bottom: 40px;
-    padding-right: 15px;
-    font-size: 2.5rem;
-    font-family: 'Poppins';
-    font-weight: 500;
-    width: 100%;
-}
-
-.project .side-info h2 {
-    font-size: 1.1em;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.project .side-info p {
-    width: 70%;
-    margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 1.1em;
-    line-height: 18px;
-    color: #9ea3a3;
-}
-
-.project .side-info p a {
-    color: #9ea3a3;
-    text-decoration: none;
-}
-
-.project .side-info p a:hover {
-    color: #fff;
-    transition: all 325ms;
-    cursor: crosshair;
+    width: 98vh;
 }
 
 
@@ -108,19 +16,26 @@
     margin-bottom: 5em;
 }
 
-.project .proj-content {
-    width: 60%;
-    display: block;
-    margin-left: 0;
-}
-
 .proj-images img {
     width: 100%;
     margin-bottom: 4em;
 }
 
 .project .proj-content .proj-text {
-    width: 70%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section .proj-text .title h1 {
+    font-family: "Merriweather", serif;
+    color: #9ea3a3;
+    font-size: 6em;
+}
+
+.section .proj-text .title h2 {
+    color: #9ea3a3;
+    font-size: 2em;
+    margin-top: 1.25em;
 }
 
 .project .section-header p {
