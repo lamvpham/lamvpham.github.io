@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../projects.css">
 
+
     <!--GOOGLE FONTs-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -168,7 +169,13 @@
                 </div>
 
                 <div class="proj-images">
-                    <img src="spotify-assets/user-flow.png" alt="Redesigned User Flow" style="margin-bottom: 0;">
+                    <img id="pjimages" src="spotify-assets/user-flow.png" alt="Redesigned User Flow" style="margin-bottom: 0;">
+                </div>
+
+                <div id="myModal" class="modal">
+                    <span class="exit">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
                 </div>
             </div>
 
@@ -302,6 +309,7 @@
 
     </div>
 
+    <script src="modal.js"></script>
 
 
 
