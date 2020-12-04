@@ -13,7 +13,7 @@
 /* project information */
 
 .project .proj-content .section {
-    margin-bottom: 5em;
+    margin-bottom: 7em;
 }
 
 .proj-images img {
@@ -22,27 +22,32 @@
 }
 
 .project .proj-content .proj-text {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
 }
 
 .section .proj-text .title h1 {
-    font-family: "Merriweather", serif;
-    color: #9ea3a3;
+    font-family: "Lora", serif;
+    color: #D0D0D0;
     font-size: 6em;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
 .section .proj-text .title h2 {
-    color: #9ea3a3;
-    font-size: 2em;
-    margin-top: 1.25em;
+    color: #D0D0D0;
+    font-size: 2.25em;
+    margin-top: .75em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
 }
 
 .project .section-header p {
     margin-bottom: 10px;
-    font-size: 1em;
-    font-weight: 400;
+    font-size: 1.5em;
+    font-weight: 600;
     color: #9ea3a3;
+    font-family: "Lora", serif;
 }
 
 hr {
@@ -60,26 +65,32 @@ hr {
 .text-container h1 {
     font-size: 2em;
     font-weight: 400;
+    font-family: "Open Sans", sans-serif;
 }
 
 .text-container h2 {
-    font-size: 1.25em;
-    font-weight: 500;
-    margin-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    color: #d0d0d0;
+    font-family: "Open Sans", sans-serif;
 }
 
 .text-container h3 {
     font-size: 65px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #d0d0d0;
 }
 
 .text-container p {
     margin-top: 0;
-    margin-bottom: 40px;
-    font-size: 1.1em;
-    line-height: 18px;
+    margin-bottom: 60px;
+    font-size: 1.25em;
+    line-height: 24px;
     color: #9ea3a3;
+    font-family: "Open Sans", sans-serif;
 }
 
 .numbering span {
@@ -107,125 +118,4 @@ hr {
 
 .m-t-2 {
     margin-top: 2em;
-}
-
-
-/* modal  */
-
-#pjimages {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#pjimages:hover {
-    opacity: 0.7;
-}
-
-
-/* The Modal (background) */
-
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
-}
-
-
-/* Modal Content (image) */
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 100%;
-    max-width: 700px;
-}
-
-
-/* Caption of Modal Image */
-
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #9ea3a3;
-    padding: 10px 0;
-    height: 150px;
-}
-
-
-/* Add Animation */
-
-.modal-content,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.3s;
-    animation-name: zoom;
-    animation-duration: 0.3s;
-}
-
-@-webkit-keyframes zoom {
-    from {
-        -webkit-transform: scale(0)
-    }
-    to {
-        -webkit-transform: scale(1)
-    }
-}
-
-@keyframes zoom {
-    from {
-        transform: scale(0)
-    }
-    to {
-        transform: scale(1)
-    }
-}
-
-
-/* The Close Button */
-
-.exit {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #9ea3a3;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.exit:hover,
-.exit:focus {
-    color: #714288;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-/* 100% Image Width on Smaller Screens */
-
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
 }
