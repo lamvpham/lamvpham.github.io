@@ -419,12 +419,12 @@ h5 {
 
 @media (max-width: 600px) {
     .container .pjcontain .hiddencard {
-        opacity: 1;
+        opacity: 0.8;
     }
 }
 
 .container .pjcontain:hover .hiddencard {
-    opacity: 1;
+    opacity: 0.8;
     transition: opacity ease-in 325ms;
 }
 
