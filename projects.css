@@ -191,6 +191,7 @@ hr {
     width: 100%;
     padding-top: 60%;
     overflow: hidden;
+    margin-bottom: 4em;
 }
 
 .gslides-container iframe {
@@ -210,5 +211,14 @@ hr {
 }
 
 .next-pj span {
+    font-weight: 400;
+}
+
+.prev-pj {
+    text-align: start;
+    margin-bottom: 80px;
+}
+
+.prev-pj span {
     font-weight: 400;
 }
