@@ -206,6 +206,379 @@
                     <img src="bluecat-assets2/persona.png" alt="Network Admin Persona">
                 </div>
 
+                <div class="proj-text ">
+                    <div class="text-container m-t-2 ">
+                        <h2>Understanding the requirements</h2>
+                        <div class="numbering">
+                            <span>01</span>
+                            <p>Maintain existing functionality, specifically show/hide BAM IP/domain, online help, and landing page</p>
+                            <span>02</span>
+                            <p>Maintain functionality of custom image in banner</p>
+                            <span>03</span>
+                            <p>Use more screen real estate: </p>
+                            <p style="text-indent: 10px;"> · Current workflows use the default template (which is narrow) and the request is to make the template larger so that workflows use more page real estate </p>
+                            <p style="text-indent: 10px;"> · How will a default change to the template affect existing customers? </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container">
+                        <h2>Designing the experience</h2>
+                        <p>The initial thought process for this project is to improve the users’ experience with the product. One of the challenges was to refresh the Gateway UI while keeping inline with Edge’s design system and layout to ensure uniformity
+                            between products. To reskin a flagship product, I have to ensure that the design satisfies all stakeholders without causing any risk to the project timeline and not to deviate from the purpose of Gateway.
+                        </p>
+                        <p style="margin-top: -40px; ">The first step was to understand the clients' journey through Gateway. After conducting user research, it became clear that almost all customers and internal BlueCat employees disliked the current landing page and would go straight
+                            to the side menu. With that feedback, I decided to do a complete overhaul to give the landing page purpose.</p>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <p style="margin-bottom:-40px"><b>Current BlueCat Gateway</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <video width="100%" controls>
+                        <source src="bluecat-assets2/walkthrough.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- part 1 - dashboard -->
+            <div class="section">
+                <div class="proj-text">
+                    <div class="section-header">
+                        <p>Part 1 - Gateway Dashboard</p>
+                        <hr/>
+                    </div>
+                    <div class="text-container m-t-2">
+                        <h2>First Step</h2>
+                        <p>To fit the paradigm of having a dashboard on all products, I thoroughly researched different landing page and dashboard concepts that could display workflows effectively while avoiding adding unnecessary information to the user.
+                            Compared to BlueCat Edge and Integrity, Gateway is not statistics driven, so I approached the dashboard with a general direction on how to improve usage of the front page.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <p style="margin-bottom:-40px"><b>Gateway Dashboard Concepts</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img src="bluecat-assets2/concepts.png " alt="Dashboard Concepts">
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <p>When talking to the technical product manager of Gateway for feedback on my ideas, he leaned towards concept #3 that I drew out (see top-right concept on previous image). This concept drew inspiration from the Aha! dashboard (see
+                            below), where my idea has the workflows catagorized based on their usage. This required recording metrics, and the developers currently have a program set up to record the data locally for each client. </p>
+                    </div>
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <p style="margin-bottom:-40px"><b>Aha Dashboard Inspiration</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/aha.png " alt="Aha Dashboard ">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>Current Gateway Dashboard</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/home.png " alt="Current Gateway Dashboard ">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>Dashboard Concept as of February 10, 2020</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/dashboard-concept.png " alt="Dashboard Concept as of February 10, 2020 ">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-top:-40px ">
+                            See the up-to-date mockups here:
+                            <a class="highlight " href="https://6glx6p.axshare.com "> <u> https://6glx6p.axshare.com </u> </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p>The mockup for the Gateway dashboard (seen above) that I constructed catagorizes workflows based on the user's usage of those workflows and the names of the the workflows followed by who has access to it. The way I designed this
+                            is to allow for the user to have faster access to their desired workflows, prioritizing the efficiency of the user's taskflow when on Gateway.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <h2>Feedback Iteration v2</h2>
+                        <p>After getting feedback from the Internal Gateway Board Members, they mentioned key insights:
+                        </p>
+
+                        <div class="numbering" style="margin-top: -30px; margin-bottom: 30px;">
+                            <span>01</span>
+                            <p>For the dashboard design, only have the frequent usage column</p>
+                            <p style="text-indent: 10px;"> · From the perspective of the user, the frequent usage column is the only section necessary for their using</p>
+                            <p style="text-indent: 10px;"> · From the standpoint of an admin, having information to the usage of each workflow is interesting to have</p>
+
+                            <span>02</span>
+                            <p>Would the usage columns be for overall usage between all the users in that company using Gateway? Or would it be an individual's usage?</p>
+                            <p style="text-indent: 10px;"> · If for the user, it could be recently used instead of frequent usage</p>
+                        </div>
+
+                        <p>The next version instead combines the usages into a list view, making it still take up screen real estate and provide value to the Network Admins every time they log in by putting it in one column.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>Dashboard Concept v2</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/dashboard-concept-2.png " alt="Dashboard Concept v2 ">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-top:-40px ">
+                            See the up-to-date mockups here:
+                            <a class="highlight " href="https://6glx6p.axshare.com "> <u> https://6glx6p.axshare.com </u> </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p>By the end of my internship, this was the state of the Gateway Dashboard. The next step with this is to launch the prototype to an internal clientale for their feedback on the value of this change.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- part 2 - Gateway UI -->
+            <div class="section">
+                <div class="proj-text">
+                    <div class="section-header">
+                        <p>Part 2 - Gateway UI</p>
+                        <hr/>
+                    </div>
+                    <div class="text-container m-t-2">
+                        <h2>Updates on the project</h2>
+                        <p>After having a meeting with the technical product manager about an update, it was noted by internal customer stakeholders that BlueCat Integrity is the main product of BlueCat and Gateway is a product that supports Integrity. Due
+                            to this, the stakeholders have a strong preference that the UI color scheme of Gateway resemble Integrity (bright colors). With the mockups resembling Edge's design system, the Integrity UI colour scheme for Gateway needs to
+                            be a separate design entirely.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container">
+                        <h2>Understanding the requirements (pt. 2)</h2>
+                        <div class="numbering">
+                            <span>01</span>
+                            <p><s>Gateway UI needs to resemble BlueCat Edge</s></p>
+                            <span>02</span>
+                            <p>As a second level requirement for the Gateway UI refresh, investigate the option of providing a Light Mode that resembles the UI of BAM 9.2.0 (for reference, see below)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container">
+                        <h2>Uncertainties</h2>
+                        <div class="numbering">
+                            <span>01</span>
+                            <p>Do we provide the light mode as a plug-in via BlueCat Labs (GitHub) or</p>
+                            <span>02</span>
+                            <p>Do we ship the HTML/CSS/JS files in the Gateway image to provide the functionality in the UI to switch between light and dark modes?</p>
+                            <p style="text-indent: 10px;"> · Must keep in mind that Engineering wants to keep the size of the Gateway base file as small as possible</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>BAM 9.2.0 UI</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/bam.png " alt="BAM 9.2.0 UI">
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <h2>Edge and Integrity Color Palettes and Typography</h2>
+                        <p>The UI I created follows the design system for Edge, and the ask for a BAM UI look meant that I needed to integrate the BAM design system in a different file. My manager recently worked on a facelift for BAM (BAM 9.2.0), so I asked
+                            for the design system he made for the new UI look.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>BlueCat Edge Design System</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/ds-colours-edge.png " alt="BlueCat Edge Design System - Colours" style="margin-bottom: 0">
+                    <img src="bluecat-assets2/ds-typography-edge.png " alt="BlueCat Edge Design System - Typography">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>BAM 9.2.0 Design System</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/ds-colours-bam.png " alt="BAM 9.2.0 Design System - Colours" style="margin-bottom: 0">
+                    <img src="bluecat-assets2/ds-typography-bam.png " alt="BAM 9.2.0 Design System - Typography">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p>Using the BAM design system, I duplicated the Gateway design that I made for the Edge scheme and reskinned the UI. In addition to that, each page after the dashboard page has the navigation menu open to keep a consistent paradigm
+                            with the Edge interface, where it has the same concept to make it easier for the user to flow through the product.</p>
+                        <p style="margin-top: -40px;">Shown below are some of the currently designed pages for the Gateway UI as of February 28th (note: most pages have a recoloured layout, spacing fixes, and typography alignments - the pages have yet to be completely redesigned at
+                            this time).</p>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>Dark Mode Design</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/signin.png " alt="Dark Mode Design - Sign In">
+                    <img src="bluecat-assets2/workflow-perm-dark.gif" alt="Dark Mode Design - Workflow Permissions">
+                    <img src="bluecat-assets2/gen-config-dark.gif" alt="Dark Mode Design - General Configurations">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>Light Mode Design</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/signin-light.png " alt="Light Mode Design - Sign In">
+                    <img src="bluecat-assets2/workflow-perm-light.gif" alt="Light Mode Design - Workflow Permissions">
+                    <img src="bluecat-assets2/gen-config-light.gif" alt="Light Mode Design - General Configurations">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-top:-40px ">
+                            See the up-to-date mockups here:
+                            <a class="highlight " href="https://6glx6p.axshare.com "> <u> https://6glx6p.axshare.com </u> </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <h2>Feedback from Reskinned UI</h2>
+                        <p>Recently, I presented the current mockups that have both the Edge styling and the BAM reskin to the director of BlueCat Gateway and two of the primary stakeholders to gain feedback on the direction of the UI design concept. It
+                            was well-received, and I took note of valuable insights towards where to go next.
+                        </p>
+
+                        <div class="numbering" style="margin-top: -30px; margin-bottom: 30px;">
+                            <span>01</span>
+                            <p>Everyone loves the search function, where it allows the user to quickly search the name of their desired workflow</p>
+                            <span>02</span>
+                            <p>They wondered about the functionality of the breadcrumbs:</p>
+                            <p style="text-indent: 10px;"> · Clicking home or the back arrow button sends the user to the dashboard</p>
+                            <p style="text-indent: 10px;"> · Clicking the parent directory opens the left navigation menu (if it was previously closed) to the section with that directory</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <h2>UI changes v2 - Beyond the reskin</h2>
+                        <p> After the reskin, the full-pledged UI updates would begin! (This was to gradually get the developers more onboard with the changes rather than suddenly having everything changed, causing more pushback)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>Workflow Permissions Original</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/workflow-perm-og.png " alt="Workflow Permissions Original">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>Workflow Permissions v1</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/workflow-perm-v1.png " alt="Workflow Permissions v1">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-bottom:-40px "><b>Workflow Permissions v2</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images ">
+                    <img src="bluecat-assets2/workflow-perm-v2.png " alt="Workflow Permissions v2">
+                </div>
+
+                <div class="proj-text ">
+                    <div class="text-container ">
+                        <p style="margin-top:-40px ">
+                            See the up-to-date mockups here:
+                            <a class="highlight " href="https://6glx6p.axshare.com "> <u> https://6glx6p.axshare.com </u> </a>
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
             <!-- conclusion / reflection -->
@@ -216,62 +589,78 @@
                         <hr/>
                     </div>
                     <div class="text-container m-t-2 ">
-                        <h2>Moving forward towards hard launch</h2>
-                        <p> Starting Soft Launch, we began reaching out to a variety of dating startups and organizations to partner with them! It's the perfect match; music is an element that deepens the personal engagement levels between people (like it's
-                            its own love language). By partnering with dating organizations, the rate of successful matches can increase as people explore their potential match's music taste.
+                        <h2>Moving forward past my internship</h2>
+                        <p> With the final UI changes finished, the prototype will be sent out to the VIP channel (consisting of company/enterprise managers, network admins, etc.) on the BlueCat Slack for further user testing and feedback.
                         </p>
-                        <p style="margin-top: -40px"><b style="color: #d0d0d0">Starting the new year, we officially partnered up with Aphrodite Project as they head towards their next matching launch!</b> Exciting things moving forward, and as we begin our process to hard launch,
-                            we will begin partnering up with more companies around the California/Toronto areas. This initiative is to drive more personal connections between people, driven by music.</p>
                     </div>
                 </div>
 
                 <div class="proj-text ">
                     <div class="text-container">
                         <h2>What I learned</h2>
-                        <p>Reflecting upon the time that passed as I worked on Discover Together with the team, it was a great opportunity for me to work closely between development and design as we begin to officially roll out the platform. Gathering feedback
-                            and implementing that was easier to do with a small team because it was more immediate to address the people involved for that, and the business aspect of marketing and partnerships showed me the more holistic approach towards
-                            understanding the later stages of a product.
+                        <p>Having spearheaded the Gateway revamp, it gave me the opportunity to learn so much more about how to establish small changes to engineering and gradually update with more changes. Overall, I used <b style="color: #d0d0d0">interaction design and user-focused
+                            thought processes to re-imagine the data visualization of a product dashboard that contains no data aggregation.</b>
                         </p>
-                        <p style="margin-top:-40px">As I move forward with my design experience, I helped define the identity of a product, and what the metrics for success would be for us as we grow our audience and user base. By emphasizing accessibility and ease of use for users,
-                            it taught me more about growing a product from the start, and how to further expand my skillset through polishing user flows and the micro-interactions involved.</p>
+                        <p style="margin-top:-40px">Learning so much about translating design system details into new explorations of what can be changed, it brought a new mindset for me to move forward with. What is the reasoning behind why a component is where it currently is?
+                            Are the colours accessible and commonhouse in different products, or custom for the specific company? There's only so many ways to find out :)</p>
                     </div>
                 </div>
             </div>
 
+            <!-- extra content -->
+            <div class="section">
+                <div class="proj-text ">
+                    <div class="section-header">
+                        <p>Interested in reading some more about BlueCat? (not visually updated just yet)</p>
+                        <hr/>
+                    </div>
+                    <div class="text-container">
+                        <div class="numbering">
+                            <span>01</span>
+                            <p><a href="bluecat-extra-pj/bluecat-2.html" class="highlight"> comparing queries per second per service point </a></p>
+                            <span>02</span>
+                            <p><a href="bluecat-extra-pj/bluecat-3.html" class="highlight"> visualizing malicious traffic on the Edge Map </a></p>
+                            <span>03</span>
+                            <p><a href="bluecat-extra-pj/bluecat-4.html" class="highlight"> exposing queries per second per service point </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <!-- end credits  -->
-    <div class="container">
+    <div class="container ">
 
-        <div class="prev-pj">
-            <h2><a class="nav-link highlight" href="ceridian.html"><span>next:</span> Calendar List View Research</a></h2>
+        <div class="prev-pj ">
+            <h2><a class="nav-link highlight " href="ceridian.html "><span>next:</span> Calendar List View Research</a></h2>
         </div>
-        <div class="next-pj">
-            <h2><a class="nav-link highlight" onclick="location.href='https://staging.synqrinus.com/' ; "><span>prev:</span> Synqrinus</a></h2>
+        <div class="next-pj ">
+            <h2><a class="nav-link highlight " onclick="location.href='https://staging.synqrinus.com/' ; "><span>prev:</span> Synqrinus</a></h2>
         </div>
 
         <div>
-            <div class="row" style="margin-bottom: -25px;">
-                <div class="col">
-                    <p class="top-bar-text">Coded with my blood, sweat, and tears</p>
+            <div class="row " style="margin-bottom: -25px; ">
+                <div class="col ">
+                    <p class="top-bar-text ">Coded with my blood, sweat, and tears</p>
                 </div>
-                <div class="col" style="text-align: right;">
-                    <p class="top-bar-text">I know we just met, but let's get coffee!</p>
+                <div class="col " style="text-align: right; ">
+                    <p class="top-bar-text ">I know we just met, but let's get coffee!</p>
                 </div>
             </div>
-            <hr style="background-color: #9ea3a3;" />
-            <div class="row" style="margin-top: -8px;">
-                <div class="col">
-                    <p class="top-bar-text">Ⓒ Lam Pham 2020 ·
-                        <a class="highlight" href="assets/resume.pdf" target="blank">Resume!</a>
+            <hr style="background-color: #9ea3a3; " />
+            <div class="row " style="margin-top: -8px; ">
+                <div class="col ">
+                    <p class="top-bar-text ">Ⓒ Lam Pham 2020 ·
+                        <a class="highlight " href="assets/resume.pdf " target="blank ">Resume!</a>
                     </p>
                 </div>
-                <div class="col" style="text-align: right;">
-                    <p class="top-bar-text">
-                        <a class="highlight" href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in"></i></a> ·
-                        <a class="highlight" href="mailto:tolamvpham@gmail.com?Subject=coffee!" target="_top"><i class="fas fa-envelope"></i></a>
-                        <!-- <a class="highlight" href="https://dribbble.com/lamvpham" target="blank"><i class="fab fa-dribbble"></i></a> -->
+                <div class="col " style="text-align: right; ">
+                    <p class="top-bar-text ">
+                        <a class="highlight " href="https://www.linkedin.com/in/lamvpham/ " target="blank "><i class="fab fa-linkedin-in "></i></a> ·
+                        <a class="highlight " href="mailto:tolamvpham@gmail.com?Subject=coffee! " target="_top "><i class="fas fa-envelope "></i></a>
+                        <!-- <a class="highlight " href="https://dribbble.com/lamvpham " target="blank "><i class="fab fa-dribbble "></i></a> -->
                 </div>
             </div>
         </div>
