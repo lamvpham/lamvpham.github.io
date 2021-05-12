@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<!-- if you're inspecting my code, welcome! -->
+<!-- have any questions or any feedback? please let me know :) -->
+
+<head>
+    <title>Lam Pham</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167813282-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167813282-1');
+    </script>
+
+    <!-- mandatory tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- site description-->
+    <meta name="description" content="Portfolio of Lam Pham">
+    <meta name="description" content="Student Designer at the University of Waterloo">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/pj-cards.css">
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/title.js"></script>
+    <!-- <script src="scripts/colours.js"></script> -->
+
+    <!-- icons -->
+    <link rel="shortcut icon" href="assets/L.svg">
+    <script src="https://kit.fontawesome.com/63da5f6700.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="fade-in">
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-text">
+                <h6 style="margin-left: 0"><span class="name">Lam Pham </span><span class="extra-text">· Systems Design Engineering @ uWaterloo</span></h6>
+            </div>
+
+            <a id="toggle" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div id="links" class="links">
+                <div class="navbar-text right">
+                    <h6 class="highlight pointer" onclick="location.href='about.html';">About</h6>
+                    <!-- <h6 class="highlight pointer" onclick="location.href='projects.html';">Projects</h6> -->
+                    <h6 class="highlight pointer" onclick="location.href='afterhours.html';">After Hours</h6>
+                    <h6 class="highlight pointer" onclick="location.href='assets/Lam-Pham-Resume.pdf';">Resume</h6>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/navbar-btn.js"></script>
+    </div>
+
+    <!-- content -->
+    <div class="home-container">
+
+        <!-- title -->
+        <div class="section" id="title">
+            <div class="title-text">
+                <h1>The name rhymes.</h1>
+                <h1>But who is <span class="title">Lam Pham</span>?</h1>
+            </div>
+        </div>
+
+        <!-- definition -->
+        <div class="definition">
+            <h2> lam · pham</h2>
+            <h2> /ɭæɱ fæɱ/ <span class="audio pointer"><img src="assets/definition/sound.svg" onclick="playAudio('assets/definition/definition.mp3')" alt="speaker icon"></span></h2>
+            <script src="scripts/definition.js"></script>
+
+            <div class="normal">
+                <h5>Noun</h5>
+                <div class="numbering">
+                    <span>1.</span>
+                    <p style="margin-top: 0;">a designer from the University of Waterloo studying Systems Design Engineering, aspiring to create solutions addressing the challenges faced by people in society.</p>
+
+                    <span>2.</span>
+                    <p>currently working @ <a class="highlight underline" href="https://www.cdkglobal.com/us" target="blank">CDK Global</a> as a UX Designer this summer,
+                        <a class="highlight underline" href="https://watsi.org/" target="blank">Watsi</a> as a Product Design Consultant, and <a class="highlight underline" href="http://synqrinus.com/" target="blank">Synqrinus</a> as a freelance Web Designer
+                        & Developer.</p>
+                    <p style="margin-left: 3em;">a. recently collaborating with clients to design product experiences for businesses and enterprises @ <a class="highlight underline" href="https://www.ceridian.com/" target="blank">Ceridian</a> as a Mobile Product Designer and <a class="highlight underline"
+                            href="https://bluecatnetworks.com/" target="blank">BlueCat Networks</a> as a UX/UI Designer.</p>
+
+                    <span>3.</span>
+                    <p> can be found jamming out on the guitar (currently learning <a class="highlight underline" href="https://www.youtube.com/watch?v=AIOAlaACuv4" target="blank">Fast Car by Tracy Chapman</a>), drawing art, and playing Yoshi on Super Smash
+                        Bros.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- project cards -->
+        <div class="project-cards">
+            <h1 class="maintitle">Featured Projects</h1>
+
+            <div class="card">
+                <div class="from-t">
+                    <div class="toptext">
+                        <div class="pjtitle">
+                            <h1 class="highlight"><a href="projects/spotify.html">Discover Together</a></h1>
+                        </div>
+                        <h2> · Passion Project · Web & Mobile · UI/UX · Visual · Research & Testing · Interaction & Prototyping </h2>
+                    </div>
+                </div>
+
+                <div class="img pointer" onclick="location.href='projects/spotify.html';">
+                    <div class="img1">
+                        <img src="assets/pjcard-assets/dt.png" alt>
+                        <div class="imgoverlay">
+                            <p class="imgtext">See case study ⟶</p>
+                        </div>
+                    </div>
+                    <!-- <div class="img2">
+                        <img src="assets/pjcard-assets/dt2.png" alt>
+                    </div> -->
+                </div>
+
+                <div class="from-b">
+                    <p class="bottomtext">
+                        A platform to analyze two people's Spotify music tastes, then curate a playlist made specifically for them.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="from-t">
+                    <div class="toptext">
+                        <div class="pjtitle">
+                            <h1 class="highlight"><a href="projects/ceridian.html">Calendar List View</a></h1>
+                        </div>
+                        <h2> · Internship · Mobile · Interaction Accessibility · Research & Testing · Competitive Analysis</h2>
+                    </div>
+                </div>
+
+                <div class="img pointer" onclick="location.href='projects/ceridian.html';">
+                    <!-- <div class="img2">
+                        <img src="assets/pjcard-assets/cd2.png" alt>
+                    </div> -->
+                    <div class="img1">
+                        <img src="assets/pjcard-assets/cd.png" alt>
+                        <div class="imgoverlay">
+                            <p class="imgtext">See case study ⟶</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="from-b">
+                    <p class="bottomtext">
+                        Proposing accessibility changes for Dayforce's most used feature on cross platforms.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="from-t">
+                    <div class="toptext">
+                        <div class="pjtitle">
+                            <h1 class="highlight"><a href="projects/bluecat.html">Gateway Revamp</a></h1>
+                        </div>
+                        <h2> · Internship · Concept · Experimental · Research & Testing · UI/UX · Prototyping </h2>
+                    </div>
+                </div>
+
+                <div class="img pointer" onclick="location.href='projects/bluecat.html';">
+                    <div class="img1">
+                        <img src="assets/pjcard-assets/bc.png" alt>
+                        <div class="imgoverlay">
+                            <p class="imgtext">See case study ⟶</p>
+                        </div>
+                        <!-- <video src="pjcard-assets/bluecat-video.mp4" type="video/mp4" autoplay="" muted="" loop=""></video> -->
+                    </div>
+                    <!-- <div class="img2">
+                        <img src="assets/pjcard-assets/bc2.png" alt>
+                    </div> -->
+                </div>
+
+                <div class="from-b">
+                    <p class="bottomtext">
+                        Conceptualizing a static dashboard concept + modernizing the UI on a flagship product.
+                    </p>
+                </div>
+            </div>
+            <h2 class="secondtitle"><a href="projects.html" class="highlight">Coming soon: see all projects :)</a></h2>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h6>Coded with my blood, sweat, and tears</h6>
+                <h6>© Lam Pham 2021</h6>
+                <!-- · <a class="highlight pointer" href="assets/resume.pdf" target="blank"><b>Resume</b></a> -->
+            </div>
+
+            <div class="footer-text right">
+                <h6 style="margin-top: -4px;">I know we just met, but let’s get coffee :)</h6>
+                <a class="highlight" href="mailto:tolamvpham@gmail.com?Subject=coffee!" target="_top"><i class="fas fa-envelope"></i></a>
+                <a class="highlight" href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in" style="margin: 0"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
