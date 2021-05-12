@@ -1,104 +1,67 @@
 <!doctype html>
 <html lang="en">
 
+<!-- if you're inspecting my code, welcome! -->
+<!-- have any questions or any feedback? please let me know :) -->
+
 <head>
     <title>Discover Together</title>
 
-    <!--SCRIPTS-->
-    <!-- <script src="./animations.js"></script>-->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-
-    <!--MANDATORY TAGS-->
+    <!-- mandatory tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
-    <!--WEBSITE DESCRIPTION-->
+    <!-- site description-->
     <meta name="description" content="Portfolio of Lam Pham">
-    <meta name="description" content="Student Designer and Product Manager at the University of Waterloo">
+    <meta name="description" content="Student Designer at the University of Waterloo">
 
-    <!--CSS-->
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="../projects.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="stylesheet" href="../css/animations.css">
 
-
-    <!--GOOGLE FONTs-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
-
-    <!--BOOTSTRAP-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-    <!--ICONS -->
+    <!-- icons -->
+    <link rel="shortcut icon" href="../assets/L.svg">
     <script src="https://kit.fontawesome.com/63da5f6700.js" crossorigin="anonymous"></script>
-    <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css&#8221; />
-    <link rel="shortcut icon" href="../assets/purple.png">
 </head>
 
-<body style="background-color:#161616" class="fade-in">
+<body class="fade-in">
 
-    <!-- navbar 1-->
-    <div class="main-nav fade-in">
-        <ul class="nav">
-            <li><a class="highlight" href="../assets/resume.pdf" target="blank">RESUME</a></li>
-            <li><a class="highlight" href="../about.html">ABOUT</a></li>
-            <li><a class="highlight" href="../index.html">HOME</a></li>
-            <li><br/></li>
-            <!-- <li><a class="highlight" href="https://dribbble.com/lamvpham" target="blank"> <i class="fab fa-dribbble fa-rotate-90"></i></a></li> -->
-            <li><a class="highlight" href="https://reading.supply/@lamvpham" target="blank"><i class="fas fa-square"></i></a></li>
-            <li><a class="highlight" href="mailto:tolamvpham@gmail.com?Subject=coffee!" target="_top"><i class="fas fa-envelope fa-rotate-90"></i></a></li>
-            <li><a class="highlight" href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in fa-rotate-90"></i></a></li>
-        </ul>
-    </div>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-text">
+                <h6 style="margin-left: 0"><span class="name">Lam Pham </span><span class="extra-text">· Systems Design Engineering @ uWaterloo</span></h6>
+            </div>
 
-    <!-- navbar 2 -->
-    <div class="navbar fixed-top navbar-dark bg-faded fade-in">
-        <a class="navbar-brand" href="../index.html">L.</a>
+            <a id="toggle" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link highlight" href="../index.html"> HOME </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link highlight" href="../about.html"> ABOUT </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link highlight" href="../assets/resume.pdf" target="blank"> RESUME </a>
-                </li>
-                <li class="nav-item">
-                    <div class="row">
-                        <!-- <div class="icon-beside">
-                            <a class="nav-link highlight" href="https://dribbble.com/lamvpham" target="blank"> <i class="fab fa-dribbble"></i> </a>
-                        </div> -->
-                        <div class="icon-beside">
-                            <a class="nav-link highlight" href="https://reading.supply/@lamvpham" target="blank"> <i class="fas fa-square "></i> </a>
-                        </div>
-                        <div class="icon-beside ">
-                            <a class="nav-link highlight " href="mailto:tolamvpham@gmail.com?Subject=coffee! " target="_top "> <i class="fas fa-envelope "></i> </a>
-                        </div>
-                        <div class="icon-beside ">
-                            <a class="nav-link highlight " href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in "></i> </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+            <div id="links" class="links">
+                <div class="navbar-text right">
+                    <h6 class="highlight pointer" onclick="location.href='../index.html';">Home</h6>
+                    <h6 class="highlight pointer" onclick="location.href='../about.html';">About</h6>
+                    <!-- <h6 class="highlight pointer" onclick="location.href='projects.html';">Projects</h6> -->
+                    <h6 class="highlight pointer" onclick="location.href='../afterhours.html';">After Hours</h6>
+                    <h6 class="highlight pointer" onclick="location.href='../assets/Lam-Pham-Resume.pdf';">Resume</h6>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="proj-images top-image">
-        <img src="spotify-assets/main-photo.png" alt="Discover Together">
+        <script src="../scripts/navbar-btn.js"></script>
     </div>
 
     <!-- content -->
+    <div class="proj-images">
+        <img src="spotify-assets/main-photo.png" alt="Discover Together">
+    </div>
+
     <div class="project">
         <!-- content -->
         <div class="proj-content">
@@ -124,19 +87,18 @@
                             <h2>Overview</h2>
                             <p>Over the course of fall 2020 and onwards, the team and I designed and developed a user-facing website to discover new music with the people close to oneself. We believe that sharing music with others brings people closer, and
                                 by combining people's music taste with their friends, they both can discover new music, together. </p>
-                            <p style="margin-top: -40px"><b style="color: #d0d0d0">Update:</b> We have currently reached to <s>over 28 countries</s> <b style="color: #d0d0d0">over 68 countries</b>! As well, <s>over 700+ playlists</s> <b style="color: #d0d0d0">over 1400+ playlists</b>                                have been created so far :) (as of 18/2/21)</p>
+                            <p style="margin-top: -40px"><b>Update:</b> We have currently reached to <s>over 28 countries</s> <b>over 68 countries</b>! As well, <s>over 1400+ playlists (as of 18/2/21)</s> <b>over 1900+ playlists</b> (as of 12/5/21) have been created so far :) </p>
                             <h2>Role</h2>
                             <p>Working with a team of six, my responsibilities entailed designing and developing an accessible and aesthetic design that can correspond on a mobile device, as well as desktop. I focused on the task flow between pages, making
                                 sure the front-end matched with the design, and creating a unique aesthetic that's visually pleasing and welcoming to new and returning users.
                             </p>
                             <h2>The problem</h2>
-                            <p>Music exploration has been aided by Spotify's Discover Weekly playlists and other recommendation playlists, but these are typically listened to <b style="color: #d0d0d0">alone</b>. There is a <b style="color: #d0d0d0">lack of experience with discovering
+                            <p>Music exploration has been aided by Spotify's Discover Weekly playlists and other recommendation playlists, but these are typically listened to <b>alone</b>. There is a <b>lack of experience with discovering
                                 music with others</b>, and Spotify did try that with their Listen Alike concept, where you can compare your music taste to famous artists and podcasters. But we wanted to define an experience for the user and whoever that
                                 user chooses, and encourage them to find hidden gems socially.</p>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="proj-images">
                     <img src="spotify-assets/spotify-recs.png" alt="My Spotify Recommendations">
@@ -144,18 +106,18 @@
 
                 <div class="proj-text">
                     <div class="text-container">
-                        <div class="row">
-                            <div class="col-md stats">
+                        <div class="stats-section">
+                            <div class="contain stats">
                                 <h2>Tools</h2>
-                                <p>Figma, Coda, Hotjar, HTML/CSS/JS</p>
+                                <p>Figma, Coda, Hotjar, HTML, CSS, JS</p>
                             </div>
-                            <div class="col-md stats">
+                            <div class="contain stats">
                                 <h2>Duration</h2>
-                                <p>September 2020 - Present</p>
-                                <p style="margin-top: -40px">Soft Launch: <b style="color: #d0d0d0">Dec. 7, 2020</b></p>
-                                <p style="margin-top: -40px">Hard Launch (subject to change): <b style="color: #d0d0d0">Feb. 14, 2021</b></p>
+                                <p>September 2020 - March 2020</p>
+                                <p>Soft Launch: <b>Dec. 7, 2020</b></p>
+                                <p>Hard Launch: <b>Feb. 14, 2021</b></p>
                             </div>
-                            <div class="col-md stats">
+                            <div class="contain stats" style="padding-bottom: 0;">
                                 <h2>Responsibility</h2>
                                 <p>Interaction Design, Prototyping, UI/UX Design, Data Visualization, User Research, Branding</p>
                             </div>
@@ -163,13 +125,15 @@
                     </div>
                 </div>
 
+
+
                 <div class="proj-text">
                     <div class="text-container">
                         <h2>The solution</h2>
-                        <p>Discover Together is a website responsive on both mobile and desktop, where it provides users the ability to <b style="color: #d0d0d0">curate playlists based on two people's music tastes</b>. By creating a collaborative experience,
-                            we automate song recommendations for both users to discover, together.</p>
-                        <p style="margin-top: -40px">We are currently soft launched so <a class="highlight" href="https://discover-together.com/" target="blank"><u>check us out!</u></a> If you'd like to make a playlist with me to see how this works, <a class="highlight" href="https://discover-together.com/shared/4af9014a50dc4782b5671f34debf6072"
-                                target="blank"><u>click here :)</u></a></p>
+                        <p>Discover Together is a website responsive on both mobile and desktop, where it provides users the ability to <b>curate playlists based on two people's music tastes</b>. By creating a collaborative experience, we automate song recommendations
+                            for both users to discover, together.</p>
+                        <p style="margin-top: -40px">We are currently soft launched so <a class="highlight underline" href="https://discover-together.com/" target="blank">check us out!</a> If you'd like to make a playlist with me to see how this works, <a class="highlight underline"
+                                href="https://discover-together.com/shared/4af9014a50dc4782b5671f34debf6072" target="blank">click here :)</a></p>
                     </div>
                 </div>
                 <!-- 
@@ -223,9 +187,8 @@
                         <p>When I joined the Discover Together team, the project was already conceptualized by Arjun and Trustin, where the backend capabilities were functional. The website lacked the visual appeal, which is where they brought on myself
                             and Ann Li to revamp the design.
                         </p>
-                        <p style="margin-top: -40px;">If you want to understand the initial backend process, read this article written by <a class="highlight" href="https://towardsdatascience.com/curating-a-spotify-discover-playlist-for-two-people-with-k-means-clustering-a926a9e1ec7d"
-                                target="blank"><u>Trustin!</u></a></p>
-                        </p>
+                        <p style="margin-top: -40px;">If you want to understand the initial backend process, read this article written by <a class="highlight underline" href="https://towardsdatascience.com/curating-a-spotify-discover-playlist-for-two-people-with-k-means-clustering-a926a9e1ec7d"
+                                target="blank">Trustin!</a></p>
                     </div>
                 </div>
 
@@ -296,21 +259,21 @@
                         </p>
                         <div class="numbering ">
                             <span>01</span>
-                            <p><a class="highlight " href="https://obscurifymusic.com/login "><u>Obscurify</u></a></p>
+                            <p><a class="highlight underline" href="https://obscurifymusic.com/login ">Obscurify</a></p>
                             <p style="margin-top: 0 ">A platform used to discover how obscure a person's music taste is</p>
                             <div class="proj-images ">
                                 <img src="spotify-assets/inspo-1.png " alt="Obscurify - Inspiration #1 ">
                             </div>
 
                             <span>02</span>
-                            <p><a class="highlight " href="https://discoverquickly.com/ "><u>Discover Quickly</u></a></p>
+                            <p><a class="highlight underline" href="https://discoverquickly.com/ ">Discover Quickly</a></p>
                             <p style="margin-top: 0 ">A platform used to explore and discover new music based on one's own music taste</p>
                             <div class="proj-images ">
                                 <img src="spotify-assets/inspo-2.png " alt="Discover Quickly - Inspiration #2 ">
                             </div>
 
                             <span>03</span>
-                            <p><a class="highlight " href="https://musictaste.space/ "><u>musictaste.space</u></a></p>
+                            <p><a class="highlight underline" href="https://musictaste.space/ ">musictaste.space</a></p>
                             <p style="margin-top: 0 ">A platform used to compare a person's music taste with others</p>
                             <div class="proj-images ">
                                 <img src="spotify-assets/inspo-3.png " alt="musictaste.space - Inspiration #3 " style="margin-bottom: 0; ">
@@ -506,7 +469,7 @@
                         <p>Translating the low fidelity mockups into high fidelity prototypes was a unique challenge, as the front-end capabilities of HTML/CSS needed to mimic that. This is our V1 that was soft launched and will be cleaned up and improved
                             by hard launch!
                         </p>
-                        <p style="margin-top: -40px">Like what you see? You can check out the <a class="highlight" href="https://discover-together.com/" target="blank"><u>live platform right now!</u></a>
+                        <p style="margin-top: -40px">Like what you see? You can check out the <a class="highlight underline" href="https://discover-together.com/" target="blank">live platform right now!</a>
                         </p>
                     </div>
                 </div>
@@ -546,7 +509,7 @@
 
                 <div class="proj-text ">
                     <div class="text-container ">
-                        <p>The rest of the platform pages currently in production can be checked out <a class="highlight" href="https://discover-together.com/" target="blank"><u>here!</u></a>
+                        <p>The rest of the platform pages currently in production can be checked out <a class="highlight underline" href="https://discover-together.com/" target="blank">here!</a>
                         </p>
                     </div>
                 </div>
@@ -617,8 +580,9 @@
                     <div class="text-container ">
                         <p>This heatmap of the landing page for mobile illustrates 61 sessions from Dec. 7, 2020 - Jan. 7, 2021, where there are 50 clicks recorded. 41 clicks were recorded to click "Start Discovering".
                         </p>
-                        <p style="margin-top: -40px">After this soft launch, we plan to market further on Product Hunt, Reddit, etc. and partner with dating startups/organizations. <b style="color: #d0d0d0">The goal is to chase after 1.01 average shares</b>, which will exponentially
-                            grow as our audience increases.</p>
+                        <p style="margin-top: -40px">After this soft launch, we plan to market further on Product Hunt, Reddit, etc. and partner with dating startups/organizations. <b>The goal is to chase after 1.01 average shares</b>, which will exponentially grow as our audience
+                            increases.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -632,10 +596,10 @@
                     </div>
                     <div class="text-container m-t-2 ">
                         <h2>After fully launching, what's next?</h2>
-                        <p> The day of the launch finally came and went. February 14th, 2021; Valentine's day! The day before was when our partner <a class="highlight" href="https://aphrodite.global/" target="blank"><u>Aphrodite</u></a> launched their matches
-                            to the UW, UCLA, and USC campuses, which marketed Discover Together as an icebreaker method. We also spread the word in multiple school, career, and student communities, and as well launched on Product Hunt.
+                        <p> The day of the launch finally came and went. February 14th, 2021; Valentine's day! The day before was when our partner <a class="highlight underline" href="https://aphrodite.global/" target="blank">Aphrodite</a> launched their
+                            matches to the UW, UCLA, and USC campuses, which marketed Discover Together as an icebreaker method. We also spread the word in multiple school, career, and student communities, and as well launched on Product Hunt.
                         </p>
-                        <p style="margin-top: -40px">As of February 18, 2021, we gained over <b style="color: #d0d0d0">1500 new users</b> with a collective total of <b style="color: #d0d0d0">1436 playlists</b> and have reached <b style="color: #d0d0d0">68 countries</b>!</p>
+                        <p style="margin-top: -40px">As of February 18, 2021, we gained over <b>1500 new users</b> with a collective total of <b>1436 playlists</b> and have reached <b>68 countries</b>!</p>
                     </div>
                 </div>
 
@@ -664,8 +628,10 @@
                         <p> Starting Soft Launch, we began reaching out to a variety of dating startups and organizations to partner with them! It's the perfect match; music is an element that deepens the personal engagement levels between people (like it's
                             its own love language). By partnering with dating organizations, the rate of successful matches can increase as people explore their potential match's music taste.
                         </p>
-                        <p style="margin-top: -40px"><b style="color: #d0d0d0">Starting the new year, we officially partnered up with <a class="highlight" href="https://aphrodite.global/" target="blank"><u>Aphrodite Project</u></a> as they head towards their next matching launch!</b>                            Exciting things moving forward, and as we begin our process to hard launch, we will begin partnering up with more companies around the California/Toronto areas. This initiative is to drive more personal connections between
-                            people, driven by music.</p>
+                        <p style="margin-top: -40px"><b>Starting the new year, we officially partnered up with <a class="highlight underline" href="https://aphrodite.global/" target="blank">Aphrodite Project</a> as they head towards their next matching launch!</b> Exciting things
+                            moving forward, and as we begin our process to hard launch, we will begin partnering up with more companies around the California/Toronto areas. This initiative is to drive more personal connections between people, driven by
+                            music.
+                        </p>
                     </div>
                 </div>
 
@@ -683,36 +649,31 @@
             </div>
 
         </div>
+
+        <!-- next/prev -->
+        <div class="next-prev">
+            <div class="prev-pj">
+                <h2><a class="nav-link highlight" href="bluecat.html"><span>next:</span> Gateway Revamp</a></h2>
+            </div>
+            <div class="next-pj">
+                <h2><a class="nav-link highlight" href="ceridian.html"><span>prev:</span> Calendar List View</a></h2>
+            </div>
+        </div>
     </div>
 
-    <!-- end credits  -->
-    <div class="container">
-        <div class="next-pj">
-            <h2><a class="nav-link highlight" href="ceridian.html"><span>prev:</span> Calendar List View</a></h2>
-        </div>
-
-        <div>
-            <div class="row" style="margin-bottom: -25px;">
-                <div class="col">
-                    <p class="top-bar-text">Coded with my blood, sweat, and tears</p>
-                </div>
-                <div class="col" style="text-align: right;">
-                    <p class="top-bar-text">I know we just met, but let's get virtual coffee!</p>
-                </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h6>Coded with my blood, sweat, and tears</h6>
+                <h6>© Lam Pham 2021</h6>
+                <!-- · <a class="highlight pointer" href="assets/resume.pdf" target="blank"><b>Resume</b></a> -->
             </div>
-            <hr style="background-color: #9ea3a3;" />
-            <div class="row" style="margin-top: -8px;">
-                <div class="col">
-                    <p class="top-bar-text">Ⓒ Lam Pham 2020 ·
-                        <a class="highlight" href="assets/resume.pdf" target="blank">Resume!</a>
-                    </p>
-                </div>
-                <div class="col" style="text-align: right;">
-                    <p class="top-bar-text">
-                        <a class="highlight" href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in"></i></a> ·
-                        <a class="highlight" href="mailto:tolamvpham@gmail.com?Subject=coffee!" target="_top"><i class="fas fa-envelope"></i></a>
-                        <!-- <a class="highlight" href="https://dribbble.com/lamvpham" target="blank"><i class="fab fa-dribbble"></i></a> -->
-                </div>
+
+            <div class="footer-text right">
+                <h6 style="margin-top: -4px;">I know we just met, but let’s get coffee :)</h6>
+                <a class="highlight" href="mailto:tolamvpham@gmail.com?Subject=coffee!" target="_top"><i class="fas fa-envelope"></i></a>
+                <a class="highlight" href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in" style="margin: 0"></i></a>
             </div>
         </div>
     </div>

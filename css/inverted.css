@@ -1,0 +1,64 @@
+/* content */
+
+html,
+body {
+    background-color: var(--textcolours);
+}
+
+a {
+    color: var(--bgcolours);
+}
+
+h1 {
+    color: var(--bgcolours);
+}
+
+.definition h3 {
+    color: var(--bgcolours);
+}
+
+.definition h4 {
+    color: var(--bgcolours);
+}
+
+.definition .normal p {
+    color: var(--bgcolours);
+}
+
+.numbering span {
+    color: var(--bgcolours);
+}
+
+.numbering p {
+    color: var(--bgcolours);
+}
+
+
+/* animation */
+
+.highlight {
+    color: var(--bgcolours);
+}
+
+.highlight:before {
+    background-color: var(--bgcolours);
+}
+
+
+/* navbar + footer */
+
+.navbar .navbar-content .navbar-text h6 {
+    color: var(--bgcolours);
+}
+
+.toggle .bar {
+    background-color: var(--bgcolours);
+}
+
+.footer .footer-content .footer-text h6 {
+    color: var(--bgcolours);
+}
+
+.footer a i {
+    color: var(--bgcolours);
+}
