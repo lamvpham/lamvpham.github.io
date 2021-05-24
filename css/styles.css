@@ -157,7 +157,7 @@ h1 {
 
 @media (max-width: 768px) {
     .home-container .section {
-        height: 89vh;
+        height: 87vh;
     }
     .title-text {
         margin-bottom: -44pt;
