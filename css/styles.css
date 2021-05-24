@@ -157,10 +157,10 @@ h1 {
 
 @media (max-width: 768px) {
     .home-container .section {
-        height: 90vh;
+        height: 89vh;
     }
     .title-text {
-        margin-bottom: -40pt;
+        margin-bottom: -44pt;
     }
     h1 {
         margin: 0 0 -18px;
