@@ -72,7 +72,7 @@ video {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 91vh;
+    height: 95vh;
     /* margin-bottom: 48px; */
 }
 
@@ -155,12 +155,14 @@ h1 {
     }
 } */
 
-
-/* @media (max-width: 786px) {
-    .title-text {
-        margin-bottom: 60pt;
+@media (max-width: 768px) {
+    .home-container .section {
+        height: 85vh;
     }
-} */
+    .title-text {
+        margin-bottom: -28pt;
+    }
+}
 
 @media (max-width: 740px) {
     h1 {
@@ -229,6 +231,12 @@ h1 .title {
 .definition {
     margin-top: 100px;
     padding-bottom: 2.8%;
+}
+
+@media (max-width: 768px) {
+    .definition {
+        margin-top: 160px;
+    }
 }
 
 .definition h2 {
