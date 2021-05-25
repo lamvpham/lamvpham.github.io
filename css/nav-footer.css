@@ -38,6 +38,42 @@
     height: 16px;
 }
 
+@media (max-width: 635px) {
+    .toggle {
+        right: 4.85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .toggle {
+        right: 4.7%;
+    }
+}
+
+@media (max-width: 585px) {
+    .toggle {
+        right: 4.5%;
+    }
+}
+
+@media (max-width: 550px) {
+    .toggle {
+        right: 4.35%;
+    }
+}
+
+@media (max-width: 525px) {
+    .toggle {
+        right: 4%;
+    }
+}
+
+@media (max-width: 495px) {
+    .toggle {
+        right: 5%;
+    }
+}
+
 .toggle .bar {
     height: 2px;
     width: 100%;
