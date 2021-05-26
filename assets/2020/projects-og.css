@@ -1,0 +1,224 @@
+/* new code for project sections */
+
+.project {
+    margin: 0 auto;
+    width: 70%;
+}
+
+@media (max-width: 1250px) {
+    .project {
+        width: 90%;
+    }
+}
+
+.main-nav {
+    width: 98vh;
+}
+
+@media (max-width: 1000px) {
+    .project {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .top-image {
+        margin-top: 50px;
+    }
+}
+
+
+/* project information */
+
+.project .proj-content .section {
+    margin-bottom: 7em;
+}
+
+.proj-images img {
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+@media (max-width: 540px) {
+    .proj-images img {
+        padding: 0;
+    }
+}
+
+.project .proj-content .proj-text {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.section .proj-text .title h1 {
+    font-family: "Lora", serif;
+    color: #D0D0D0;
+    font-size: 6em;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+@media (max-width: 1250px) {
+    .section .proj-text .title h1 {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section .proj-text .title h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 800px) {
+    .section .proj-text .title h1 {
+        font-size: 2.75em;
+    }
+}
+
+.section .proj-text .title h2 {
+    color: #D0D0D0;
+    font-size: 2.25em;
+    margin-top: .75em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 1250px) {
+    .section .proj-text .title h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section .proj-text .title h2 {
+        font-size: 1.65em;
+    }
+}
+
+@media (max-width: 800px) {
+    .section .proj-text .title h2 {
+        font-size: 1.25em;
+    }
+}
+
+.project .section-header p {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #9ea3a3;
+    font-family: "Lora", serif;
+}
+
+hr {
+    background-color: #9ea3a3;
+}
+
+.text-container {
+    margin-bottom: 4em;
+}
+
+.text-container .stats {
+    padding: 10px 20px 10px 15px;
+}
+
+.text-container h1 {
+    font-size: 2em;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
+.text-container h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    color: #d0d0d0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.text-container h3 {
+    font-size: 65px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #d0d0d0;
+}
+
+.text-container p {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-size: 1.25em;
+    line-height: 24px;
+    color: #9ea3a3;
+    font-family: "Open Sans", sans-serif;
+}
+
+.numbering span {
+    display: inline-block;
+    position: absolute;
+    font-size: 1.1em;
+    font-family: 'Poppins';
+    color: #9ea3a3;
+    font-weight: 600;
+}
+
+.numbering p {
+    padding-top: 2px;
+    margin-left: 2em;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    line-height: 18px;
+    color: #9ea3a3;
+}
+
+.numbering img {
+    margin-left: 2em;
+    width: 96%;
+}
+
+
+/* for section header only */
+
+.m-t-2 {
+    margin-top: 2em;
+}
+
+
+/* gslides responsive container */
+
+.gslides-container {
+    position: relative;
+    width: 100%;
+    padding-top: 60%;
+    overflow: hidden;
+    margin-bottom: 4em;
+}
+
+.gslides-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* end credits next pj buttons */
+
+.next-pj {
+    text-align: end;
+    margin-bottom: 80px;
+}
+
+.next-pj span {
+    font-weight: 400;
+}
+
+.prev-pj {
+    text-align: start;
+    margin-bottom: 80px;
+}
+
+.prev-pj span {
+    font-weight: 400;
+}
