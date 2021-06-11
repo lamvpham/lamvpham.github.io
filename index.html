@@ -1,8 +1,19 @@
 <!doctype html>
 <html lang="en">
 
-<!-- if you're inspecting my code, welcome! -->
-<!-- have any questions or any feedback? please let me know :) -->
+<!-- 
+        ___       ________  _____ ______      
+       |\  \     |\   __  \|\   _ \  _   \    
+       \ \  \    \ \  \|\  \ \  \\\__\ \  \   
+        \ \  \    \ \   __  \ \  \\|__| \  \  
+         \ \  \____\ \  \ \  \ \  \    \ \  \ 
+          \ \_______\ \__\ \__\ \__\    \ \__\
+           \|_______|\|__|\|__|\|__|     \|__| 
+
+
+if you're inspecting my code, welcome!
+have any questions or any feedback? please let me know :) 
+-->
 
 <head>
     <title>Lam Pham</title>
@@ -25,8 +36,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <!-- site description-->
-    <meta name="description" content="Portfolio of Lam Pham">
-    <meta name="description" content="Student Designer at the University of Waterloo">
+    <meta property="og:title" content="Lam Pham">
+    <meta property="og:image" content="assets/meta.png">
+    <meta property="og:description" content="Student Designer at uWaterloo">
+    <meta property="og:url" content="https://lamvpham.me/">
+    <meta name="twitter:card" content="summary_large_image">
 
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css">
@@ -198,7 +212,7 @@
                     </p>
                 </div>
             </div>
-            <div class="card">
+            <!-- <div class="card">
                 <div class="from-t">
                     <div class="toptext">
                         <div class="pjtitle">
@@ -223,11 +237,37 @@
                         A social experiment focused on visual identity and capturing strangers true thoughts in a world where we feel so alone.
                     </p>
                 </div>
+            </div> -->
+
+            <div class="allprojects">
+                <div class="underline underline-color"></div>
+                <div class="marquee">
+                    <ul class="marquee-content">
+                        <li class="marquee-item pointer" onclick="location.href='https://www.cdkglobal.com/us';">CDK Global</li>
+                        <li class="marquee-item pointer" onclick="location.href='https://watsi.org/';">Watsi</li>
+                        <li class="marquee-item pointer" onclick="location.href='projects/spotify.html';">Discover Together</li>
+                        <li class="marquee-item pointer" onclick="location.href='https://www.linkedin.com/company/loo-labs/about/';">Loo Labs</li>
+                        <li class="marquee-item pointer" onclick="location.href='projects/ceridian.html';">Ceridian</li>
+                        <li class="marquee-item pointer" onclick="location.href='https://staging.synqrinus.com/';">Synqrinus</li>
+                        <li class="marquee-item pointer" onclick="location.href='projects/bluecat.html';">BlueCat</li>
+
+                        <!-- repeat for cycling -->
+                        <li class="marquee-item pointer" onclick="location.href='https://www.cdkglobal.com/us';">CDK Global</li>
+                        <li class="marquee-item pointer" onclick="location.href='https://watsi.org/';">Watsi</li>
+                        <li class="marquee-item pointer" onclick="location.href='projects/spotify.html';">Discover Together</li>
+                        <li class="marquee-item pointer" onclick="location.href='https://www.linkedin.com/company/loo-labs/about/';">Loo Labs</li>
+                        <li class="marquee-item pointer" onclick="location.href='projects/ceridian.html';">Ceridian</li>
+                        <li class="marquee-item pointer" onclick="location.href='https://staging.synqrinus.com/';">Synqrinus</li>
+                        <li class="marquee-item pointer" onclick="location.href='projects/bluecat.html';">BlueCat</li>
+                        <!-- when adding more projects, adjust keyframe scrolling -> 100% {transform: translateX} -->
+                    </ul>
+                </div>
+
+                <div class="underline underline-color" style="margin-top: 80px"></div>
+                <h2 class="secondtitle"><a href="allprojects.html" class="highlight">See all projects - 7:</a></h2>
             </div>
 
-            <h2 class="secondtitle"><a href="projects.html" class="highlight">Coming soon: see all projects :)</a></h2>
         </div>
-
     </div>
 
     <!-- footer -->
