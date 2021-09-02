@@ -234,23 +234,7 @@ h2.secondtitle {
     font-weight: 400;
 }
 
-#section-art {
-    padding-top: 184px;
-}
-
-#section-pg {
-    padding-top: 184px;
-}
-
-#section-journal {
-    padding-top: 184px;
-}
-
-#section-pd {
-    padding-top: 184px;
-}
-
-#section-playlists {
+#section-art, #section-pg, #section-journal, #section-pd, #section-playlists {
     padding-top: 184px;
 }
 
