@@ -1,0 +1,124 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+	-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	animation-name: background;
+  -webkit-font-smoothing: antialiased;
+  padding: 100px;
+}
+
+.body-content {
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+  width: 500px;
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+
+/* spacing */
+
+.spacing-b {
+  margin-bottom: 52px;
+}
+
+.override-top-m {
+  margin-top: 10px;
+}
+
+.override-bot-m {
+  margin-bottom: 0px;
+}
+
+
+/* buttons */
+
+.buttons {
+  -webkit-transform-origin: left top;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  position: fixed;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+
+/* text */
+
+h1 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	margin: 20px 0;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 500;
+	margin: 32px 0 0px;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 400;
+	margin: 20px 0 20px;
+}
+
+h4 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+
+/* animation */
+
+.animation {
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes background {
+    0% {
+      background: #E0EDCD;
+      color: #007034;
+    }
+    25% {
+      background: #FCECBB;
+      color: #F55727;
+    }
+    50% {
+      background: #FAE1E6;
+      color: #E01B3C;
+    }
+    75% {
+      background: #E0D8E8;
+      color: #6A18C7;
+    }
+    100% {
+      background: #DCE7F5;
+      color: #3126D1;
+    }
+  }
