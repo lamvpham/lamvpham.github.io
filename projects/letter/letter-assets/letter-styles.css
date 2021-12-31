@@ -76,7 +76,7 @@ h2 {
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 500;
-	margin: 32px 0 0px;
+	margin: 32px 0 0;
 }
 
 h3 {
@@ -89,6 +89,41 @@ h3 {
 h4 {
   font-weight: bold;
   margin-top: 0;
+}
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 16px 0;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 28px 0 0;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 8px 0 16px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .body-content {
+    margin-top: 40px;
+  }
+  .content {
+    width: 300px;
+  }
+  .buttons {
+    -webkit-transform: rotate(0) translateX(0);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 40px;
+  }
+  a.button {
+    font-size: 12px;
+  }
 }
 
 
@@ -121,4 +156,39 @@ h4 {
       background: #DCE7F5;
       color: #3126D1;
     }
+}
+
+/* fade animation  */
+
+.fade-in {
+  animation: fadeIn ease-in-out .4s;
+  -webkit-animation: fadeIn ease-in-out .4s;
+  -moz-animation: fadeIn ease-in-out .4s;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
   }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
