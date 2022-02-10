@@ -21,7 +21,6 @@
     }
 }
 
-
 /* @media (max-width: 1250px) {
     .top-image {
         margin-top: 50px;
@@ -56,14 +55,14 @@
 }
 
 .project .proj-content .proj-text {
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .section .proj-text .title h1 {
     font-family: 'Roslindale';
     color: var(--textcolours);
-    font-size: 6em;
+    font-size: 4.5em;
     font-weight: 700;
     margin-top: 20px;
     transition: font-size .2s ease-in;
@@ -71,7 +70,7 @@
 
 @media (max-width: 1250px) {
     .section .proj-text .title h1 {
-        font-size: 5em;
+        font-size: 4.25em;
         transition: font-size .2s ease-in;
     }
 }
@@ -92,36 +91,38 @@
 
 .section .proj-text .title h2 {
     color: var(--textcolours);
-    font-size: 2.25em;
-    margin-top: 1em;
+    font-size: 1.6em;
+    margin-top: 1.2em;
     font-weight: 400;
     transition: font-size .2s ease-in;
 }
 
 @media (max-width: 1250px) {
     .section .proj-text .title h2 {
-        font-size: 2em;
+        font-size: 1.45em;
+        margin-top: 1.4em;
         transition: font-size .2s ease-in;
     }
 }
 
 @media (max-width: 1000px) {
     .section .proj-text .title h2 {
-        font-size: 1.65em;
+        font-size: 1.35em;
+        margin-top: 1.45em;
         transition: font-size .2s ease-in;
     }
 }
 
 @media (max-width: 800px) {
     .section .proj-text .title h2 {
-        font-size: 1.25em;
+        font-size: 1.2em;
         transition: font-size .2s ease-in;
     }
 }
 
 .project .section-header p {
     margin-bottom: 10px;
-    font-size: 1.5em;
+    font-size: 1.35em;
     font-weight: 600;
     color: #aaa;
     font-family: 'Roslindale';
@@ -147,9 +148,9 @@ hr {
 }
 
 .text-container h2 {
-    font-size: 1.8em;
+    font-size: 1.55em;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     margin-top: -10px;
     color: var(--textcolours);
     transition: font-size .2s ease-in;
@@ -165,8 +166,8 @@ hr {
 
 .text-container p {
     margin-top: 0;
-    margin-bottom: 60px;
-    font-size: 1.25em;
+    margin-bottom: 50px;
+    font-size: 1.2em;
     line-height: 24px;
     color: var(--textcolours);
     transition: font-size .2s ease-in;
@@ -176,15 +177,15 @@ hr {
     display: inline-block;
     position: absolute;
     font-size: 1.1em;
+    margin-top: 1px;
     color: var(--textcolours);
     font-weight: 600;
     transition: font-size .2s ease-in;
 }
 
 .numbering p {
-    padding-top: 2px;
     margin-left: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 12px !important;
     font-size: 1.1em;
     line-height: 18px;
     color: var(--textcolours);
@@ -193,41 +194,38 @@ hr {
 
 @media (max-width: 1700px) {
     .text-container h2 {
-        font-size: 1.75em;
+        font-size: 1.45em;
         transition: font-size .2s ease-in;
     }
     .text-container p {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        line-height: 23px;
         transition: font-size .2s ease-in;
     }
     .project .section-header p {
-        font-size: 1.45em;
+        font-size: 1.3em;
         transition: font-size .2s ease-in;
     }
 }
 
 @media (max-width: 1250px) {
     .text-container h2 {
-        font-size: 1.6em;
+        font-size: 1.3em;
         transition: font-size .2s ease-in;
     }
     .text-container p {
-        font-size: 1.125em;
-        transition: font-size .2s ease-in;
+        margin-bottom: 45px;
     }
     .project .section-header p {
-        font-size: 1.35em;
+        font-size: 1.1em;
+        margin-bottom: 0;
         transition: font-size .2s ease-in;
     }
 }
 
 @media (max-width: 980px) {
     .text-container h2 {
-        font-size: 1.5em;
-        transition: font-size .2s ease-in;
-    }
-    .project .section-header p {
-        font-size: 1.35em;
+        font-size: 1.1em;
         transition: font-size .2s ease-in;
     }
 }
@@ -257,6 +255,19 @@ hr {
     .stats-section .contain p {
         width: 100%;
         margin-bottom: 2.5%;
+    }
+}
+
+p.problem-statement {
+    font-size: 1.8em;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+@media (max-width: 980px) {
+    p.problem-statement {
+        font-size: 1.5em;
+        line-height: 28px;
     }
 }
 
