@@ -177,7 +177,7 @@ hr {
     display: inline-block;
     position: absolute;
     font-size: 1.1em;
-    margin-top: 1px;
+    line-height: 24px;
     color: var(--textcolours);
     font-weight: 600;
     transition: font-size .2s ease-in;
@@ -187,7 +187,6 @@ hr {
     margin-left: 2em;
     margin-bottom: 12px !important;
     font-size: 1.1em;
-    line-height: 18px;
     color: var(--textcolours);
     transition: font-size .2s ease-in;
 }
@@ -199,7 +198,6 @@ hr {
     }
     .text-container p {
         font-size: 1.1em;
-        line-height: 23px;
         transition: font-size .2s ease-in;
     }
     .project .section-header p {
