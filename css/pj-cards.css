@@ -8,11 +8,11 @@
     }
 }
 
-.project-cards h1.maintitle {
+h1.maintitle {
     font-family: 'Roslindale';
     font-size: 70px;
     width: 100%;
-    margin-bottom: -30px;
+    margin-bottom: 30px;
     transition: font-size .2s ease-in;
 }
 
@@ -25,14 +25,14 @@
 }
 
 @media (max-width: 1250px) {
-    .project-cards h1.maintitle {
+    h1.maintitle {
         font-size: 60px;
         transition: font-size .2s ease-in;
     }
 }
 
 @media (max-width: 980px) {
-    .project-cards h1.maintitle {
+    h1.maintitle {
         font-size: 50px;
         transition: font-size .2s ease-in;
     }
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 740px) {
-    .project-cards h1.maintitle {
+    h1.maintitle {
         font-size: 40px;
         transition: font-size .2s ease-in;
     }
@@ -64,16 +64,13 @@
 .card {
     display: flex;
     position: relative;
-}
-
-.card {
     flex-direction: column;
-    margin: 105px 0 40px;
+    margin: 44px 0 80px;
 }
 
 @media (max-width: 1250px) {
     .card {
-        margin: 75px 0 40px;
+        margin: 44px 0 48px;
     }
 }
 

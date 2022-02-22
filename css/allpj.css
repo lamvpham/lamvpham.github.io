@@ -53,7 +53,7 @@
 .project-link h5 {
     font-size: 17px;
     font-weight: 300;
-    margin: 0;
+    margin: 2px 0 0;
     color: var(--textcolours);
     transition: font-size .2s cubic-bezier(.795, 0, .035, 1);
     /* mix-blend-mode: difference; */
