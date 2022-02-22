@@ -1,5 +1,9 @@
 /* columns */
 
+.highlight::after {
+    background-color: #DC0F59;
+}
+
 .ah {
     display: flex;
     position: relative;
