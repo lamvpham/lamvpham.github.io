@@ -52,7 +52,7 @@ have any questions or any feedback? please let me know :)
     <div class="navbar">
         <div class="navbar-content">
             <div class="navbar-text">
-                <h6 style="margin-left: 0" onclick="location.href='../index.html';"><span class="name highlight pointer">Lam Pham</span><span class="extra-text"> · Systems Design Engineering @ uWaterloo</span></h6>
+                <h6 style="margin-left: 0" onclick="location.href='../index.html';"><span class="name highlight pointer">Lam Pham </span><span class="extra-text"> · Systems Design Engineering @ uWaterloo</span></h6>
             </div>
 
             <a id="toggle" class="toggle">
@@ -63,14 +63,14 @@ have any questions or any feedback? please let me know :)
 
             <div id="links" class="links">
                 <div class="navbar-text right">
+                    <h6 class="highlight pointer" onclick="location.href='../index.html';">Work</h6>
                     <h6 class="highlight pointer" onclick="location.href='../about.html';">About</h6>
-                    <!-- <h6 class="highlight pointer" onclick="location.href='projects.html';">Projects</h6> -->
                     <h6 class="highlight pointer" onclick="location.href='../afterhours.html';">After Hours</h6>
                     <h6 class="highlight pointer" onclick="location.href='../assets/Lam-Pham-Resume.pdf';" target="blank">Resume</h6>
                 </div>
             </div>
         </div>
-        <script src="../scripts/navbar-btn.js"></script>
+        <script src="scripts/navbar-btn.js"></script>
     </div>
 
     <!-- content -->
@@ -96,7 +96,6 @@ have any questions or any feedback? please let me know :)
                     <div class="text-group">
                         <div class="section-header">
                             <p>Context</p>
-                            <hr/>
                         </div>
                         <div class="text-container m-t-2">
                             <h2>Role</h2>
@@ -131,15 +130,12 @@ have any questions or any feedback? please let me know :)
                 <div class="proj-text">
                     <div class="section-header">
                         <p>Introduction</p>
-                        <hr/>
                     </div>
                     <div class="text-container m-t-2">
-                        <h2>Starting point</h2>
+                        <h2>Old Design Concepts</h2>
                         <p>The initial context for the notification center was to add notifications into a CDK product. 
                             The project quickly became too complex, resulting in its abandonment due to scope creep and lack of clarity for its 
                             direction. </p>
-                        <p style="margin-top: -40px;">In the images below, previous attempts in designing a notification center were made for 
-                            specific use cases over the years, but failed to work on a general basis due to an absence of product navigation and usability. </p>
                         <div class="numbering ">
                             <span>01</span>
                             <p>Notification Center Concept 1</p>
@@ -172,9 +168,8 @@ have any questions or any feedback? please let me know :)
                     <div class="text-container">
                         <h2>Scope & objectives</h2>
                         <p>The scope was 8 weeks to research common UX patterns for notification centers, then architect UX patterns on a broader 
-                            level for any CDK product. In doing so, I would need to establish foundational requirements on global notification patterns 
-                            for international product team adoption. I also explored possibilities for a message hub to be integrated within 
-                            the notification center feature.</p>
+                            level for any CDK product. I would need to establish <b>foundational requirements on global notification patterns</b> 
+                            for international product team adoption, with possibilities for a message hub to be integrated.</p>
                     </div>
                 </div>
             </div>
@@ -184,20 +179,13 @@ have any questions or any feedback? please let me know :)
                 <div class="proj-text">
                     <div class="section-header">
                         <p>Preliminary Process</p>
-                        <hr/>
                     </div>
                     <div class="text-container m-t-2">
-                        <h2>Competitive analysis</h2>
+                        <h2>Competitive analysis & Internal product team interviews</h2>
                         <p>The initial approach to understanding and laying out the architecture and interactions of a notification center 
                             was to do a competitive analysis on other established design systems. Researching the notification aspects of 
                             GitHub Primer and Uber Base design systems helped understand other approaches to a notification center.</p>
-                        <p style="margin-top: -40px;"> RDS and Materials have the same behaviors for toasts and snackbars, where toasts are 
-                            primarily used for system messaging and snackbars are directly related to the operation performed. Some findings 
-                            here are that with Base, the toasts are intended to provide feedback to a user and snackbars are used to give 
-                            users feedback after taking an action.</p>
-
-                        <h2>Internal product team interviews</h2>
-                        <p>I had to look back to the initial circumstances for the task two years prior, where the progression of the first 
+                        <p style="margin-top:-40px;">I had to look back to the initial circumstances for the task two years prior, where the progression of the first 
                             notification center was surrounded by a multitude of questions and nonstandardized UX patterns using custom 
                             components. The line between notification, messaging, and task list was very blurred:</p>
                     </div>
@@ -209,10 +197,7 @@ have any questions or any feedback? please let me know :)
                 
                 <div class="proj-text">
                     <div class="text-container">
-                        <p>Due to the vague requirements placed for the notification center, interviewing other designers and product 
-                            teams with these questions in mind aided me in solidifying a direction for the center and the requirements 
-                            needed for architecture patterns.</p>
-                        <p style="margin-top:-40px;">In addition, there is a CDK product, Text Connect, which is a messaging hub for 
+                        <p>In addition, there is a CDK product, Text Connect, which is a messaging hub for 
                             dealerships and their customers. Chatting with the design manager showcased the current 
                             components and patterns that are being used on that product. With this, I could replicate those interaction 
                             patterns and information hierarchy onto the notification center containing the messaging hub for global 
@@ -242,14 +227,12 @@ have any questions or any feedback? please let me know :)
                 <div class="proj-text">
                     <div class="section-header">
                         <p>Getting into the weeds of it</p>
-                        <hr/>
                     </div>
                     <div class="text-container m-t-2">
                         <h2>Lo-fi mockups</h2>
-                        <p>To get fast, tangible artifacts, I mapped out the functionality of interactions to give a quick representation of 
-                            the design’s intended purpose based on my findings with the competitive analysis and internal interviews.</p>
-                        <p style="margin-top:-40px">I designed 3 different variations of the notification center: the first one using a dialog 
-                            window for the center, the second being a full page, and the third being a mix between a dialog window and a full page.</p>
+                        <p>From the requirements I set based on the competitive analysis and internal interviews, I designed 3 different variations of the 
+                            notification center: the first one using a dialog window for the center, the second being a full page, and the third being a mix 
+                            between a dialog window and a full page.</p>
                     </div>
                 </div>
 
@@ -332,13 +315,15 @@ have any questions or any feedback? please let me know :)
                 <div class="proj-text">
                     <div class="section-header">
                         <p>Results</p>
-                        <hr/>
                     </div>
                     <div class="text-container m-t-2">
                         <h2>Final Designs</h2>
                         <p>The image below is the dialog window for the notifications, and the interactions 
                             for users are limited to viewing notifications/messages, going into a conversation and sending a message, and going 
                             to the full page notification center.</p>
+                        <p style="margin-top:-40px">Viewing from the full page center, there are deep links when viewing notifications that 
+                            navigate out towards the page with that content. This interaction allows for users to stay productive and get more 
+                            context on what the information displayed in the notification is about, making the notifications actionable.</p>
                     </div>
                 </div>
 
@@ -346,24 +331,8 @@ have any questions or any feedback? please let me know :)
                     <img src="cdk-assets/final/final_popover.png" alt="Final Design for Popover">
                 </div>
 
-                <div class="proj-text">
-                    <div class="text-container">
-                        <p>Viewing from the full page center, there are deep links when viewing notifications that 
-                            navigate out towards the page with that content. This interaction allows for users to stay productive and get more 
-                            context on what the information displayed in the notification is about, making the notifications actionable.</p>
-                    </div>
-                </div>
-
                 <div class="proj-images">
                     <img src="cdk-assets/final/final_page.png" alt="Final Design for Full Page">
-                </div>
-
-                <div class="proj-text">
-                    <div class="text-container">
-                        <p>The new individual components were designed individually and documented in the design system 
-                            UI Kit for other designers to use. The components were made to be scalable for various browser or platform widths, and 
-                            responsive for additional content based on the product it's in.</p>
-                    </div>
                 </div>
 
                 <div class="proj-images">
@@ -381,8 +350,6 @@ have any questions or any feedback? please let me know :)
                         <p>Testing protocols to validate the architecture patterns of the designs were through usability verification from the RDS 
                             team. The designs had the accessible standards of WCAG 2.0 and a11y, and also integrated well with the components already 
                             developed; meaning less complexity for developer handoff.</p>
-                        <p style="margin-top:-40px">Going through the hi-fi designs with the Text Connect design manager, he addressed that
-                            the limited actions available to users in the dialog window provided more value for the full page center.</p>
                       
                         <h2>Tradeoffs being done with the design</h2>
                         <p>Due to the generalized aspect of the notification center, the specific use cases of other CDK products may not be easily 
@@ -397,27 +364,20 @@ have any questions or any feedback? please let me know :)
                 <div class="proj-text">
                     <div class="section-header">
                         <p>Moving Forward</p>
-                        <hr/>
                     </div>
                     <div class="text-container m-t-2">
                         <h2>Next Steps</h2>
-                        <p>The next step is with how future iterations can build upon and guide current designers on how to tackle notifications. 
-                            In addition to the general direction being set in stone, the foundational designs are finalized and future designers 
-                            from other teams can use the notification components in the UI Kit.</p>
-                        <p style="margin-top:-40px">Future plans for Text Connect align similarly with the approach for this notification center, 
-                            and can benefit the product’s progress by cutting design/development costs through notification center research and 
-                            design work. </p>
+                        <p>Future iterations can build upon and guide current designers on how to tackle notifications. The foundational designs 
+                            are finalized and future designers from other teams can use the notification components in the UI Kit. Future plans 
+                            for Text Connect align similarly with the approach for this notification center, and will benefit the product’s progress 
+                            by cutting design/development costs.</p>
 
                         <h2>Conclusions and what I learned</h2>
-                        <p>The adoption of the UI Kit components and templates of the notification center is already rolling out within the CDK design 
+                        <p>The adoption of the UI Kit components and templates of the notification center is rolling out within the CDK design 
                             teams. Through this internship, it helped teach me to process interaction patterns and product 
-                            architecture from a more holistic point-of-view. <b>From understanding the range of edge cases that apply to 
-                            numerous different products and aggregating it all into generalized patterns, to exploring the evolution of past needs 
-                            in their context to future requirements; viewing all this from the lense of a design system, consistency and uniformity 
-                            are necessities I've learnt</b>.</p>
-                        <p style="margin-top:-40px">Moving forward, I want to broaden the scope of my perspective. To be able to process complex 
-                            demands and sift them down, that can enhance my knowledge of fleshing out product needs and being able to further define 
-                            what is actually needed. This is only the beginning :)</p>
+                            architecture from a more holistic point-of-view. <b>Understanding the range of edge cases that apply to 
+                            numerous different products and aggregating it all into generalized patterns, it helped me explore the evolution of past needs 
+                            in their context to future requirements</b>.</p>
                     </div>
                 </div>
             </div>
