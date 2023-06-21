@@ -33,6 +33,17 @@ body {
   display: none;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.audio {
+  margin-left: 2px;
+}
+
+.audio img {
+  width: 0.95em;
+}
 
 /* spacing */
 
