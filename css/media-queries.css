@@ -1,0 +1,121 @@
+/* media queries */
+@media (max-width: 1475px) {
+    h1 {
+        font-size: 80px;
+        transition: font-size .2s ease-in;
+    }
+    h3 {
+        font-size: 50px;
+        transition: font-size .2s ease-in;
+    }
+    p {
+        font-size: 13px;
+        transition: font-size .2s ease-in;
+    }
+    .header-spacing {
+        padding-right: 60px;
+    }
+    .middle-spacing {
+        padding-right: 290px;
+    }
+    .bottom-spacing {
+        padding-right: 250px;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 60px;
+        transition: font-size .2s ease-in;
+        margin: -1px;
+        letter-spacing: 2px;
+    }
+    h3 {
+        font-size: 42px;
+        letter-spacing: 10px;
+        transition: font-size .2s ease-in;
+    }
+    p {
+        /* font-size: 12px; */
+        transition: font-size .2s ease-in;
+    }
+    span.subtext-1 p,
+    span.subtext-2 p {
+        font-size: 14px;
+    }
+    .header-spacing {
+        padding-right: 30px;
+    }
+    .middle-spacing {
+        padding-right: 200px;
+    }
+    .bottom-spacing {
+        padding-right: 200px;
+    }
+    .body-content {
+        width: 410px;
+    }
+    .top-bar {
+        padding: 14px 0;
+    }
+    .bottom-bar {
+        padding: 14px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+        transition: font-size .2s ease-in;
+    }
+    h3 {
+        font-size: 35px;
+        letter-spacing: 7px;
+        transition: font-size .2s ease-in;
+    }
+    span.text-1 h3, span.text-2 h3  {
+        margin: 12px;
+    }
+    .header-spacing {
+        padding-right: 10px;
+    }
+    .middle-spacing {
+        padding-right: 160px;
+    }
+    .bottom-spacing {
+        padding-right: 40px;
+    }
+
+    /* project hover queries */
+    #project-image {
+        display: none;
+    }
+    .top-bar, .bot, #workcontent {
+        opacity: 1 !important;
+    }
+    .header {
+        opacity: 0.14 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    p {
+        /* font-size: 12px; */
+        transition: font-size .2s ease-in;
+    }
+    .body-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70vw;
+    }
+    .exp-row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .exp-row p {
+        margin: 0;
+    }
+}

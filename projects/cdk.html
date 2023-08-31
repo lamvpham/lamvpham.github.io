@@ -1,22 +1,21 @@
 <!doctype html>
 <html lang="en">
 
-<!-- 
-        ___       ________  _____ ______      
-       |\  \     |\   __  \|\   _ \  _   \    
-       \ \  \    \ \  \|\  \ \  \\\__\ \  \   
-        \ \  \    \ \   __  \ \  \\|__| \  \  
-         \ \  \____\ \  \ \  \ \  \    \ \  \ 
-          \ \_______\ \__\ \__\ \__\    \ \__\
-           \|_______|\|__|\|__|\|__|     \|__| 
-
-
-if you're inspecting my code, welcome!
-have any questions or any feedback? please let me know :) 
--->
-
 <head>
-    <title>Notification Center Patterns</title>
+    <title>Notification Patterns</title>
+
+    <!-- google analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167813282-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167813282-1');
+    </script>
 
     <!-- mandatory tags -->
     <meta charset="UTF-8">
@@ -25,345 +24,336 @@ have any questions or any feedback? please let me know :)
     <!-- site description-->
     <meta property="og:title" content="Lam Pham">
     <meta property="og:image" content="https://lamvpham.me/assets/meta.png">
-    <meta property="og:description" content="Student Designer at uWaterloo">
+    <meta property="og:description" content="Product Designer">
     <meta property="og:url" content="https://lamvpham.me/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="lamvpham">
-    <meta name="twitter:description" content="Student Designer at uWaterloo">
+    <meta name="twitter:description" content="Product Designer">
     <meta name="twitter:image" content="https://lamvpham.me/assets/meta.png">
 
     <!-- css -->
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/projects.css">
-    <link rel="stylesheet" href="../css/nav-footer.css">
-    <link rel="stylesheet" href="../css/animations.css">
-
-    <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/animations.css">                
+    <link rel="stylesheet" href="../css/project-hovers.css">                
+    <link rel="stylesheet" href="../css/media-queries.css">   
+    <link rel="stylesheet" href="../css/projects.css">                             
 
     <!-- icons -->
     <link rel="shortcut icon" href="../assets/L.svg">
     <script src="https://kit.fontawesome.com/63da5f6700.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="fade-in">
-
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="navbar-content">
-            <div class="navbar-text">
-                <h6 style="margin-left: 0" onclick="location.href='../index.html';"><span class="name highlight pointer">Lam Pham </span><span class="extra-text"> · Systems Design Engineering @ uWaterloo</span></h6>
+<body onload="preloader()">
+    <div id="preloader">
+        <div class="crt-lines"></div>
+        <div class="vignette" style="opacity:0.4"></div>
+        <div class="snow"></div>
+        
+        <div id="vcr-text-1" class="vcr-top-text">
+            <div class="top-text">
+                <h2 class="text glitch layers" data-text="??????">PROJECT2 PAGE</h2>
+                <h2 class="text extra">COMP VIEW</h2>
+                <h2 class="text extra">DECK 2</h2>
             </div>
-
-            <a id="toggle" class="toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-
-            <div id="links" class="links">
-                <div class="navbar-text right">
-                    <h6 class="highlight pointer" onclick="location.href='../index.html';">Work</h6>
-                    <h6 class="highlight pointer" onclick="location.href='../about.html';">About</h6>
-                    <h6 class="highlight pointer" onclick="location.href='../afterhours.html';">After Hours</h6>
-                    <h6 class="highlight pointer" onclick="location.href='../assets/Lam-Pham-Resume.pdf';" target="blank">Resume</h6>
-                </div>
+            <div class="top-text">
+                <h2 class="text">PLAY <span class="image"><img src="../assets/play.svg"/></span></h2>
+                <h2 class="text extra glitch layers" data-text="LINE2">LINE2</h2>
             </div>
-        </div>
-        <script src="scripts/navbar-btn.js"></script>
-    </div>
-
-    <!-- content -->
-    <div class="proj-images">
-        <img src="cdk-assets/main-photo.png" alt="Notification Center Architecture Patterns">
-    </div>
-
-    <div class="project">
-        <div class="proj-content">
-            <!-- intro -->
-            <div class="section">
-                <div class="proj-text">
-                    <div class="text-group title">
-                        <h1>Notification Center Architecture Patterns</h1>
-                        <h2>Architecting the UX patterns and interaction behaviours on a global scale for a message center </h2>
-                    </div>
-                </div>
+            <div class="top-text" style="margin-bottom: 8px;">
+                <h2 class="text counter">REC 00:<label id="minutes"> 00</label>:<label id="seconds">00</label></h2>
+                <h2 class="text extra glitch layers" data-text="26:12:21"><span id="shortclock"></span></h2>
             </div>
-
-            <!-- context -->
-            <div class="section">
-                <div class="proj-text">
-                    <div class="section-header">
-                        <p>Context</p>
-                    </div>
-                    <div class="text-container m-t-2">
-                        <h2>Role</h2>
-                        <p>With my internship at CDK Global, I spent summer 2021 as a UX Design intern on the Radial Design Systems (RDS) team. The project I worked on was about the <b>UX architecture of a new notification center, and how the designed prototype reflects the requirements that product teams needed</b>.</p>
-
-                        <h2>The problem</h2>
-                        <p class="problem-statement">How might we help reduce the lack of consistency across all CDK platforms/apps and address the product team's 
-                            needs for a standardized notification center? </p>
-                    
-                        <h2>Solution</h2>
-                        <p>The final prototypes have uniform product architecture patterns for easier user comprehension. The generalized designs provided flexibility to match the requirements needed from various product teams.</p>
-                    </div>
-                </div>
+            <div class="top-text">
+                <h2 class="text">LVP</h2>
             </div>
         </div>
+
+        <div id="vcr-text-2" class="bottom-bar">
+            <h2 class="glitch layers" data-text="??????">PROJ02 <span class="source extra">SOURCE</span></h2>
+        </div>
     </div>
+    <iframe src="../assets/effects/audio/vcr.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
-    <div class="proj-images">
-        <img src="cdk-assets/solution.png" alt="Notification Center Templates for Screens and Dialog Window">
-    </div>
+    <div id="wrap" class="fade-in container">
+        <div class="overlay">
+            <img src="../projects/pj-cards/cdk-inpage.png" center>
+        </div>
 
-    <div class="project">
-        <div class="proj-content">
+        <div class="effects">
+            <div class="crt-lines"></div>
+            <div class="vignette"></div>
+            <div class="snow"></div>
+        </div>
 
-            <!-- intro -->
-            <div class="section">
-                <div class="proj-text">
-                    <div class="section-header">
-                        <p>Introduction</p>
+        <div class="top-bar">
+            <div class="two-bars">
+                <p class="two-m-b"><span id="clock"></span></p>
+                <p><span id="work" class="highlight pointer texthover" onclick="location.href='../index.html';">WORK</span> 
+                    <span class="spacing star">✸</span> 
+                    <span id="about" class="highlight pointer texthover" onclick="location.href='../index.html#about';">ABOUT</span></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="t-b-m">
+                <!-- context -->
+                <div class="project-content no-m-t">
+                    <div class="section section-bottom">
+                        <h3>NOTIFICATION PATTERNS</h3>
+                        <h4>ARCHITECTING THE UX PATTERNS & INTERACTION BEHAVIOURS ON A GLOBAL SCALE FOR A MESSAGE CENTER</h4>
                     </div>
-                    <div class="text-container m-t-2">
-                        <h2>Old Design Concepts</h2>
-                        <p>The initial context for the notification center was to add notifications into a CDK product (back in 2020). The project quickly became too complex, resulting in its abandonment due to scope creep and lack of clarity for its direction.</p>
-                        <div class="numbering ">
-                            <span>01</span>
-                            <p>Notification Center Concept 1</p>
-                            <div class="proj-images">
-                                <img src="cdk-assets/concepts/concept-1.png" alt="Notification Center Concept 1">
-                            </div>
 
-                            <span>02</span>
-                            <p>Notification Center Concept 2</p>
-                            <div class="proj-images">
-                                <img src="cdk-assets/concepts/concept-2.png" alt="Notification Center Concept 2">
-                            </div>
-
-                            <span>03</span>
-                            <p>Notification Center Concept 3</p>
-                            <div class="proj-images">
-                                <img src="cdk-assets/concepts/concept-3.png" alt="Notification Center Concept 3">
-                            </div>
-
-                            <span>04</span>
-                            <p>Notification Center Concept 4</p>
-                            <div class="proj-images">
-                                <img src="cdk-assets/concepts/concept-4.png" alt="Notification Center Concept 4">
-                            </div>
+                    <div class="section">
+                        <h5>CONTEXT</h5>
+                        <div class="sub-section">
+                            <p class="italics glowing"><b class="subheader">Role</b></p>
+                            <p>With my internship at CDK Global, I spent summer 2021 as a UX Design intern on the Radial Design Systems (RDS) team. The project I worked on was about the <span class="glowing">UX architecture of a new notification center, and how the designed prototype reflects the requirements that product teams needed</span>.</p>
+                        </div>
+                        <div class="sub-section">
+                            <p class="italics glowing"><b class="subheader">The Problem</b></p>
+                            <h4 class="glowing"><b>How might we help reduce the lack of consistency across all CDK platforms/apps and address the product team's needs for a standardized notification center?</b></h4>
+                        </div>
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Solution</b></p>
+                            <p>The final prototypes have uniform product architecture patterns for easier user comprehension. The generalized designs provided flexibility to match the requirements needed from various product teams.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="proj-text">
-                    <div class="text-container">
-                        <h2>Scope & objectives</h2>
-                        <p>The scope was 8 weeks to research common UX patterns for notification centers, then extrapolate those insights into general interaction patterns for any CDK product. <b>Establishing foundational requirements on global notification patterns</b> for international product team adoption was needed (with possibilities for a message hub to be integrated).</p>
+                <img class="proj-image" src="cdk-assets/solution.png">
+
+                <!-- intro -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>INTRODUCTION</h5>
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Past Iteration Concepts</b></p>
+                            <p>The initial context for the notification center was to add notifications into a CDK product (back in 2020). The project quickly became too complex, resulting in its abandonment due to scope creep and lack of clarity for its direction.</p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="numbering">
+                    <div class="project-content no-m-b">
+                        <div class="section">
+                            <div class="sub-section no-m-b">
+                                <p><span class="r-m glowing"><b>01</b></span> Notification Center Concept 1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="proj-image" src="cdk-assets/concepts/concept-1.png">
+                    
+                    <div class="project-content no-m-b">
+                        <div class="section">
+                            <div class="sub-section no-m-b">
+                                <p><span class="r-m glowing"><b>02</b></span> Notification Center Concept 2</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="proj-image" src="cdk-assets/concepts/concept-2.png">
+
+                    <div class="project-content no-m-b">
+                        <div class="section">
+                            <div class="sub-section no-m-b">
+                                <p><span class="r-m glowing"><b>03</b></span> Notification Center Concept 3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="proj-image" src="cdk-assets/concepts/concept-3.png">
+
+                    <div class="project-content no-m-b">
+                        <div class="section">
+                            <div class="sub-section no-m-b">
+                                <p><span class="r-m glowing"><b>04</b></span> Notification Center Concept 4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="proj-image" src="cdk-assets/concepts/concept-4.png">
+                </div>
+
+                <div class="project-content">
+                    <div class="section no-m-b">
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Scope & Objectives</b></p>
+                            <p>The scope was 8 weeks to research common UX patterns for notification centers, then extrapolate those insights into general interaction patterns for any CDK product. <span class="glowing">Establishing foundational requirements on global notification patterns</span> for international product team adoption was needed (with possibilities for a message hub to be integrated). </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- prelim process -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>PRELIMINARY PROCESS</h5>
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Competitive Analysis & Internal User Interviews</b></p>
+                            <p>By conducting a competitive analysis on other established design systems (such as GitHub Primer & Uber Base), that helped me to understand other approaches to a notification center.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="cdk-assets/questions.png">
+
+                <div class="project-content">
+                    <div class="section">
+                        <div class="sub-section no-m-b">
+                            <p>In addition, there is a CDK product, Text Connect, which is a messaging hub for dealerships and their customers. Talking with that design manager, they showed the current components and patterns being used on that product. With this, I could replicate those interaction patterns and information hierarchy onto the notification center containing the messaging hub for global consistency between products.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="cdk-assets/textconnect.png">
+
+                <div class="project-content">
+                    <div class="section no-m-b">
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Requirements</b></p>
+                            <p>Based on the competitive analysis and interviews, I was able to discern the foundational requirements for the generalized notification center:</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="cdk-assets/requirements.png">
+
+                <!-- mockup iteration -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>MOCKUP ITERATION</h5>
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Lo-fi Mockups</b></p>
+                            <p>With those requirements, I designed 3 variations of a notification center user flow: the first one using a dialog window for the center, the second being a full page, and the third being a mix between a dialog window and a full page.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image section-bottom" src="cdk-assets/lofis/lofi-1.png">
+                <img class="proj-image section-bottom" src="cdk-assets/lofis/lofi-2.png">
+                <img class="proj-image" src="cdk-assets/lofis/lofi-3.png">
+
+                <div class="project-content">
+                    <div class="section no-m-b">
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Applying Feedback</b></p>
+                            <p>Upon iterating, these higher fidelity dialog window designs portrayed two options for switching between alerts and messages.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image section-bottom" src="cdk-assets/iterations/popover_iteration_1.png">
+                <img class="proj-image" src="cdk-assets/iterations/popover_iteration_2.png">
+
+                <div class="project-content">
+                    <div class="section no-m-b">
+                        <div class="sub-section no-m-b">
+                            <p class="ptext-m-b">Translating that to the full page notification center, the options were with tabs or a dropdown.</p>
+                            <p>The feedback given was that to warrant a new page, alerts will need to be less frequent for more important/urgent needs that require attention. In turn, notifications to be filtered for higher important in a workflow rather than diluted with info from toasts that user already knows about.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image section-bottom" src="cdk-assets/iterations/page_iteration_1.png">
+                <img class="proj-image" src="cdk-assets/iterations/page_iteration_2.png">
+
+                <div class="project-content">
+                    <div class="section no-m-b">
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">User Flows</b></p>
+                            <p>After presenting the user flows and prototypes to the RDS team and other designers, the general consensus was to have a dialog window as a quick view for notifications and an option for a full notification center page for more actionable workflows.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="cdk-assets/simplified_user_flow.png">
+
+                <div class="project-content">
+                    <div class="section no-m-b">
+                        <div class="sub-section no-m-b">
+                            <p>Using that information and feedback, I mapped out the general architecture for the dialog window and full page that the user would follow with these designs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="cdk-assets/info_architecture.png">
+
+                <!-- mvp -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>MVP</h5>
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Results</b></p>
+                            <p class="ptext-m-b">The interactions for users are limited to viewing notifications/messages, going into a conversation & sending a message, and going to the full page notification center.</p>
+                            <p>Viewing from the full page center, there are deep links when viewing notifications that navigate out towards the page with that content. This interaction allows for users to stay productive and get more context on what the information displayed in the notification is about, making the notifications actionable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image section-bottom" src="cdk-assets/final/final_popover.png">
+                <img class="proj-image section-bottom" src="cdk-assets/final/final_page.png">
+                <img class="proj-image section-bottom" src="cdk-assets/final/final_templates.png">
+                <img class="proj-image" src="cdk-assets/final/final_components.png">
+
+                <div class="project-content">
+                    <div class="section no-m-b">
+                        <div class="sub-section">
+                            <p class="italics glowing"><b class="subheader">Validation</b></p>
+                            <p>I did testing protocols to validate the architecture patterns of the designs, done through usability verification from the RDS team. The designs had the accessible standards of WCAG 2.0 and a11y, and also integrated well with the components already developed; meaning less complexity for developer handoff.</p>
+                        </div>
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">Trade-offs</b></p>
+                            <p>Due to the generalized aspect of the notification center, specific use cases of other CDK products may not be easily integratable. The components from the hi-fi prototypes were designed and fleshed out to be accessible for a variety of situations, but the high-level functionality of the components are limited to the newly established requirements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- conclusion -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>MOVING FORWARD</h5>
+                        <div class="sub-section">
+                            <p class="italics glowing"><b class="subheader">Next Steps</b></p>
+                            <p>Future iterations can build upon and guide designers on how to tackle notifications. The foundational designs are finalized and other teams can use the notification components in the UI Kit, future plans for Text Connect align similarly with this approach.</p>
+                        </div>
+                        <div class="sub-section no-m-b">
+                            <p class="italics glowing"><b class="subheader">What I Learned</b></p>
+                            <p>The adoption of the UI Kit components and templates of the notification center is rolling out within the CDK design teams. Through this internship, it helped teach me to process interaction patterns and product architecture from a more holistic point-of-view. <span class="glowing">Understanding the range of edge cases that apply to numerous different products and aggregating it all into generalized patterns helped me explore the evolution of past needs in their context to future requirements</span>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next/prev -->
+                <div class="next-prev">
+                    <!-- <div class="prev-pj">
+                        <h2><a class="highlight pointer texthover underline" href="spotify.html"><span>next:</span> Discover Together</a></h2>
+                    </div> -->
+                    <div class="next-pj">
+                        <h2><a class="highlight pointer texthover underline" href="formlabs.html"><span>next:</span> ENTITY ARCHITECTURES</a></h2>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- prelim process -->
-            <div class="section">
-                <div class="proj-text">
-                    <div class="section-header">
-                        <p>Preliminary Process</p>
-                    </div>
-                    <div class="text-container m-t-2">
-                        <h2>Competitive analysis & Internal user interviews</h2>
-                        <p>By conducting a competitive analysis on other established design systems (such as GitHub Primer & Uber Base), that helped me to understand other approaches to a notification center.</p>
-                    </div>
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/questions.png " alt="Questions raised from interviews">
-                </div>
-                
-                <div class="proj-text">
-                    <div class="text-container">
-                        <p>In addition, there is a CDK product, Text Connect, which is a messaging hub for dealerships and their customers. Talking with that design manager, they showed the current components and patterns being used on that product. With this, I could replicate those interaction patterns and information hierarchy onto the notification center containing the messaging hub for global consistency between products.</p>
-                    </div>
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/textconnect.png" alt="Current Text Connect Interface">
-                </div>
-
-                <div class="proj-text">
-                    <div class="text-container">
-                        <h2>Requirements</h2>
-                        <p>Based on the competitive analysis and interviews, I was able to discern the foundational requirements for the generalized notification center:</p>
-                    </div>
-                </div>
-
-                <div class="proj-images">
-                    <img style="margin-bottom:0;" src="cdk-assets/requirements.png" alt="Requirements set">
-                </div>
-            </div>
-
-            <!-- weeds -->
-            <div class="section">
-                <div class="proj-text">
-                    <div class="section-header">
-                        <p>Getting into the weeds of it</p>
-                    </div>
-                    <div class="text-container m-t-2">
-                        <h2>Lo-fi mockups</h2>
-                        <p>With those requirements, I designed 3 variations of a notification center user flow: the first one using a dialog window for the center, the second being a full page, and the third being a mix between a dialog window and a full page.</p>
-                    </div>
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/lofis/lofi-1.png" alt="Lofi Flow #1">
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/lofis/lofi-2.png" alt="Lofi Flow #2">
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/lofis/lofi-3.png" alt="Lofi Flow #3">
-                </div>
-
-                <div class="proj-text">
-                    <div class="text-container">
-                        <h2>Applying feedback</h2>
-                        <p>Upon iterating, these higher fidelity dialog window designs portrayed two options for switching between alerts and messages.</p>
-                    </div>
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/iterations/popover_iteration_1.png" alt="Popover first iteration, option 1">
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/iterations/popover_iteration_2.png" alt="Popover first iteration, option 2">
-                </div>
-
-                <div class="proj-text">
-                    <div class="text-container">
-                        <p>Translating that to the full page notification center, the options were with tabs or a dropdown.</p>
-                        <p style="margin-top:-40px">The feedback given was that to warrant a new page, alerts will need to be less frequent for more important/urgent needs that require attention. In turn, notifications to be filtered for higher important in a workflow rather than diluted with info from toasts that user already knows about.</p>
-                    </div>
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/iterations/page_iteration_1.png" alt="Page first iteration, option 1">
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/iterations/page_iteration_2.png" alt="Page first iteration, option 2">
-                </div>
-
-                <div class="proj-text">
-                    <div class="text-container">
-                        <h2>User flows</h2>
-                        <p>After presenting the user flows and prototypes to the RDS team and other designers, the general consensus was to have a dialog window as a quick view for notifications and an option for a full notification center page for more actionable workflows.</p>
-                    </div>
-                </div>
-    
-                <div class="proj-images">
-                    <img src="cdk-assets/simplified_user_flow.png" alt="Simplifed user flow">
-                </div>
-
-                <div class="proj-text">
-                    <div class="text-container">
-                        <p>Using that information and feedback, I mapped out the general architecture for the dialog window
-                            and full page that the user would follow with these designs.</p>
-                    </div>
-                </div>
-
-                <div class="proj-images">
-                    <img style="margin-bottom:0;" src="cdk-assets/info_architecture.png" alt="Information Architecture of Notification Center">
-                </div>
-            </div>
-
-            <!-- results -->
-            <div class="section">
-                <div class="proj-text">
-                    <div class="section-header">
-                        <p>MVP - Final Designs</p>
-                    </div>
-                    <div class="text-container m-t-2">
-                        <h2>Results</h2>
-                        <p>The interactions for users are limited to viewing notifications/messages, going into a conversation & sending a message, and going to the full page notification center.</p>
-                        <p style="margin-top:-40px">Viewing from the full page center, there are deep links when viewing notifications that navigate out towards the page with that content. This interaction allows for users to stay productive and get more context on what the information displayed in the notification is about, making the notifications actionable.</p>
-                    </div>
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/final/final_popover.png" alt="Final Design for Popover">
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/final/final_page.png" alt="Final Design for Full Page">
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/final/final_templates.png" alt="UI Kit Templates">
-                </div>
-
-                <div class="proj-images">
-                    <img src="cdk-assets/final/final_components.png" alt="UI Kit Components">
-                </div>
-
-
-                <div class="proj-text">
-                    <div class="text-container">
-                        <h2>Validation</h2>
-                        <p>I did testing protocols to validate the architecture patterns of the designs, done through usability verification from the RDS team. The designs had the accessible standards of WCAG 2.0 and a11y, and also integrated well with the components already developed; meaning less complexity for developer handoff.</p>
-                      
-                        <h2>Trade-offs</h2>
-                        <p>Due to the generalized aspect of the notification center, specific use cases of other CDK products may not be easily integratable. The components from the hi-fi prototypes were designed and fleshed out to be accessible for a variety of situations, but the high-level functionality of the components are limited to the newly established requirements.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- conclusion -->
-            <div class="section">
-                <div class="proj-text">
-                    <div class="section-header">
-                        <p>Moving Forward</p>
-                    </div>
-                    <div class="text-container m-t-2">
-                        <h2>Next Steps</h2>
-                        <p>Future iterations can build upon and guide designers on how to tackle notifications. The foundational designs are finalized and other teams can use the notification components in the UI Kit, future plans for Text Connect align similarly with this approach.</p>
-
-                        <h2>What I learned</h2>
-                        <p>The adoption of the UI Kit components and templates of the notification center is rolling out within the CDK design teams. Through this internship, it helped teach me to process interaction patterns and product architecture from a more holistic point-of-view. <b>Understanding the range of edge cases that apply to numerous different products and aggregating it all into generalized patterns helped me explore the evolution of past needs in their context to future requirements</b>.</p>
-                    </div>
-                </div>
-            </div>
-    
         </div>
 
-         <!-- next/prev -->
-         <div class="next-prev">
-            <div class="prev-pj">
-                <h2><a class="nav-link highlight" href="formlabs.html"><span>next:</span> Teams/Groups Entity Architecture</a></h2>
-            </div>
-            <div class="next-pj">
-                <h2><a class="nav-link highlight" href="spotify.html"><span>prev:</span> Discover Together</a></h2>
-            </div>
+        <div class="bottom-bar bot">
+            <p><span class="highlight pointer texthover underline" onclick="location.href='mailto:tolamvpham@gmail.com?Subject=coffee!';" target="_top">EMAIL</span> 
+               <span class="spacing star">✸</span> 
+               <span class="highlight pointer texthover underline" onclick="window.open('https://www.linkedin.com/in/lamvpham/')">LINKEDIN</span>  
+               <span class="spacing star">✸</span> 
+               <span class="highlight pointer texthover underline" onclick="window.open('../assets/Lam-Pham-Resume.pdf')">RESUME</span></p>
         </div>
+
     </div>
-
-    <!-- footer -->
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-text">
-                <h6>Coded with my blood, sweat, and tears</h6>
-                <h6>© Lam Pham 2021</h6>
-                <!-- · <a class="highlight pointer" href="assets/resume.pdf" target="blank"><b>Resume</b></a> -->
-            </div>
-
-            <div class="footer-text right">
-                <h6 style="margin-top: 2px">I know we just met, but let’s get coffee :)</h6>
-                <a class="highlight" href="mailto:tolamvpham@gmail.com?Subject=coffee!" target="_top"><i class="fas fa-envelope"></i></a>
-                <a class="highlight" href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in" style="margin: 0"></i></a>
-            </div>
-        </div>
-    </div>
-
 </body>
+
+<!-- scripts -->
+<script src="../scripts/preloader.js"></script>
+<script src="../scripts/navswitch.js"></script>
+<script src="../scripts/clock.js"></script>
+<script src="../scripts/shortclock.js"></script>
+<script src="../scripts/counter.js"></script>
+<script src="../scripts/video.js"></script>
+
+</html>

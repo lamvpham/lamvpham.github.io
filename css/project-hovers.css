@@ -1,0 +1,81 @@
+/* project image hover */
+#project-text-1, #project-text-2 {
+  padding-top: 2px;
+  font-size: 14px;
+}
+
+span.pj-text {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#proj-text-1, 
+#proj-text-2 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    transition: opacity 0.2s ease-out;
+}
+
+span.subtext-1 p,
+span.subtext-2 p {
+    color: #140f16;
+    text-shadow: 0 0 1px #3b2173, 0 0 2px #6c3cd3 !important;
+    margin: 0;
+    font-size: 15px;
+}
+
+span.text-1 h3,
+span.text-2 h3 {
+    color: #140f16;
+    text-shadow: 0 0 3px #3b2173, 0 0 4px #6c3cd3 !important;
+    margin: 16px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* project roll animation */
+.overlay {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    z-index: -100;
+    display: block;
+  }
+  
+.img-container {
+  height: 100vh;
+}
+
+.proj-img-1 {
+  --imageHeight: 950px;
+  background: url(../projects/pj-cards/fl.png) center;
+  height: calc(var(--imageHeight) * 2);
+  animation: roll 14s linear infinite;
+  transition: opacity 0.2s ease-out;
+}
+
+.proj-img-2 {
+  --imageHeight: 950px;
+  background: url(../projects/pj-cards/cdk.png) center;
+  height: calc(var(--imageHeight) * 2);
+  animation: roll 14s linear infinite;
+  transition: opacity 0.2s ease-out;
+}
+
+@keyframes roll{
+  0% {
+      transform: translateY(0px);
+  }
+  100% {
+      transform: translateY(calc(var(--imageHeight) * -1));
+  }
+}

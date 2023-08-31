@@ -1,24 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-<!-- 
-        ___       ________  _____ ______      
-       |\  \     |\   __  \|\   _ \  _   \    
-       \ \  \    \ \  \|\  \ \  \\\__\ \  \   
-        \ \  \    \ \   __  \ \  \\|__| \  \  
-         \ \  \____\ \  \ \  \ \  \    \ \  \ 
-          \ \_______\ \__\ \__\ \__\    \ \__\
-           \|_______|\|__|\|__|\|__|     \|__| 
-
-
-if you're inspecting my code, welcome!
-have any questions or any feedback? please let me know :) 
--->
-
 <head>
     <title>Lam Pham</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167813282-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -38,304 +24,215 @@ have any questions or any feedback? please let me know :)
     <!-- site description-->
     <meta property="og:title" content="Lam Pham">
     <meta property="og:image" content="https://lamvpham.me/assets/meta.png">
-    <meta property="og:description" content="Student Designer at uWaterloo">
+    <meta property="og:description" content="Product Designer">
     <meta property="og:url" content="https://lamvpham.me/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="lamvpham">
-    <meta name="twitter:description" content="Student Designer at uWaterloo">
+    <meta name="twitter:description" content="Product Designer">
     <meta name="twitter:image" content="https://lamvpham.me/assets/meta.png">
 
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/nav-footer.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/pj-cards.css">
-
-    <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/title.js"></script>
-    <!-- <script src="scripts/colours.js"></script> -->
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/animations.css">                
+    <link rel="stylesheet" href="css/project-hovers.css">                
+    <link rel="stylesheet" href="css/media-queries.css">                
 
     <!-- icons -->
     <link rel="shortcut icon" href="assets/L.svg">
     <script src="https://kit.fontawesome.com/63da5f6700.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="fade-in">
-
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="navbar-content">
-            <div class="navbar-text">
-                <h6 style="margin-left: 0" onclick="location.href='index.html';"><span class="name highlight pointer">Lam Pham </span><span class="extra-text"> · Systems Design Engineering @ uWaterloo</span></h6>
+<body onload="preloader()">
+    <div id="preloader">
+        <div class="crt-lines"></div>
+        <div class="vignette" style="opacity:0.4"></div>
+        <div class="snow"></div>
+        
+        <div id="vcr-text-1" class="vcr-top-text">
+            <div class="top-text">
+                <h2 class="text glitch layers" data-text="??????">HOME PAGE</h2>
+                <h2 class="text extra">COMP VIEW</h2>
+                <h2 class="text extra">DECK 1</h2>
             </div>
-
-            <a id="toggle" class="toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-
-            <div id="links" class="links">
-                <div class="navbar-text right">
-                    <h6 class="highlight pointer" onclick="location.href='index.html';"><b>Work</b></h6>
-                    <h6 class="highlight pointer" onclick="location.href='about.html';">About</h6>
-                    <h6 class="highlight pointer" onclick="location.href='afterhours.html';">After Hours</h6>
-                    <h6 class="highlight pointer" onclick="location.href='assets/Lam-Pham-Resume.pdf';" target="blank">Resume</h6>
-                </div>
+            <div class="top-text">
+                <h2 class="text">PLAY <span class="image"><img src="assets/play.svg"/></span></h2>
+                <h2 class="text extra glitch layers" data-text="LINE1">LINE1</h2>
             </div>
-        </div>
-        <script src="scripts/navbar-btn.js"></script>
-    </div>
-
-    <!-- content -->
-    <div class="home-container">
-
-        <!-- title -->
-        <div class="section" id="title">
-            <div class="title-text">
-                <h1>The name rhymes.</h1>
-                <h1>But who is <span class="title">Lam Pham</span>?</h1>
+            <div class="top-text" style="margin-bottom: 8px;">
+                <h2 class="text counter">REC 00:<label id="minutes"> 00</label>:<label id="seconds">00</label></h2>
+                <h2 class="text extra glitch layers" data-text="26:12:21"><span id="shortclock"></span></h2>
+            </div>
+            <div class="top-text">
+                <h2 class="text">LVP</h2>
             </div>
         </div>
 
-        <!-- definition -->
-        <div class="definition">
-            <h2> lam · pham</h2>
-            <h2> /ɭæɱ fæɱ/ <span class="audio pointer"><img src="assets/definition/sound.svg" onclick="playAudio('assets/definition/definition.mp3')" alt="speaker icon"></span></h2>
-            <script src="scripts/definition.js"></script>
-
-            <div class="normal">
-                <h5>Noun</h5>
-                <div class="numbering">
-                    <span>1.</span>
-                    <p style="margin-top: 0;">a designer from the University of Waterloo studying Systems Design Engineering, fascinated in the crossroads of technology + creative arts and its evolution in the coming years.</p>
-
-                    <span>2.</span>
-                    <p>currently seeking <b>New Grad Design roles for 2024</b> to design things that help people in their personal lives.</p>
-                    
-                    <p style="margin-left: 3em; margin-top: -12px">a. learning how cognitive science integrates into engineering design
-                    <p style="margin-left: 3em; margin-top: -18px">b. recently designed @ <a class="highlight underline" href="https://level.co/" target="blank">Level Home</a>, <a class="highlight underline" href="https://www.formlabs.com/" target="blank">Formlabs</a>, 
-                    <a class="highlight underline" href="https://www.cdkglobal.com/us" target="blank">CDK Global</a>, <a class="highlight underline" href="https://watsi.org/" target="blank">Watsi</a>, <a class="highlight underline" href="http://synqrinus.com/" target="blank">Synqrinus</a>,
-                    <a class="highlight underline" href="https://www.ceridian.com/" target="blank">Ceridian</a>, and <a class="highlight underline" href="https://bluecatnetworks.com/" target="blank">BlueCat Networks</a>.</p>
-
-                    <span>3.</span>
-                    <p> can be found jamming out on the guitar, drawing art, and playing Yoshi on Super Smash Bros.</p>
-                    <!-- (currently learning <a class="highlight underline" href="https://www.youtube.com/watch?v=AIOAlaACuv4" target="blank">Fast Car by Tracy Chapman</a>) -->
-                </div>
-            </div>
-        </div>
-
-        <!-- project cards -->
-        <div class="project-cards">
-            <h1 class="maintitle">Featured Projects</h1>
-
-            <div class="card">
-                <div class="from-t">
-                    <div class="toptext">
-                        <div class="pjtitle">
-                            <h1 class="highlight"><a href="projects/formlabs.html">Teams/Groups Entity Architecture</a></h1>
-                        </div>
-                        <h2> · Internship · UX Architecture · Interaction Analysis & Prototyping</h2>
-                    </div>
-                </div>
-
-                <div class="img pointer" onclick="location.href='projects/formlabs.html';">
-                    <div class="img1">
-                        <img src="assets/pjcard-assets/fl.png" alt>
-                        <div class="imgoverlay">
-                            <p class="imgtext">See case study ⟶</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="from-b">
-                    <p class="bottomtext">
-                        Rearchitecting entity relationships for transparent ABAC permissions and levels of access.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="from-t">
-                    <div class="toptext">
-                        <div class="pjtitle">
-                            <h1 class="highlight"><a href="projects/cdk.html">Notification Center Architecture Patterns</a></h1>
-                        </div>
-                        <h2> · Internship · UX Architecture · Interaction Analysis & Prototyping · Design System Componentry</h2>
-                    </div>
-                </div>
-
-                <div class="img pointer" onclick="location.href='projects/cdk.html';">
-                    <div class="img1">
-                        <img src="assets/pjcard-assets/cdk.png" alt>
-                        <div class="imgoverlay">
-                            <p class="imgtext">See case study ⟶</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="from-b">
-                    <p class="bottomtext">
-                        Architecting the UX patterns & interaction behaviours of a new notification center for all enterprise products.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="from-t">
-                    <div class="toptext">
-                        <div class="pjtitle">
-                            <h1 class="highlight"><a href="projects/spotify.html">Discover Together</a></h1>
-                        </div>
-                        <h2> · Passion Project · Web & Mobile · UI/UX · Visual · Research & Testing · Interaction & Prototyping </h2>
-                    </div>
-                </div>
-
-                <div class="img pointer" onclick="location.href='projects/spotify.html';">
-                    <div class="img1">
-                        <img src="assets/pjcard-assets/dt.png" alt>
-                        <div class="imgoverlay">
-                            <p class="imgtext">See case study ⟶</p>
-                        </div>
-                    </div>
-                    <!-- <div class="img2">
-                        <img src="assets/pjcard-assets/dt2.png" alt>
-                    </div> -->
-                </div>
-
-                <div class="from-b">
-                    <p class="bottomtext">
-                        A platform to analyze two people's Spotify music tastes, then curate a playlist made specifically for them.
-                    </p>
-                </div>
-            </div>
-
-            <!-- <div class="card">
-                <div class="from-t">
-                    <div class="toptext">
-                        <div class="pjtitle">
-                            <h1 class="highlight"><a href="projects/ceridian.html">Calendar List View</a></h1>
-                        </div>
-                        <h2> · Internship · Mobile · Interaction Accessibility · Research & Testing · Competitive Analysis</h2>
-                    </div>
-                </div>
-
-                <div class="img pointer" onclick="location.href='projects/ceridian.html';">
-                    <div class="img1">
-                        <img src="assets/pjcard-assets/cd.png" alt>
-                        <div class="imgoverlay">
-                            <p class="imgtext">See case study ⟶</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="from-b">
-                    <p class="bottomtext">
-                        Proposing accessibility changes for Dayforce's most used feature on cross platforms.
-                    </p>
-                </div>
-            </div> -->
-
-            <!-- <div class="card">
-                <div class="from-t">
-                    <div class="toptext">
-                        <div class="pjtitle">
-                            <h1 class="highlight"><a href="projects/bluecat.html">Gateway Revamp</a></h1>
-                        </div>
-                        <h2> · Internship · Concept · Experimental · Research & Testing · UI/UX · Prototyping </h2>
-                    </div>
-                </div>
-
-                <div class="img pointer" onclick="location.href='projects/bluecat.html';">
-                    <div class="img1">
-                        <img src="assets/pjcard-assets/bc.png" alt>
-                        <div class="imgoverlay">
-                            <p class="imgtext">See case study ⟶</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="from-b">
-                    <p class="bottomtext">
-                        Conceptualizing a static dashboard concept + modernizing the UI on a flagship product.
-                    </p>
-                </div>
-            </div> -->
-
-            <!-- <div class="card">
-                <div class="from-t">
-                    <div class="toptext">
-                        <div class="pjtitle">
-                            <h1 class="highlight">[coming soon]</a>
-                            </h1>
-                        </div>
-                        <h2> · Location-based storytelling · Concept · Experimental </h2>
-                    </div>
-                </div>
-
-                <div class="img" style="cursor: crosshair;">
-                    <div class="img1">
-                        <img src="assets/pjcard-assets/undercon.png" alt>
-                        <div class="imgoverlay">
-                            <p class="imgtext">Concept under construction</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="from-b">
-                    <p class="bottomtext">
-                        A social experiment focused on visual identity and capturing strangers true thoughts in a world where we feel so alone.
-                    </p>
-                </div>
-            </div> -->
-
-            <!-- <div class="allprojects">
-                <div class="underline underline-color"></div>
-                <div class="marquee">
-                    <ul class="marquee-content">
-                        <li class="marquee-item pointer" onclick="location.href='https://www.formlabs.com/';">Formlabs</li>
-                        <li class="marquee-item pointer" onclick="location.href='projects/cdk.html';">CDK Global</li>
-                        <li class="marquee-item pointer" onclick="location.href='https://watsi.org/';">Watsi</li>
-                        <li class="marquee-item pointer" onclick="location.href='projects/spotify.html';">Discover Together</li>
-                        <li class="marquee-item pointer" onclick="location.href='projects/ceridian.html';">Ceridian</li>
-                        <li class="marquee-item pointer" onclick="location.href='https://synqrinus.com/';">Synqrinus</li>
-                        <li class="marquee-item pointer" onclick="location.href='projects/bluecat.html';">BlueCat Networks</li>
-
-                        repeat for cycling
-                        <li class="marquee-item pointer" onclick="location.href='https://www.formlabs.com/';">Formlabs</li>
-                        <li class="marquee-item pointer" onclick="location.href='projects/cdk.html';">CDK Global</li>
-                        <li class="marquee-item pointer" onclick="location.href='https://watsi.org/';">Watsi</li>
-                        <li class="marquee-item pointer" onclick="location.href='projects/spotify.html';">Discover Together</li>
-                        <li class="marquee-item pointer" onclick="location.href='projects/ceridian.html';">Ceridian</li>
-                        <li class="marquee-item pointer" onclick="location.href='https://synqrinus.com/';">Synqrinus</li>
-                        <li class="marquee-item pointer" onclick="location.href='projects/bluecat.html';">BlueCat Networks</li>
-                        when adding more projects, adjust keyframe scrolling -> 100% {transform: translateX}
-                    </ul>
-                </div>
-
-                <div class="underline underline-color" style="margin-top: 80px"></div>
-                <h2 class="secondtitle"><a href="allprojects.html" class="highlight">See all work - 7:</a></h2>
-            </div> -->
-
+        <div id="vcr-text-2" class="bottom-bar">
+            <h2 class="glitch layers" data-text="??????">CH01 <span class="source extra">SOURCE</span></h2>
         </div>
     </div>
+    <iframe src="assets/effects/audio/vcr.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
-    <!-- footer -->
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-text">
-                <h6>Coded with my blood, sweat, and tears</h6>
-                <h6>© Lam Pham 2023</h6>
-                <!-- · <a class="highlight pointer" href="assets/resume.pdf" target="blank"><b>Resume</b></a> -->
-            </div>
+    <div id="wrap" class="fade-in container">
 
-            <div class="footer-text right">
-                <h6 style="margin-top: 2px">I know we just met, but let’s get coffee :)</h6>
-                <a class="highlight" href="mailto:tolamvpham@gmail.com?Subject=coffee!" target="_top"><i class="fas fa-envelope"></i></a>
-                <a class="highlight" href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in" style="margin: 0"></i></a>
+        <!-- <div class="video-overlay">
+            <video class="video" autoplay loop muted>
+              <source src="assets/video.mp4" type="video/mp4">
+            </video>
+        </div> -->
+
+        <div id="project-image" class="overlay">
+            <div class="img-container">
+                <div id="pj-hovers" class="proj-img-1"></div>
+
+                <div id="proj-text-1">
+                    <span class="pj-text text-1"><h3>ENTITY ARCHITECTURES</h3></span>
+                    <span class="pj-text subtext-1"><p>REARCHITECHING ENTITY RELATIONSHIPS FOR LEVELS OF ACCESS IN A 3D PRINTER ECOSYSTEM</p></span>
+                </div>
+                <div id="proj-text-2">
+                    <span class="pj-text text-2"><h3>NOTIFICATION PATTERNS</h3></span>
+                    <span class="pj-text subtext-2"><p>DEFINING UX PATTERNS/INTERACTION BEHAVIOURS FOR A NEW NOTIFICATION CENTER</p></span>
+                </div>
             </div>
         </div>
-    </div>
+        
+        <div class="effects">
+            <div class="crt-lines"></div>
+            <div class="vignette"></div>
+            <div class="snow"></div>
+        </div> 
 
+        <div class="top-bar">
+            <div class="two-bars">
+                <p class="two-m-b"><span id="clock"></span></p>
+                <p><span id="work" class="underline pointer italics glowing">WORK</span> 
+                    <span class="spacing star">✸</span> 
+                    <span id="about" class="highlight pointer texthover">ABOUT</span></p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <h1 class="line-1">THE<span class="header-spacing"></span>NAME</h1>
+                <h1 class="line-2"><span class="middle-spacing"></span>RHYMES</h1>
+                <h1 class="line-3"><span class="bottom-spacing"></span><span class="anti-mark">BUT</span><span class="header-spacing"></span> <span class="mark1">WHO</span> <span class="header-spacing"></span> <span class="mark2">IS</span> </h1>
+                <div class="child">
+                    <h1 class="glitch layers" data-text="LAM PHAM ?">LAM<span class="header-spacing"></span>PHAM<span class="header-spacing"></span> <span onclick="location.href='v2/index.html';">?</span></h1>
+                </div>
+            </div>
+
+            <div id="workcontent" class="body-content">
+                <p>I'M LAM, 
+                    A (SOON-TO-BE GRADUATING) STUDENT @ UWATERLOO, 
+                    STUDYING SYSTEMS DESIGN ENGINEERING, COGNITIVE SCIENCE,
+                    AND HUMAN-CENTERED DESIGN. 
+                </p>
+                <!-- <p>PREVIOUSLY DESIGNED @ 
+                    <span class="highlight texthover underline pointer" onclick="window.open('https://landa.app/')">LANDA</span>,
+                    <span class="highlight texthover underline pointer" onclick="window.open('https://level.co/')">LEVEL HOME</span>,
+                    <span class="highlight texthover underline pointer" onclick="window.open('https://formlabs.com/')">FORMLABS</span>,
+                    AND MORE.
+                </p> -->
+                <p>CURRENTLY SEEKING <span class="glowing">2024 NEW GRAD DESIGN ROLES</span> :)</p>
+                <hr>
+                
+                <p class="zero-m glowing"><i>case studies</i></p>
+                <p class="projects zero-m">
+                    <span class="link-padding">
+                        <span class="spacing rotating">✸</span> 
+                        <span id="project-text-1" class="pj-1 highlight texthover underline pointer" onclick="location.href='projects/formlabs.html';">01 ENTITY ARCHITECTURES</span>
+                        <span class="spacing rotating">✸</span> 
+                    </span>
+
+                    <span class="link-padding">
+                        <span class="spacing rotating">✸</span> 
+                        <span id="project-text-2" class="pj-2 highlight texthover underline pointer" onclick="location.href='projects/cdk.html';">02 NOTIFICATION PATTERNS</span>
+                        <span class="spacing rotating">✸</span> 
+                    </span>
+                </p>
+            </div>
+
+            <div id="aboutcontent" class="body-content">
+                <p>GRADUATING FROM SYSTEMS DESIGN ENGINEERING @ THE UNIVERSITY OF WATERLOO <i>(IN LESS THAN A YEAR!)</i>, 
+                    I FOLLOW THE CROSSROADS OF TECHNOLOGY + CREATIVE ARTS AND ITS EVOLUTION 
+                    IN THE COMING YEARS.</p>
+                <p> IN MY SPARE TIME, I ENJOY LEARNING ABOUT INNOVATIVE APPLICATIONS OF TECHNOLOGY,
+                    THE PSYCHOLOGY OF HUMAN INTERACTIONS WITHIN + OUTSIDE OF DESIGN, AND MAKING CURATED PLAYLISTS.</p>
+
+                <hr>
+                
+                <span class="experiences zero-m">
+                    <div class="exp-row">
+                        <p class="zero-m glowing"><i>past experiences</i></p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover italics">YOUR COMPANY</span> 
+                            <span class="star">✸</span> NEW GRAD DESIGNER</p>
+                        <p>IN 2024</p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover pointer italics" onclick="window.open('https://landa.app/')">LANDA</span> 
+                            <span class="star">✸</span> PRODUCT DESIGNER</p>
+                        <p>06/23 - 07/23</p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover pointer italics" onclick="window.open('https://level.co/')">LEVEL HOME</span> 
+                            <span class="star">✸</span> PRODUCT DESIGNER</p>
+                        <p>09/22 - 12/22</p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover pointer italics" onclick="window.open('https://formlabs.com/')">FORMLABS</span> 
+                            <span class="star">✸</span> PRODUCT DESIGNER</p>
+                        <p>01/22 - 04/22</p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover pointer italics" onclick="window.open('https://www.cdkglobal.com/')">CDK GLOBAL</span> 
+                            <span class="star">✸</span> UX DESIGNER</p>
+                        <p>06/21 - 08/21</p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover pointer italics" onclick="window.open('https://watsi.org/')">WATSI</span> 
+                            <span class="star">✸</span> PRODUCT DESIGN CONSULTANT</p>
+                        <p>01/21 - 05/21</p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover pointer italics" onclick="window.open('https://synqrinus.com/')">SYNQRINUS</span> 
+                            <span class="star">✸</span> WEB DESIGNER</p>
+                        <p>07/20 - 06/21</p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover pointer italics" onclick="window.open('https://www.ceridian.com/ca')">CERIDIAN</span> 
+                            <span class="star">✸</span> MOBILE PRODUCT DESIGNER</p>
+                        <p>09/20 - 12/20</p>
+                    </div>
+                    <div class="exp-row">
+                        <p><span class="underline highlight texthover pointer italics" onclick="window.open('https://bluecatnetworks.com/')">BLUECAT NETWORKS</span> 
+                            <span class="star">✸</span> UX/UI DESIGNER</p>
+                        <p>01/20 - 04/20</p>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <div class="bottom-bar bot">
+            <p><span class="highlight pointer texthover underline" onclick="location.href='mailto:tolamvpham@gmail.com?Subject=coffee!';" target="_top">EMAIL</span> 
+               <span class="spacing star">✸</span> 
+               <span class="highlight pointer texthover underline" onclick="window.open('https://www.linkedin.com/in/lamvpham/')">LINKEDIN</span>  
+               <span class="spacing star">✸</span> 
+               <span class="highlight pointer texthover underline" onclick="window.open('assets/Lam-Pham-Resume.pdf')">RESUME</span></p>
+        </div>
+
+    </div>
 </body>
+
+<!-- scripts -->
+<script src="scripts/preloader.js"></script>
+<script src="scripts/navswitch.js"></script>
+<script src="scripts/clock.js"></script>
+<script src="scripts/shortclock.js"></script>
+<script src="scripts/counter.js"></script>
+<script src="scripts/project-hovers.js"></script>
+<script src="scripts/video.js"></script>
+
+</html>
