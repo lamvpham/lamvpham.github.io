@@ -19,8 +19,8 @@
     background-size: 7px auto;
     mix-blend-mode: overlay;
     pointer-events: none;
-    opacity: 0.16;
-    animation: moveDownAnimation 250s linear infinite;
+    opacity: 0.12;
+    animation: moveDownAnimation 400s linear infinite;
 }
 
 @keyframes moveDownAnimation {
@@ -55,7 +55,7 @@
   background-size: 100% 100%;
   mix-blend-mode: overlay;
   pointer-events: none;
-  opacity: 0.015; 
+  opacity: 0.01; 
   transition: opacity .2s ease-in;
 }
 

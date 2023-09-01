@@ -22,16 +22,20 @@ span.pj-text {
 span.subtext-1 p,
 span.subtext-2 p {
     color: #140f16;
-    text-shadow: 0 0 1px #3b2173, 0 0 2px #6c3cd3 !important;
+    text-shadow: none !important;
+    filter: blur(0px);
     margin: 0;
     font-size: 15px;
+    z-index: 1000;
 }
 
 span.text-1 h3,
 span.text-2 h3 {
     color: #140f16;
-    text-shadow: 0 0 3px #3b2173, 0 0 4px #6c3cd3 !important;
+    text-shadow: none !important;
+    filter: blur(0px);
     margin: 16px;
+    z-index: 1000;
 }
 
 .projects {

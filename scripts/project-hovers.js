@@ -12,7 +12,6 @@ var bodycontent = document.getElementById('workcontent');
 var pjtitle1 = document.getElementById('proj-text-1');
 var pjtitle2 = document.getElementById('proj-text-2');
 
-
 pjtitle1.style.opacity = "0";
 pjtitle2.style.opacity = "0";
 
@@ -25,18 +24,18 @@ textHover2.addEventListener('mouseout', hideImage2);
 function showImage1() {
     projectHover.classList.add("proj-img-1")
     projectHover.classList.remove("proj-img-2")
-    imageHover.style.opacity = '0.8';
+    imageHover.style.opacity = '0.75';
     header.style.opacity = '0';
-    topbar.style.opacity = '0.16';
-    bottombar.style.opacity = '0.16';
-    bodycontent.style.opacity = '0.16';
+    topbar.style.opacity = '0.2';
+    bottombar.style.opacity = '0.2';
+    bodycontent.style.opacity = '0.2';
     pjtitle1.style.opacity = "1";
     pjtitle2.style.opacity = "0";
 }
 
 function hideImage1() {
     imageHover.style.opacity = '0';
-    header.style.opacity = '0.14';
+    header.style.opacity = '0.1';
     topbar.style.opacity = '1';
     bottombar.style.opacity = '1';
     bodycontent.style.opacity = '1';
@@ -46,18 +45,18 @@ function hideImage1() {
 function showImage2() {
     projectHover.classList.add("proj-img-2")
     projectHover.classList.remove("proj-img-1")
-    imageHover.style.opacity = '0.8';
+    imageHover.style.opacity = '0.75';
     header.style.opacity = '0';
-    topbar.style.opacity = '0.16';
-    bottombar.style.opacity = '0.16';
-    bodycontent.style.opacity = '0.16';
+    topbar.style.opacity = '0.2';
+    bottombar.style.opacity = '0.2';
+    bodycontent.style.opacity = '0.2';
     pjtitle2.style.opacity = "1";
     pjtitle1.style.opacity = "0";
 }
 
 function hideImage2() {
     imageHover.style.opacity = '0';
-    header.style.opacity = '0.14';
+    header.style.opacity = '0.1';
     topbar.style.opacity = '1';
     bottombar.style.opacity = '1';
     bodycontent.style.opacity = '1';
