@@ -26,9 +26,9 @@ function showImage1() {
     projectHover.classList.remove("proj-img-2")
     imageHover.style.opacity = '0.75';
     header.style.opacity = '0';
-    topbar.style.opacity = '0.2';
-    bottombar.style.opacity = '0.2';
-    bodycontent.style.opacity = '0.2';
+    topbar.style.opacity = '0.18';
+    bottombar.style.opacity = '0.18';
+    bodycontent.style.opacity = '0.18';
     pjtitle1.style.opacity = "1";
     pjtitle2.style.opacity = "0";
 }
@@ -47,9 +47,9 @@ function showImage2() {
     projectHover.classList.remove("proj-img-1")
     imageHover.style.opacity = '0.75';
     header.style.opacity = '0';
-    topbar.style.opacity = '0.2';
-    bottombar.style.opacity = '0.2';
-    bodycontent.style.opacity = '0.2';
+    topbar.style.opacity = '0.18';
+    bottombar.style.opacity = '0.18';
+    bodycontent.style.opacity = '0.18';
     pjtitle2.style.opacity = "1";
     pjtitle1.style.opacity = "0";
 }

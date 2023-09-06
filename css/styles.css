@@ -1,7 +1,7 @@
 /* main */
 :root {
     --bgcolours: #000000;
-    --textcolours: #7A7EF5;
+    --textcolours: #8a8dea;
 }
 
 /* @font-face {
@@ -20,6 +20,19 @@
     font-family: 'Romie-Black';
     src: url(../assets/font/romietrial-black-webfont.woff) format("woff");
     font-weight: black;
+}
+
+/* @font-face {
+    font-family: 'Helvetica-Neue Light';
+    src: url(../assets/font/helveticaneue-light-webfont.woff) format("woff");
+    font-weight: light;
+}
+ */
+
+@font-face {
+    font-family: 'Helvetica-Neue Regular';
+    src: url(../assets/font/helveticaneue-roman-webfont.woff) format("woff");
+    font-weight: normal;
 }
 
 .pointer {
@@ -84,7 +97,7 @@ hr {
 }
 
 .glowing {
-    color: #979afd !important;
+    color: #9fa2fa !important;
 }
 
 .child {
@@ -157,11 +170,15 @@ h3 {
 p {
     color: var(--textcolours);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 14.5px;
     margin-top: 0;
     transition: font-size .2s ease-in;
     filter: blur(0.1px);
     text-shadow: 0 0 3px #6B35DC, 0 0 5px #3A1688 !important;
+}
+
+.normal-font {
+    font-family: 'Helvetica-Neue Regular';
 }
 
 

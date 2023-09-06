@@ -21,7 +21,7 @@ span.pj-text {
 
 span.subtext-1 p,
 span.subtext-2 p {
-    color: #140f16;
+    color: #000;
     text-shadow: none !important;
     filter: blur(0px);
     margin: 0;
@@ -31,7 +31,7 @@ span.subtext-2 p {
 
 span.text-1 h3,
 span.text-2 h3 {
-    color: #140f16;
+    color: #000;
     text-shadow: none !important;
     filter: blur(0px);
     margin: 16px;
