@@ -8,12 +8,16 @@ var projectHover = document.getElementById('pj-hovers');
 var header = document.querySelector('.header');
 var topbar = document.querySelector('.top-bar');
 var bottombar = document.querySelector('.bot');
-var bodycontent = document.getElementById('workcontent');
+var bodycontent = document.getElementById('testing');
 var pjtitle1 = document.getElementById('proj-text-1');
 var pjtitle2 = document.getElementById('proj-text-2');
+var stars1 = document.getElementById('stars-1');
+var stars2 = document.getElementById('stars-2');
+var stars3 = document.getElementById('stars-3');
+var stars4 = document.getElementById('stars-4');
 
-pjtitle1.style.opacity = "0";
-pjtitle2.style.opacity = "0";
+// pjtitle1.style.opacity = "0";
+// pjtitle2.style.opacity = "0";
 
 // hovers
 textHover1.addEventListener('mouseover', showImage1);
@@ -25,12 +29,14 @@ function showImage1() {
     projectHover.classList.add("proj-img-1")
     projectHover.classList.remove("proj-img-2")
     imageHover.style.opacity = '0.75';
+    pjtitle1.style.opacity = "1";
+    pjtitle2.style.opacity = "0";
+    bodycontent.style.opacity = '0.18';
     header.style.opacity = '0';
     topbar.style.opacity = '0.18';
     bottombar.style.opacity = '0.18';
-    bodycontent.style.opacity = '0.18';
-    pjtitle1.style.opacity = "1";
-    pjtitle2.style.opacity = "0";
+    stars1.style.color = '#202020';
+    stars2.style.color = '#202020';
 }
 
 function hideImage1() {
@@ -40,18 +46,22 @@ function hideImage1() {
     bottombar.style.opacity = '1';
     bodycontent.style.opacity = '1';
     pjtitle1.style.opacity = "0";
+    stars1.style.color = '#8a8dea';
+    stars2.style.color = '#8a8dea';
 }
 
 function showImage2() {
     projectHover.classList.add("proj-img-2")
     projectHover.classList.remove("proj-img-1")
     imageHover.style.opacity = '0.75';
+    pjtitle2.style.opacity = "1";
+    pjtitle1.style.opacity = "0";
+    bodycontent.style.opacity = '0.18';
     header.style.opacity = '0';
     topbar.style.opacity = '0.18';
     bottombar.style.opacity = '0.18';
-    bodycontent.style.opacity = '0.18';
-    pjtitle2.style.opacity = "1";
-    pjtitle1.style.opacity = "0";
+    stars3.style.color = '#202020';
+    stars4.style.color = '#202020';
 }
 
 function hideImage2() {
@@ -61,4 +71,6 @@ function hideImage2() {
     bottombar.style.opacity = '1';
     bodycontent.style.opacity = '1';
     pjtitle2.style.opacity = "0";
+    stars3.style.color = '#8a8dea';
+    stars4.style.color = '#8a8dea';
 }
