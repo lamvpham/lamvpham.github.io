@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+
+<!-- 
+        ___       ________  _____ ______      
+       |\  \     |\   __  \|\   _ \  _   \    
+       \ \  \    \ \  \|\  \ \  \\\__\ \  \   
+        \ \  \    \ \   __  \ \  \\|__| \  \  
+         \ \  \____\ \  \ \  \ \  \    \ \  \ 
+          \ \_______\ \__\ \__\ \__\    \ \__\
+           \|_______|\|__|\|__|\|__|     \|__| 
+
+
+if you're inspecting my code, welcome!
+have any questions or any feedback? please let me know :) 
+-->
+
+<head>
+    <title>Teams/Groups Entity Architecture</title>
+
+    <!-- mandatory tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- site description-->
+    <meta property="og:title" content="Lam Pham">
+    <meta property="og:image" content="https://lamvpham.me/assets/meta.png">
+    <meta property="og:description" content="Student Designer at uWaterloo">
+    <meta property="og:url" content="https://lamvpham.me/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="lamvpham">
+    <meta name="twitter:description" content="Student Designer at uWaterloo">
+    <meta name="twitter:image" content="https://lamvpham.me/assets/meta.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- icons -->
+    <link rel="shortcut icon" href="../assets/L.svg">
+    <script src="https://kit.fontawesome.com/63da5f6700.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="fade-in">
+
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-text">
+                <h6 style="margin-left: 0" onclick="location.href='../index.html';"><span class="name highlight pointer">Lam Pham </span><span class="extra-text"> · Systems Design Engineering @ uWaterloo</span></h6>
+            </div>
+
+            <a id="toggle" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div id="links" class="links">
+                <div class="navbar-text right">
+                    <h6 class="highlight pointer" onclick="location.href='../v2-index.html';">Work</h6>
+                    <h6 class="highlight pointer" onclick="location.href='../v2-about.html';">About</h6>
+                    <h6 class="highlight pointer" onclick="location.href='../afterhours.html';">After Hours</h6>
+                    <h6 class="highlight pointer" onclick="location.href='../assets/Lam-Pham-Resume.pdf';" target="blank">Resume</h6>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/navbar-btn.js"></script>
+    </div>
+
+    <!-- content -->
+    <div class="proj-images">
+        <img src="formlabs-assets/main-photo.png" alt="Formlabs Dashboard">
+    </div>
+
+    <div class="project">
+        <div class="proj-content">
+            <!-- intro -->
+            <div class="section">
+                <div class="proj-text">
+                    <div class="text-group title">
+                        <h1>Teams/Groups Entity Architecture</h1>
+                        <h2>Defining the entity information and relationship architecture in the Dashboard 3-D printer ecosystem</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- context -->
+            <div class="section">
+                <div class="proj-text">
+                    <div class="section-header">
+                        <p>Context</p>
+                    </div>
+                    <div class="text-container m-t-2">
+                        <h2>Role</h2>
+                        <p>During my internship at Formlabs, I spent 10 weeks <b>defining the user/team/group information and relationship 
+                            architecture in the Dashboard entity ecosystem</b>. The responsibilities that my role entailed included working 
+                            with the Dashboard product manager and designer to understand and architect a more usable platform due to the 
+                            addition of enterprise scaling with Fleet Control.</p>
+
+                        <h2>The problem</h2>
+                        <p class="problem-statement">How might we improve the UX architecture of the entities to eliminate the need for admins to scatter their 
+                            company printer fleets between teams? </p>
+                    
+                        <h2>Solution</h2>
+                        <p>My final designed prototypes have a new information and entity architecture for Dashboard based on market landscape 
+                            analysis, architecture concept iterations, and high-fidelity designs sign up, onboarding, and company setting flows.
+                            I had an amazing learning experience with this project, so keep reading to find out more :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="proj-images">
+        <img src="formlabs-assets/solution.png" alt="Onboarding & Organization Designs">
+    </div>
+
+    <div class="project">
+        <div class="proj-content">
+
+            <!-- intro -->
+            <div class="section">
+                <div class="proj-text">
+                    <div class="section-header">
+                        <p>Introduction</p>
+                    </div>
+                    <div class="text-container m-t-2">
+                        <h2>Entities within Dashboard</h2>
+                        <p>Today, there are multiple different entities in Dashboard with sometimes many-to-many 
+                            relationships between them. These are:</p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img src="formlabs-assets/entities.png " alt="Types of entities">
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <p>Printer groups are only available to create or use when the user has Fleet Control active. 
+                            Relevant relationships between them are below (in some cases, it is worth considering user 
+                            and account as the same even though that’s not necessarily the case).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img src="formlabs-assets/entity_relations.png " alt="Entity Relationships">
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <h2>Scope & objectives</h2>
+                        <p>The scope of the project was to research different products with entity structures 
+                            similar to or different from Dashboard, then extrapolate that information into different 
+                            information architectures suitable for the platform. Levels of access and permissions need 
+                            to fleshed out due to lack of internal understanding for accounts and admins. 
+                            The timeframe of the project was 10 weeks, so I had to keep track of my time!</p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img style="margin:0" src="formlabs-assets/objectives.png " alt="Objectives">
+                </div>
+            </div>
+
+            <!-- prelim process -->
+            <div class="section">
+                <div class="proj-text">
+                    <div class="section-header">
+                        <p>Preliminary Process</p>
+                    </div>
+                    <div class="text-container m-t-2">
+                        <h2>Competitive analysis</h2>
+                        <p>To have a more thorough grasp on the issues with Dashboard, I did a competitive analysis of other 
+                            competitor products was done to evaluate the 3D and non-3D related tools and their team/group 
+                            architectures (I noticed the problem is not unique to 3D printing). Below showcases the consistent trends 
+                            between <b>nine</b> 3D related products and <b>four</b> non-3D related products.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img src="formlabs-assets/patterns.png " alt="Patterns and Trends">
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <h2>Information Architecture Iteration</h2>
+                        <p>Based on the analysis, my PM and I conceptualized six different entity structures. 
+                            Each have their own pros and cons, alongside their respective market landscape comparisons to 
+                            similar products. This boiled down to four structures (one of which is the current IA), then we scorecard each 
+                            based on the goals defined. </p>
+                        <!-- <p style="margin-top:-40px">Outlined are the goals used in the scorecards, using the Likert Scale 
+                            as the basis:</p> -->
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img src="formlabs-assets/diagrams.png" alt="Information Architecture Diagram Options">
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <p>After analyzing the different IA options and their trade-offs, we chose option 1 and 2 architectures as they
+                            aligned best with our goals compared to the current version of Teams and Groups. They
+                            were then iterated upon for further clarity of their respective levels of access and attribute-based access controls (ABAC).
+                            (It's a lot to visually digest, I know...)</p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img src="formlabs-assets/option-1.png" alt="Information Architecture Option #1">
+                </div>
+
+                <div class="proj-images">
+                    <img style="margin-bottom:0" src="formlabs-assets/option-2.png" alt="Information Architecture Option #2">
+                </div>
+            </div>
+
+            <!-- weeds -->
+            <!-- <div class="section">
+                <div class="proj-text">
+                    <div class="section-header">
+                        <p>Getting into the weeds of it</p>
+                    </div>
+                    <div class="text-container m-t-2">
+                        <h2>Low to High Fidelity Design Outcomes</h2>
+                        <p>Using the IA diagrams, I drew out wireframes for 3 main flows that would be affected by the new architecture: New User 
+                            Sign In / Up, Setting Up Company, and Setting Up Team / Printer Group. In these sketches, both 
+                            option 1 and 2 were still in consideration.</p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img style="margin-bottom:0" src="formlabs-assets/lofi_sketches.png" alt="Lofi Sketches">
+                </div>
+            </div> -->
+
+            <!-- results -->
+            <div class="section">
+                <div class="proj-text">
+                    <div class="section-header">
+                        <p>MVP - Final Designs</p>
+                    </div>
+                    <div class="text-container m-t-2">
+                        <h2>Validation</h2>
+                        <p>Myself, my Dashboard product manager, and the Dashboard designer got together with the Chief of Product to discuss 
+                            the two architectures and decide on the strongest direction for Dashboard. After discussions with the CPO, the 
+                            general direction <b>moving forward is to implement option 1</b>. This option only requires two levels of hierarchy, encapsulates 
+                            all teams to be in one organization instead. (Progress!)</p>
+                    </div>
+                </div>
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <h2>Results</h2>
+                        <p>The wireframes were designed into high-fidelity mock-ups of the Sign Up/Onboarding screens and the 
+                            Company Settings screens. The chosen architecture with option 1 was mocked up here after a decision 
+                            by the wider design team to move forward with the option that is easiest for users to understand.</p>
+                        <p style="margin-top:-40px"><b><i>*Note that most designs cannot be shown here. If interested, let me know 
+                            and I'd love to hop on call to speak more about it :)</i></b></p>
+                    </div>
+                </div>
+
+                <div class="proj-images">
+                    <img src="formlabs-assets/final.png" alt="Final Designs">
+                </div>
+<!-- 
+                <div class="proj-images">
+                    <img src="formlabs-assets/comp_devices.png" alt="Final Design for Company Page Devices">
+                </div>
+
+                <div class="proj-images">
+                    <img src="formlabs-assets/comp_members.png" alt="Final Design for Company Page Members">
+                </div> -->
+
+                <div class="proj-text">
+                    <div class="text-container">
+                        <h2>Tradeoffs</h2>
+                        <p>Based on the current user base, we want to accommodate those users as they transition into the 
+                            new architecture (not just new users). Depending on the direction of the IA that is chosen, the personas below limit the amount of 
+                            exploratory design work. The scenarios would need to be compatible with their usages as they reach the new IA 
+                            state without much frustration.</p>
+                        <div class="numbering ">
+                            <span>01</span>
+                            <p>Team & Printer Group Selections</p>
+                            <div class="proj-images">
+                                <img src="formlabs-assets/team_printergroup.png" alt="Team & Printer Group Selections">
+                            </div>
+        
+                            <span>02</span>
+                            <p>User & Printer Scenarios</p>
+                            <div class="proj-images">
+                                <img style="margin-bottom:0" src="formlabs-assets/user_printer.png" alt="User & Printer Scernarios">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="proj-text">
+                    <div class="text-container">
+                        <p>The financing of Fleet Control. Printer Groups was an entity that was originally meant to be paid alongside Fleet 
+                            Control, but with the new architecture, that entity became available without the paywall. We need to further 
+                            validate the pricing plan for customers. </p>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- conclusion -->
+            <div class="section">
+                <div class="proj-text">
+                    <div class="section-header">
+                        <p>Moving Forward</p>
+                    </div>
+                    <div class="text-container m-t-2">
+                        <h2>Next Steps</h2>
+                        <p>With the handoff of the designs to the Dashboard UX/UI designer, the next step is to further refine the details 
+                            of the workflows users would take, alongside mapping out the financial pricing plan for enterprise level Fleet Control.</p>
+
+                        <h2>Conclusions and what I learned</h2>
+                        <p>The new information and entity architecture of Dashboard was well-received by the product and design teams. The design 
+                            progression worked out with the research done, allowing for overall usage and the edge cases to be mapped out without question. </p>
+                        <p style="margin-top:-40px">Throughout this internship and project, it taught me autonomy and how to communicate opinions and decisions 
+                            more effectively. Moving forward from this internship, I want to keep tackling complex problems that deal with access and permissions 
+                            to further refine my own opinions on user role based designs. It was a great experience for me to tip my toes into, and I'm thankful
+                            of my team for helping throughout this project and term :) </p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+         <!-- next/prev -->
+         <div class="next-prev">
+            <div class="prev-pj">
+                <h2><a class="nav-link highlight" href="spotify.html"><span>next:</span> Discover Together</a></h2>
+            </div>
+            <div class="next-pj">
+                <h2><a class="nav-link highlight" href="cdk.html"><span>prev:</span> Notification Center Architecture Patterns</a></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <h6>Coded with my blood, sweat, and tears</h6>
+                <h6>© Lam Pham 2021</h6>
+                <!-- · <a class="highlight pointer" href="assets/resume.pdf" target="blank"><b>Resume</b></a> -->
+            </div>
+
+            <div class="footer-text right">
+                <h6 style="margin-top: 2px">I know we just met, but let’s get coffee :)</h6>
+                <a class="highlight" href="mailto:tolamvpham@gmail.com?Subject=coffee!" target="_top"><i class="fas fa-envelope"></i></a>
+                <a class="highlight" href="https://www.linkedin.com/in/lamvpham/" target="blank"><i class="fab fa-linkedin-in" style="margin: 0"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
