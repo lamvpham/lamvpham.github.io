@@ -1,3 +1,9 @@
+:root {
+    --bgcolours: #000000;
+    --projecttext: #E3D7CA;
+}
+
+
 .container {
     position: relative;
 }
@@ -119,11 +125,13 @@
 /* text */
 .next-prev h2 {
     font-size: 20px;
-    text-shadow: 0 0 3px #6B35DC, 0 0 5px #3A1688 !important
+    text-shadow: 0 0 3px #6B35DC, 0 0 5px #3A1688 !important;
+    color: var(--projecttext);
 }
 
 .project-content h3 {
     margin: 0 0 20px;
+    color: var(--projecttext);
 }
 
 .project-content h4 {
@@ -131,15 +139,18 @@
     filter: blur(0.2px);
     margin: 0;
     text-shadow: 0 0 12px #8861db, 0 0 14px #000 !important;
+    color: var(--projecttext);
 }
 
 .project-content .section h4 {
     font-size: 24px;
     line-height: 24px;
+    color: var(--projecttext);
+    text-shadow: none !important;
 }
 
 .project-content h5 {
-    color: #b3b4b0;
+    color: #afacb4;
     filter: blur(0.2px);
     margin: 0;
     font-family: 'Romie-Black';
@@ -152,12 +163,15 @@
     font-size: 15.5px;
     font-family: 'Helvetica-Neue Regular';
     letter-spacing: 0.5px;
+    color: var(--projecttext);
+    text-shadow: none !important;
 }
 
 .sub-section p .subheader{
     font-size: 16.5px;
     font-family: 'HelveticaNeue-Light';
     letter-spacing: 0;
+    text-shadow: 0 0 3px #6B35DC, 0 0 5px #3A1688 !important;
 }
 
 
