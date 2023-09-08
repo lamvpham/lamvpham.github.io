@@ -14,9 +14,9 @@ span.pj-text {
 #proj-text-1, 
 #proj-text-2 {
     position: absolute;
-    top: 45%;
+    top: 43.25%;
     width: 100%;
-    transition: opacity 0.2s ease-out;
+    transition: opacity 0.26s ease-out;
 }
 
 span.subtext-1 p,
@@ -50,7 +50,7 @@ span.text-2 h3 {
     position: absolute;
     width: 100%;
     opacity: 0;
-    transition: opacity 0.2s ease-out;
+    transition: opacity 0.26s ease-out;
     z-index: -100;
     display: block;
   }
@@ -64,7 +64,7 @@ span.text-2 h3 {
   background: url(../projects/pj-cards/fl.png) center;
   height: calc(var(--imageHeight) * 2);
   animation: roll 14s linear infinite;
-  transition: opacity 0.2s ease-out;
+  transition: opacity 0.26s ease-out;
 }
 
 .proj-img-2 {
@@ -72,7 +72,7 @@ span.text-2 h3 {
   background: url(../projects/pj-cards/cdk.png) center;
   height: calc(var(--imageHeight) * 2);
   animation: roll 14s linear infinite;
-  transition: opacity 0.2s ease-out;
+  transition: opacity 0.26s ease-out;
 }
 
 @keyframes roll{

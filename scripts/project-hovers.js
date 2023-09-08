@@ -8,7 +8,7 @@ var projectHover = document.getElementById('pj-hovers');
 var header = document.querySelector('.header');
 var topbar = document.querySelector('.top-bar');
 var bottombar = document.querySelector('.bot');
-var bodycontent = document.getElementById('testing');
+var bodycontent = document.getElementById('copy');
 var pjtitle1 = document.getElementById('proj-text-1');
 var pjtitle2 = document.getElementById('proj-text-2');
 var stars1 = document.getElementById('stars-1');
@@ -37,6 +37,7 @@ function showImage1() {
     bottombar.style.opacity = '0.18';
     stars1.style.color = '#202020';
     stars2.style.color = '#202020';
+    textHover2.style.opacity = '0.85';
 }
 
 function hideImage1() {
@@ -48,6 +49,7 @@ function hideImage1() {
     pjtitle1.style.opacity = "0";
     stars1.style.color = '#8a8dea';
     stars2.style.color = '#8a8dea';
+    textHover2.style.opacity = '1';
 }
 
 function showImage2() {
@@ -62,6 +64,7 @@ function showImage2() {
     bottombar.style.opacity = '0.18';
     stars3.style.color = '#202020';
     stars4.style.color = '#202020';
+    textHover1.style.opacity = '0.85';
 }
 
 function hideImage2() {
@@ -73,4 +76,5 @@ function hideImage2() {
     pjtitle2.style.opacity = "0";
     stars3.style.color = '#8a8dea';
     stars4.style.color = '#8a8dea';
+    textHover1.style.opacity = '1';
 }

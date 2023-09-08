@@ -110,14 +110,14 @@
 
 /* project specific hover */
 .projects .texthover:hover {
-  color: #202020;
-  transition: all 0.08s ease;
+  color: #2d2c2e;
+  transition: none !important;
 }
 
 .projects .underline:hover {
-  border-bottom: 1px solid #202020;
-  color: #161616;
-  transition: all 0.08s ease;
+  border-bottom: 1px solid #2d2c2e;
+  /* color: #161616; */
+  transition: none !important;
 }
 
 .projects .highlight {
@@ -134,8 +134,12 @@
   width: 0;
   height: 1px;
   bottom: 0;
-  background-color: #202020;
-  transition: all 0.08s ease;
+  background-color: #2d2c2e;
+  transition: none !important;
+}
+
+#stars-1, #stars-2, #stars-3, #stars-4 {
+  transition: all 0.02s ease;
 }
 
 
