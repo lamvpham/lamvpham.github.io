@@ -104,7 +104,7 @@
     p, #project-text-1, #project-text-2 {
         font-size: 12px;
         transition: font-size .2s ease-in;
-        filter: blur(0);
+        filter: blur(0) !important;
     }
     .body-content {
         position: fixed;
