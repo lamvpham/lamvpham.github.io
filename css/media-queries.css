@@ -67,11 +67,13 @@
     h1 {
         font-size: 50px;
         transition: font-size .2s ease-in;
+        filter: blur(0);
     }
     h3 {
         font-size: 35px;
         letter-spacing: 7px;
         transition: font-size .2s ease-in;
+        filter: blur(0);
     }
     span.text-1 h3, span.text-2 h3  {
         margin: 12px;
@@ -100,8 +102,9 @@
 
 @media (max-width: 600px) {
     p, #project-text-1, #project-text-2 {
-        font-size: 12.5px;
+        font-size: 12px;
         transition: font-size .2s ease-in;
+        filter: blur(0);
     }
     .body-content {
         position: fixed;

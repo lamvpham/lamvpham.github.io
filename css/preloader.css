@@ -118,7 +118,8 @@
 
 @media (max-width: 1000px) {
     #preloader h2 {
-        font-size: 40px;
+        font-size: 38px;
+        filter: blur(0.1px);
         transition: font-size .2s ease-in;
     }
     .vcr-top-text span.image {
