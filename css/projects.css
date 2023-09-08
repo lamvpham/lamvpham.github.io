@@ -256,13 +256,13 @@
         margin-bottom: 2px;
         font-size: 14px;
         transition: font-size .2s ease-in;
-        line-height: -1px;
+        line-height: 18px !important;
     }
     .sub-section p .subheader{
         font-size: 15px;
     }
     .project-content .section h4 {
-        line-height: -1px;
+        line-height: 20px !important;
     }
 }
 
