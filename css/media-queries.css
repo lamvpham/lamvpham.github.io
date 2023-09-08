@@ -36,7 +36,7 @@
         transition: font-size .2s ease-in;
     }
     p {
-        /* font-size: 12px; */
+        font-size: 13px;
         transition: font-size .2s ease-in;
     }
     span.subtext-1 p,
@@ -99,8 +99,8 @@
 }
 
 @media (max-width: 600px) {
-    p {
-        /* font-size: 12px; */
+    p, #project-text-1, #project-text-2 {
+        font-size: 12.5px;
         transition: font-size .2s ease-in;
     }
     .body-content {
