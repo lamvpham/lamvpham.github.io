@@ -121,7 +121,7 @@
     .exp-row p {
         margin: 0;
     }
-    .experiences {
+    .experiences, hr {
         display: none;
     }
 }
