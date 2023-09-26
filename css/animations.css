@@ -19,7 +19,7 @@
     background-size: 7px auto;
     mix-blend-mode: overlay;
     pointer-events: none;
-    opacity: 0.12;
+    opacity: 0.09;
     animation: moveDownAnimation 400s linear infinite;
 }
 
