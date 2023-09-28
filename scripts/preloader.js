@@ -1,7 +1,7 @@
 var loading;
 
 function preloader() {
-    loading = setTimeout(showPage, 1915);
+    loading = setTimeout(showPage, 1050);
     // loading = setTimeout(transition, 2000);
 }
 

@@ -42,32 +42,40 @@
 
 <body onload="preloader()">
     <div id="preloader">
-        <div class="crt-lines"></div>
-        <div class="vignette" style="opacity:0.4"></div>
-        <div class="snow"></div>
-        
-        <div id="vcr-text-1" class="vcr-top-text">
-            <div class="top-text">
-                <h2 class="text glitch layers" data-text="??????">HOME PAGE</h2>
-                <h2 class="text extra">COMP VIEW</h2>
-                <h2 class="text extra">DECK 1</h2>
+        <div id="preloader-wrap">
+            <div class="crt-lines"></div>
+            <div class="vignette" style="opacity:0.4"></div>
+            <div class="snow"></div>
+            
+            <div id="vcr-text-1" class="vcr-top-text">
+                <div class="top-text">
+                    <h2>HOME PAGE</h2>
+                    <!-- <h2 class="text extra">COMP VIEW</h2> -->
+                    <h2 class="text extra">DECK 1</h2>
+                </div>
+                <div class="top-text">
+                    <h2 class="text">PLAY <span class="image"><img src="assets/play.svg"/></span></h2>
+                    <!-- <h2>LINE1</h2> -->
+                </div>
+                <div class="top-text" style="margin-bottom: 8px;">
+                    <h2 class="text counter">REC 00:<label id="minutes"> 00</label>:<label id="seconds">00</label></h2>
+                    <!-- <h2 class="text extra glitch layers" data-text="26:12:21"><span id="shortclock"></span></h2> -->
+                </div>
+                <!-- <div class="top-text">
+                    <h2 class="text">LVP</h2>
+                </div> -->
             </div>
-            <div class="top-text">
-                <h2 class="text">PLAY <span class="image"><img src="assets/play.svg"/></span></h2>
-                <h2 class="text extra glitch layers" data-text="LINE1">LINE1</h2>
-            </div>
-            <div class="top-text" style="margin-bottom: 8px;">
-                <h2 class="text counter">REC 00:<label id="minutes"> 00</label>:<label id="seconds">00</label></h2>
-                <h2 class="text extra glitch layers" data-text="26:12:21"><span id="shortclock"></span></h2>
-            </div>
-            <div class="top-text">
-                <h2 class="text">LVP</h2>
+            <div id="vcr-text-2" class="bottom-bar">
+                <h2>CH01 <span class="source extra">SOURCE</span></h2>
             </div>
         </div>
 
-        <div id="vcr-text-2" class="bottom-bar">
-            <h2 class="glitch layers" data-text="??????">CH01 <span class="source extra">SOURCE</span></h2>
+        <div class="loading">
+            <h2 class="text glitch layers" data-text="LOADING">LOADING</h2>
         </div>
+
+
+
     </div>
     <iframe src="assets/effects/audio/vcr.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 
