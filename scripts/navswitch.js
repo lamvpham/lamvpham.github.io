@@ -5,21 +5,32 @@ var aboutContent = document.getElementById('aboutcontent');
 var proseNav = document.getElementById('prose');
 var proseContent = document.getElementById('prosecontent');
 
-
-if (window.location.hash === '#about') {
-    showAbout();
-} 
-
-else if (window.location.hash === '#prose') {
-    showProse();
-} 
-
-else {
+// script for url hash changes
+function hideAllContent() {
+    workContent.style.display = 'none';
     aboutContent.style.display = 'none';
     proseContent.style.display = 'none';
 }
 
+function handleHashChange() {
+    var hash = window.location.hash;
 
+    hideAllContent();
+
+    if (hash === '#about') {
+        showAbout();
+    } else if (hash === '#prose') {
+        showProse();
+    } else {
+        showWork();
+    }
+}
+
+window.addEventListener('hashchange', handleHashChange);
+handleHashChange();
+
+
+// showing and hiding content
 workNav.addEventListener("click", showWork);
 aboutNav.addEventListener("click", showAbout);
 proseNav.addEventListener("click", showProse);
@@ -31,7 +42,7 @@ function showProse() {
     proseContent.style.display = 'block';
 
     if (window.location.hash === '#about') {
-        history.replaceState({}, document.title, window.location.pathname);
+        history.pushState({}, document.title, window.location.pathname);
     }
 
     proseNav.classList.add("italics");
@@ -59,7 +70,7 @@ function showAbout() {
     proseContent.style.display = 'none';
 
     if (window.location.hash === '#prose') {
-        history.replaceState({}, document.title, window.location.pathname);
+        history.pushState({}, document.title, window.location.pathname);
     }
 
     aboutNav.classList.add("italics");
@@ -87,11 +98,11 @@ function showWork() {
     proseContent.style.display = 'none'
 
     if (window.location.hash === '#about') {
-        history.replaceState({}, document.title, window.location.pathname);
+        history.pushState({}, document.title, window.location.pathname);
     }
 
     else if (window.location.hash === '#prose') {
-        history.replaceState({}, document.title, window.location.pathname);
+        history.pushState({}, document.title, window.location.pathname);
     }
 
     workNav.classList.add("italics");
