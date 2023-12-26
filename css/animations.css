@@ -97,12 +97,12 @@
 }
 
 .texthover {
-    color: #8a8dea;
+    color: #9295ef;
     transition: all 0.4s ease;
 }
 
 .texthover:hover {
-    color: #9fa2fa;
+    color: #afb1fc;
     text-shadow: 0 0 13px #845cf1, 0 0 15px #5830a9 !important;
     transition: all 0.4s ease;
 }
