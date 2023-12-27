@@ -97,13 +97,13 @@
         opacity: 1 !important;
     }
     .header {
-        opacity: 0.14 !important;
+        opacity: 0.12 !important;
     }
 }
 
 @media (max-width: 600px) {
     p, #project-text-1, #project-text-2, #project-text-3 {
-        font-size: 12px;
+        font-size: 11.5px;
         transition: font-size .2s ease-in;
         filter: blur(0) !important;
     }
@@ -113,6 +113,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 70vw;
+    }
+    .header {
+        opacity: 0.1 !important;
     }
     .exp-row {
         flex-direction: column;

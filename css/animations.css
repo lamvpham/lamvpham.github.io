@@ -102,7 +102,7 @@
 }
 
 .texthover:hover {
-    color: #afb1fc;
+    color: #bbbdfd;
     text-shadow: 0 0 13px #845cf1, 0 0 15px #5830a9 !important;
     transition: all 0.4s ease;
 }
