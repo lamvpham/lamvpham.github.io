@@ -125,7 +125,7 @@
     .exp-row p {
         margin: 0;
     }
-    .experiences, .hr-line {
+    .experiences, .hr-line, .prose-text {
         display: none;
     }
 }

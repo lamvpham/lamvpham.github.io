@@ -286,7 +286,7 @@ p {
 
 
 /* about page content */
-.experiences {
+.experiences, .prose-entries {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
