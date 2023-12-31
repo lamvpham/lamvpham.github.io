@@ -49,6 +49,16 @@ body {
   margin: 4px 0 4px;
 }
 
+
+/* img */
+img {
+  margin: 0 0 8px auto;
+  width: 100%;
+}
+
+
+
+
 /* spacing */
 
 .spacing-b {
