@@ -45,6 +45,10 @@ body {
   width: 0.95em;
 }
 
+.list {
+  margin: 4px 0 4px;
+}
+
 /* spacing */
 
 .spacing-b {
