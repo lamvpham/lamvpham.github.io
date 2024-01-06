@@ -36,7 +36,7 @@ function showImage1() {
     projectHover.classList.remove("proj-img-2")
     projectHover.classList.remove("proj-img-3")
     imageHover.style.opacity = '0.75';
-    bodycontent.style.opacity = '0.18';
+    bodycontent.style.opacity = '0';
     pjtitle1.style.opacity = "1";
     pjtitle2.style.opacity = "0";
     pjtitle3.style.opacity = "0";
@@ -65,7 +65,7 @@ function showImage2() {
     projectHover.classList.remove("proj-img-1")
     projectHover.classList.remove("proj-img-3")
     imageHover.style.opacity = '0.75';
-    bodycontent.style.opacity = '0.18';
+    bodycontent.style.opacity = '0';
     pjtitle2.style.opacity = "1";
     pjtitle1.style.opacity = "0";
     pjtitle3.style.opacity = "0";
@@ -94,7 +94,7 @@ function showImage3() {
     projectHover.classList.remove("proj-img-1")
     projectHover.classList.remove("proj-img-2")
     imageHover.style.opacity = '0.75';
-    bodycontent.style.opacity = '0.18';
+    bodycontent.style.opacity = '0';
     pjtitle3.style.opacity = "1";
     pjtitle2.style.opacity = "0";
     pjtitle1.style.opacity = "0";
