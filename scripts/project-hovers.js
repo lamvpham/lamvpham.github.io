@@ -50,7 +50,7 @@ function showImage1() {
 
 function hideImage1() {
     imageHover.style.opacity = '0';
-    header.style.opacity = '0.1';
+    header.style.opacity = '0.065';
     topbar.style.opacity = '1';
     bottombar.style.opacity = '1';
     bodycontent.style.opacity = '1';
@@ -79,7 +79,7 @@ function showImage2() {
 
 function hideImage2() {
     imageHover.style.opacity = '0';
-    header.style.opacity = '0.1';
+    header.style.opacity = '0.065';
     topbar.style.opacity = '1';
     bottombar.style.opacity = '1';
     bodycontent.style.opacity = '1';
@@ -108,7 +108,7 @@ function showImage3() {
 
 function hideImage3() {
     imageHover.style.opacity = '0';
-    header.style.opacity = '0.1';
+    header.style.opacity = '0.065';
     topbar.style.opacity = '1';
     bottombar.style.opacity = '1';
     bodycontent.style.opacity = '1';
