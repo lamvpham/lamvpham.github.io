@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Entity Architectures</title>
+    <title>Permissions Architecture</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LB6SRGJK4S"></script>
@@ -101,23 +101,23 @@
                 <!-- context -->
                 <div class="project-content no-m-t">
                     <div class="section section-bottom">
-                        <h3>ENTITY ARCHITECTURES</h3>
-                        <h4>DEFINING THE ENTITY ARCHITECTURE IN THE DASHBOARD 3-D PRINTER ECOSYSTEM</h4>
+                        <h3>PERMISSIONS ARCHITECTURE</h3>
+                        <h4>Defining the entity relationships for user permissions in a 3D printer ecosystem</h4>
                     </div>
 
                     <div class="section">
                         <h5>Context</h5>
                         <div class="sub-section">
                             <p class="glowing"><b class="subheader">The Problem</b></p>
-                            <h4><b>How might we improve the UX architecture of the entities to eliminate the need for admins to scatter their company printer fleets between teams?</b></h4>
+                            <h4><b>How might we improve the UX architecture of user permissions to eliminate the need for admins to scatter their company printer fleets between teams?</b></h4>
                         </div>
                         <div class="sub-section">
                             <p class="glowing"><b class="subheader">Role</b></p>
-                            <p>I spent 10 weeks defining the user/team/group entity architecture (shortforming it to EA) in the product, Dashboard. The responsibilities of my role included working with the Dashboard product manager and designer to understand and architect a more usable platform due to a new addition of enterprise scaling (Fleet Control).</p>
+                            <p>I spent 10 weeks defining the user/team/group permissions architecture (shortforming it to PA) in the product, Dashboard. The responsibilities of my role included working with the Dashboard product manager and designer to understand and architect a more usable platform due to a new addition of enterprise scaling (Fleet Control).</p>
                         </div>
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Solution</b></p>
-                            <p>My final prototypes have a new EA for Dashboard based on market landscape analysis, architecture iterations, and high-fidelity sign up, onboarding, and company setting flows. This design affected <span class="underline">4.2% of customer accounts (~50 companies)</span>, helping simplify their mental models and user flows.</p>
+                            <p>My final prototypes have a new PA for Dashboard based on market landscape analysis, architecture iterations, and high-fidelity sign up, onboarding, and company setting flows. This design affected <span class="underline">4.2% of customer accounts (~50 companies)</span>, helping simplify their mental models and user flows.</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                         <h5>Introduction</h5>
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Entities within Dashboard</b></p>
-                            <p>There were multiple different entities in Dashboard with sometimes many relationships between them. These are:</p>
+                            <p>There were multiple different user entities in Dashboard with sometimes many relationships between them. These are:</p>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                     <div class="section">
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Scope & Objectives</b></p>
-                            <p>The scope of the project was 10 weeks to research products with EA's similar & different from Dashboard, then extrapolate the insights into an EA suitable for the platform. Levels of access and permissions needed to be fleshed out due to lack of internal understanding for accounts and admins.</p>
+                            <p>The scope of the project was 10 weeks to research products with PA's similar & different from Dashboard, then extrapolate the insights into an PA suitable for the platform. Levels of access and permissions needed to be fleshed out due to lack of internal understanding for accounts and admins.</p>
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                         <h5>Preliminary Process</h5>
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Competitive Analysis</b></p>
-                            <p>To thoroughly understand the problem space, a competitive analysis was done to evaluate 3D & non-3D related tools and their EA's (the problem is not unique to 3D printing).</p>
+                            <p>To thoroughly understand the problem space, a competitive analysis was done to evaluate 3D & non-3D related tools and their PA's (the problem is not unique to 3D printing).</p>
                         </div>
                     </div>
                 </div>
@@ -174,8 +174,8 @@
                 <div class="project-content">
                     <div class="section">
                         <div class="sub-section no-m-b">
-                            <p class="glowing"><b class="subheader">Entity Architecture Iteration</b></p>
-                            <p>Based on the analysis, my PM and I conceptualized 4 different entity architectures (one is the current structure). Each have their own pros and cons, alongside their respective market landscape comparisons - so we scorecard each based on the goals defined.</p>
+                            <p class="glowing"><b class="subheader">Permission Architecture Iteration</b></p>
+                            <p>Based on the analysis, my PM and I conceptualized 4 different user permission architectures (one is the current structure). Each have their own pros and cons, alongside their respective market landscape comparisons - so we scorecard each based on the goals defined.</p>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                 <div class="project-content">
                     <div class="section">
                         <div class="sub-section no-m-b">
-                            <p>After analyzing the different EA options and their trade-offs, we chose option 1 and 2 architectures as they aligned best with our goals compared to the current version of Teams and Groups. They were then iterated upon for further clarity of their respective levels of access and attribute-based access controls (ABAC).</p>
+                            <p>After analyzing the different PA options and their trade-offs, we chose option 1 and 2 architectures as they aligned best with our goals compared to the current version of Teams and Groups. They were then iterated upon for further clarity of their respective levels of access and attribute-based access controls (ABAC).</p>
                         </div>
                     </div>
                 </div>
@@ -214,7 +214,7 @@
                     <div class="section no-m-b">
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Trade-offs</b></p>
-                            <p>Based on the current user base, we wanted to accommodate those users as they transitioned into the new architecture (not just new users). Dependent on the EA chosen, the personas below limited the amount of exploratory design work. The scenarios would need to be compatible with their usages as they convert to the new EA state without much frustration.</p>
+                            <p>Based on the current user base, we wanted to accommodate those users as they transitioned into the new architecture (not just new users). Dependent on the PA chosen, the personas below limited the amount of exploratory design work. The scenarios would need to be compatible with their usages as they convert to the new PA state without much frustration.</p>
                         </div>
                     </div>
                 </div>
@@ -252,7 +252,7 @@
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">What I Learned</b></p>
                             <p class="ptext-m-b">The project impacted ~50 companies with >100 employees and >4 printers each. This revamp was internally tested and showcased over 80% increase in user flow comprehension.</p>
-                            <p>Throughout this project, it taught me <span class="underline">higher-level product decisions</span> and how to communicate that more effectively. Moving forward from this internship, I want to keep tackling complex problems that deal with access and permissions to further refine my skills with role-based designs.</p>
+                            <p>Throughout this project, it taught me <span class="underline">higher-level product decisions</span> and how to communicate UX copy more effectively. Moving forward from this internship, I want to keep tackling complex problems that deal with access and user permissions to further refine my skills with role-based designs.</p>
                         </div>
                     </div>
                 </div>
