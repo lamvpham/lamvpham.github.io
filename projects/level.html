@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>OAuth Integration</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LB6SRGJK4S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-LB6SRGJK4S');
+    </script>
+
+    <!-- mandatory tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- site description-->
+    <meta property="og:title" content="Lam Pham">
+    <meta property="og:image" content="https://lamvpham.me/assets/meta.png">
+    <meta property="og:description" content="Product Designer">
+    <meta property="og:url" content="https://lamvpham.me/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="lamvpham">
+    <meta name="twitter:description" content="Product Designer">
+    <meta name="twitter:image" content="https://lamvpham.me/assets/meta.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <link rel="stylesheet" href="../css/animations.css">                
+    <link rel="stylesheet" href="../css/project-hovers.css">                
+    <link rel="stylesheet" href="../css/media-queries.css">   
+    <link rel="stylesheet" href="../css/projects.css">                             
+
+    <!-- icons -->
+    <link rel="shortcut icon" href="../assets/L.svg">
+    <script src="https://kit.fontawesome.com/63da5f6700.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="wrap" class="fade-in container" style="display: flex">
+        <div class="overlay">
+            <img src="../projects/pj-cards/lh-inpage.png" center>
+        </div>
+
+        <div class="effects">
+            <div class="crt-lines"></div>
+            <div class="vignette"></div>
+            <div class="snow"></div>
+        </div>
+
+        <div class="top-bar">
+            <div class="two-bars">
+                <p class="two-m-b"><span id="clock"></span></p>
+                <p class="two-m-b">
+                    <span id="work" class="highlight pointer texthover" onclick="location.href='../';">WORK</span> 
+                    <span class="spacing star rotating">✸</span> 
+                    <span id="about" class="highlight pointer texthover" onclick="location.href='../#about';">ABOUT</span>
+                    <span class="spacing star rotating">✸</span> 
+                    <span id="prose" class="highlight pointer texthover" onclick="location.href='../#prose';">PROSE</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="t-b-m">
+                <!-- context -->
+                <div class="project-content no-m-t">
+                    <div class="section section-bottom">
+                        <h3>OAUTH INTEGRRATION</h3>
+                        <h4>Designed the Google Assistant integration to be used with IoT device voice activation</h4>
+                    </div>
+
+                    <div class="section">
+                        <h5>Context</h5>
+                        <div class="sub-section">
+                            <p class="glowing"><b class="subheader">The Problem</b></p>
+                            <h4><b>How might we future-proof the Level Lock to remain adaptable with current advancements in voice tech and security?</b></h4>
+                        </div>
+                        <div class="sub-section">
+                            <p class="glowing"><b class="subheader">Role</b></p>
+                            <p>As the lead designer, I researched and designed the MVP for smart device ecosystem integration into Level's IoT devices. Collaborating with the CPO and mobile devs, the project took 3 weeks to implement from research to prototype.</p>
+                        </div>
+                        <div class="sub-section no-m-b">
+                            <p class="glowing"><b class="subheader">Solution</b></p>
+                            <p>The final prototype takes into account the technical fundamentals required for integration, including OAuth 2.0 initiated by Google, secondary user verification for high-risk actions, and App Flipping for account linkage. The voice-activation feature for the Level Locks will give a more natural and convenient interaction to the product, which will be a staple function for all current and future devices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="level-assets/level_flows.gif">
+                
+
+ 
+
+
+
+
+
+
+
+
+
+                <!-- intro -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>Introduction</h5>
+                        <div class="sub-section">
+                            <p class="glowing"><b class="subheader">The Scope</b></p>
+                            <p>The current method of unlocking/locking the Level Lock is by opening the app and pressing a button, or using a physical key.
+                                Competitors already have functionality for voice activation with their IoT devices, and by not offering this, the Level product
+                                is at a competitive disadvantage in the household smart device domain.</p>
+                        </div>
+                        <div class="sub-section no-m-b">
+                            <p class="glowing"><b class="subheader">The Objective</b></p>
+                            <p class="ptext-m-b">Make Google Assistant a part of the onboarding experience for new users to know that the functionality is there, and within settings for current users to learn about, for more seamless user interactions.</p>
+                            <p>The Level Connect is a Wi-Fi bridge for communicating between various wireless devices under the same network. This is the focal point for introducing the Google Assistant integration within the Level app.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="level-assets/wifi-bridge.png">
+
+
+                <!-- prelim process -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>Preliminary Process</h5>
+                        <div class="sub-section">
+                            <p class="glowing"><b class="subheader">Qualitative Research</b></p>
+                            <p class="ptext-m-b">I had to understand the technical documentation for OAuth 2.0: an authorization protocol to grant access to a client app on behalf of the user without sharing user credentials.</p>
+                            <p class="ptext-m-b">This method enhances security by using access tokens that are refreshed and transcient, minimizing the risk of unauthorized access.</p>
+                            <p>Secondary user verifiation is a common practice to layer additional security measures for critical tasks, such as requiring explicit assertions (yes/no) or PINs (ex. locking the door would not require the user to say the security PIN, but unlocking the door would).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="level-assets/suv.png">
+
+                <div class="project-content">
+                    <div class="section">
+                        <div class="sub-section no-m-b">
+                            <p class="glowing"><b class="subheader">Competitive Analysis</b></p>
+                            <p>By evaluating the common feature sets and industry standards of competitors (August Home, U-tec, and Kwikset) regarding the Google Assistant integration, this allowed me to design the user flow.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="level-assets/comp_ana.png">
+
+                <div class="project-content">
+                    <div class="section">
+                        <div class="sub-section no-m-b">
+                            <p class="glowing"><b class="subheader">Design Exploration & Iteration</b></p>
+                            <p>After scoping and researching the problem space, I spent the next week mapping out potential user entry points for the feature, and designing initial prototypes based around that. I actively sought 
+                                feedback from the CPO and developers to ensure the designs aligned with the app flip documentation and matched the goal of the feature.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="level-assets/entry-points.png">
+
+                <div class="project-content">
+                    <div class="section">
+                        <div class="sub-section no-m-b">
+                            <p>I gathered the feedback through product team roundups (where I shared the designs on a daily basis and delved into various options to explore), alongside developer meetings (to discuss the design constraints vs security protocol).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="level-assets/exploration.png">
+
+
+                <!-- mvp -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>MVP</h5>
+                        <div class="sub-section no-m-b">
+                            <p class="glowing"><b class="subheader">Testing & Validation</b></p>
+                            <p class="ptext-m-b">Using different smart devices on hand (such as the Apple HomePod & Amazon Sidewalk), I followed the OAuth 2.0 authorization flow for Google Assistant with the Level Lock. </p>
+                            <p>This way, I was able to justify my design decisions to the developers regarding what endpoints were necessary for data access between the Level app and the Google Home app.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="level-assets/main_flow.png">
+
+                <div class="project-content">
+                    <div class="section">
+                        <div class="sub-section no-m-b">
+                            <p class="glowing"><b class="subheader">Results</b></p>
+                            <p>By having the feature be introduced in onboarding for new users, this would provide a strong inclination to use the feature. Other entry points are within the settings or during set up for another Level device. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="level-assets/level_flows.gif">
+
+
+
+
+
+
+
+
+
+                <!-- next steps -->
+                <div class="project-content">
+                    <div class="section">
+                        <h5>Moving Forward</h5>
+                        <div class="sub-section">
+                            <p class="glowing"><b class="subheader">Next Steps</b></p>
+                            <p>After handoff to the developers, the next step regarding the OAuth designs is enabling a way of switching Google accounts without having to unlink the current account. Since having one account associated to the OAuth is a technical constraint, this is put for later down the roadmap.</p>
+                        </div>
+                        <div class="sub-section no-m-b">
+                            <p class="glowing"><b class="subheader">What I Learned</b></p>
+                            <p class="ptext-m-b">Level Lock's are currently circulating the United States with +1 million devices sold. This project enables the smart locks to be paired with Google Assistant and paves way for other smart devices to be integrated into the ecosystem.</p>
+                            <p>Throughout this project, it taught me <span class="underline">secure user authentication and authorization</span> industry standards and how to design for it based on the technical needs. Understanding permissions and access is important to scaling products and gaining customer trust, and I want to dive deeper into the psychology behind designing for that in a business.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- next/prev -->
+                <div class="next-prev">
+                    <div class="prev-pj">
+                        <h2><a class="highlight pointer texthover underline" href="cdk.html"><span>prev:</span> NOTIFICATION PATTERNS</a></h2>
+                    </div>
+                    <div class="next-pj">
+                        <h2><a class="highlight pointer texthover underline" href="formlabs.html"><span>next:</span> PERMISSIONS ARCHITECTURE</a></h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bottom-bar bot">
+            <div class="two-bars">
+                <p class="two-m-b">
+                    <span class="highlight pointer texthover underline" onclick="location.href='mailto:tolamvpham@gmail.com?Subject=coffee!';" target="_top">EMAIL</span> 
+                    <span class="spacing star rotating">✸</span> 
+                    <span class="highlight pointer texthover underline" onclick="window.open('https://www.linkedin.com/in/lamvpham/')">LINKEDIN</span>  
+                    <span class="spacing star rotating">✸</span> 
+                    <span class="highlight pointer texthover underline" onclick="window.open('../assets/Lam-Pham-Resume.pdf')">RESUME</span>
+                </p>
+                <p class="two-m-b">CODED WITH MY BLOOD, SWEAT, AND TEARS</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<!-- scripts -->
+<!-- <script src="../scripts/preloader.js"></script> -->
+<script src="../scripts/navswitch.js"></script>
+<script src="../scripts/clock.js"></script>
+<script src="../scripts/shortclock.js"></script>
+<script src="../scripts/counter.js"></script>
+<script src="../scripts/video.js"></script>
+
+</html>
