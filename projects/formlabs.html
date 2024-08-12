@@ -109,7 +109,8 @@
                         <h5>Context</h5>
                         <div class="sub-section">
                             <p class="glowing"><b class="subheader">The Problem</b></p>
-                            <h4><b>How might we improve user's mental models of the Dashboard UX architecture for better user permissions & workflows?</b></h4>
+                            <p class="m-b-8">With a new feature that enables workflows to be scaled up, the base Dashboard interface was not compatible with this scaling and only added confusion for users.</p>
+                            <h4><b><span class="coloured">How might we</span> improve user's mental models of the Dashboard UX architecture for better user permissions & workflows?</b></h4>
                         </div>
                         <div class="sub-section">
                             <p class="glowing"><b class="subheader">Role</b></p>
@@ -125,38 +126,42 @@
                 <img class="proj-image" src="formlabs-assets/solution.gif">
 
                 <!-- intro -->
-                <div class="project-content">
+                <!-- <div class="project-content">
                     <div class="section">
                         <h5>Introduction</h5>
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Entities within Dashboard</b></p>
-                            <p>There were multiple different user entities in Dashboard with sometimes many relationships between them. These are:</p>
+                            <p>There were multiple different user entities in Dashboard with sometimes many relationships between them (printer groups are only available to create or use when the user has Fleet Control active). These are:</p>
                         </div>
                     </div>
                 </div>
 
-                <img class="proj-image" src="formlabs-assets/entities.png">
-                
-                <div class="project-content">
-                    <div class="section">
-                        <div class="sub-section no-m-b">
-                            <p>Printer groups are only available to create or use when the user has Fleet Control active. Relevant relationships between them are below (in some cases, it is worth considering user and account as the same even though that’s not necessarily the case).</p>
-                        </div>
-                    </div>
-                </div>
-
-                <img class="proj-image" src="formlabs-assets/entity_relations.png">
+                <img class="proj-image" src="formlabs-assets/entities.png"> -->                
 
                 <div class="project-content">
                     <div class="section">
+                        <h5>Introduction</h5>
                         <div class="sub-section no-m-b">
-                            <p class="glowing"><b class="subheader">Scope & Objectives</b></p>
-                            <p>The scope of the project was 10 weeks to research products with PA's similar & different from Dashboard, then extrapolate the insights into an PA suitable for the platform. Levels of access and permissions needed to be fleshed out due to lack of internal understanding for accounts and admins.</p>
+                            <p class="glowing"><b class="subheader">Understanding the Problem Space</b></p>
+                            <p>With 10 weeks to research products with PA's similar & different from Dashboard and then extrapolate the insights into an PA suitable for the platform, I had to first understand the user pain points. With the current UX architecture, what pain points arise from usage? What user feedback was given about the platform?</p>
                         </div>
                     </div>
                 </div>
 
-                <img class="proj-image" src="formlabs-assets/objectives.png">
+                <video class="video" autoplay loop muted>
+                    <source src="formlabs-assets/issues.mp4" type="video/mp4">
+                </video>
+
+                <div class="project-content">
+                    <div class="section">
+                        <div class="sub-section no-m-b">
+                            <p>Based on user's current issues with the platform, my PM and I defined these goals to guide our direction for the architecture.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <img class="proj-image" src="formlabs-assets/goals.png">
                 
                 <!-- prelim process -->
                 <div class="project-content">
@@ -164,34 +169,44 @@
                         <h5>Preliminary Process</h5>
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Competitive Analysis</b></p>
-                            <p>To thoroughly understand the problem space, a competitive analysis was done to evaluate 3D & non-3D related tools and their PA's (the problem is not unique to 3D printing).</p>
+                            <p>To understand the problem space, a competitive analysis was done to evaluate 3D & non-3D related tools and their PA's (the problem is not unique to 3D printing). 4 distinct trends popped out to me that should be noted for our own architecture:</p>
                         </div>
                     </div>
                 </div>
 
                 <img class="proj-image" src="formlabs-assets/patterns.png">
 
+                <!-- <div class="project-content">
+                    <div class="section">
+                        <div class="sub-section no-m-b">
+                            <p>Based on competitive analysis, these are the goals used to scorecard the pro's and con's of all the PA iterations my PM and I planned out.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="proj-image" src="formlabs-assets/goals_2.png"> -->
+
+
                 <div class="project-content">
                     <div class="section">
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Permission Architecture Iteration</b></p>
-                            <p>Based on the analysis, my PM and I conceptualized 4 different user permission architectures (one is the current structure). Each have their own pros and cons, alongside their respective market landscape comparisons - so we scorecard each based on the goals defined.</p>
+                            <p>Based on the analysis, my PM and I conceptualized 17 different user permission architectures. Each have their own pros and cons, alongside their respective market landscape comparisons - so we scorecard each based on the goals defined.</p>
                         </div>
                     </div>
                 </div>
 
-                <img class="proj-image" src="formlabs-assets/diagrams.png">
+                <img class="proj-image" src="formlabs-assets/iterations.png">
 
                 <div class="project-content">
                     <div class="section">
                         <div class="sub-section no-m-b">
-                            <p>After analyzing the different PA options and their trade-offs, we chose option 1 and 2 architectures as they aligned best with our goals compared to the current version of Teams and Groups. They were then iterated upon for further clarity of their respective levels of access and attribute-based access controls (ABAC).</p>
+                            <p>After analyzing the different PA options and their trade-offs, we chose this architecture as it aligned best with our goals compared to the current version of Teams and Groups.</p>
                         </div>
                     </div>
                 </div>
 
-                <img class="proj-image section-bottom" src="formlabs-assets/option-1.png">
-                <img class="proj-image" src="formlabs-assets/option-2.png">
+                <img class="proj-image" src="formlabs-assets/proposed_solution.png">
 
                 <!-- mvp -->
                 <div class="project-content">
@@ -199,11 +214,11 @@
                         <h5>MVP</h5>
                         <div class="sub-section">
                             <p class="glowing"><b class="subheader">Validation</b></p>
-                            <p>Myself, my Dashboard PM, and the Dashboard designer got together with the CPO to discuss the 2 architectures and decided that the most feasible to implement is option 1. This option only requires two levels of hierarchy, was easiest for (new & current) users to understand, and encapsulates all teams to be in one organization instead.</p>
+                            <p>Myself, my Dashboard PM, and the Dashboard designer got together with the CPO to discuss the architecture. This option only requires two levels of hierarchy, was easiest for (new & current) users to understand, and encapsulates all teams to be in one organization, so after, it was time to start prototyping.</p>
                         </div>
                         <div class="sub-section no-m-b">
                             <p class="glowing"><b class="subheader">Results</b></p>
-                            <p>The wireframes were converted into high-fidelity mock-ups of the Sign Up/Onboarding screens and the Company Settings screens.</p>
+                            <p>After some lo-fi sketches to map out the designs, they were converted into hi-fi prototypes of the Sign Up/Onboarding screens and the Company Settings screens.</p>
                         </div>
                     </div>
                 </div>

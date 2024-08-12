@@ -100,6 +100,10 @@
     margin-bottom: 0 !important;
 }
 
+.m-b-8 {
+    margin-bottom: 8px !important;
+}
+
 .no-m-t {
     margin-top: 0 !important;
 }
@@ -172,6 +176,11 @@
     font-family: 'HelveticaNeue-Light';
     letter-spacing: 0;
     text-shadow: 0 0 3px #6B35DC, 0 0 5px #3A1688 !important;
+}
+
+.coloured {
+    color: #FDD46B;
+    text-shadow: 0 0 12px #DC7135;
 }
 
 
