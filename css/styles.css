@@ -162,7 +162,7 @@ h3 {
     color: var(--textcolours);
     font-size: 60px;
     line-height: 0.9;
-    letter-spacing: 14px;
+    letter-spacing: 12px;
     transition: font-size .2s ease-in;
     filter: blur(0.1px);
     text-shadow: 0 0 4px #6B35DC, 0 0 5px #000 !important;
