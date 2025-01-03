@@ -1,5 +1,5 @@
 function showContent(year) {
-    var arrayOfYears = ["2020", "2021", "2022", "2023"];
+    var arrayOfYears = ["2020", "2021", "2022", "2023", "2024"];
     let showhide;
   
     // hide all years' content
