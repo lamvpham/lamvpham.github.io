@@ -51,7 +51,7 @@ body {
 
 
 /* img */
-img {
+img, video {
   margin: 0 0 8px auto;
   width: 100%;
 }
