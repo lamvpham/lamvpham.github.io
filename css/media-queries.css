@@ -35,7 +35,7 @@
         letter-spacing: 4px;
         transition: font-size .2s ease-in;
     }
-    p {
+    p, #project-text-1, #project-text-2, #project-text-3,  #project-text-4 {
         font-size: 13px;
         transition: font-size .2s ease-in;
     }
@@ -125,8 +125,5 @@
     }
     .exp-row p {
         margin: 0;
-    }
-    .experiences, .hr-line, .prose-text {
-        display: none;
     }
 }
